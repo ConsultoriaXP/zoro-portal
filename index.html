@@ -185,12 +185,14 @@ transform:translateX(100%);transition:transform .26s;z-index:100;overflow-y:auto
 <input class="search" id="cmQ" placeholder="Buscar ticker na matriz de consenso...">
 <select id="cmF"><option value="">Todas as casas</option><option value="XP">XP</option><option value="BTG">BTG</option><option value="Itau">Itau</option><option value="Santander">Santander</option><option value="Safra">Safra</option><option value="Bradesco">Bradesco</option></select>
 <select id="cmMin"><option value="1">Qualquer cobertura</option><option value="2">2+ casas</option><option value="3">3+ casas</option><option value="4">4+ casas</option></select>
+<select id="cmSeg"><option value="">Todos os segmentos</option></select>
 </div>
+<div class="card" style="padding:16px 16px 10px;margin-bottom:18px"><h3 style="font-size:12px;font-weight:700;color:var(--mut);text-transform:uppercase;letter-spacing:.5px;margin-bottom:14px">Top fundos por consenso &middot; n&ordm; de casas que recomendam</h3><canvas id="chartConsenso" height="160"></canvas></div>
 <div class="card" style="padding:6px 6px 2px;margin-bottom:22px"><div class="scroll">
 <table id="cmT"><thead><tr>
 <th data-k="t">Ticker</th><th data-k="n">Fundo</th><th data-k="seg">Segmento</th>
 <th class="c" data-k="n_casas">Casas</th><th>Quem recomenda (XP / BTG / ITA / SAN / SAF / BRA)</th>
-<th class="r" data-k="pvpa">P/VP</th><th class="r" data-k="dy12m">DY 12m</th>
+<th class="r" data-k="pvpa">P/VP</th><th class="r" data-k="dy12m">DY 12m</th><th style="min-width:90px">Movimentos</th>
 </tr></thead><tbody></tbody></table></div></div>
 <h2 style="font-size:17px;font-weight:800;margin:6px 0 14px;letter-spacing:-.3px">Carteiras por casa &middot; Maio/2026</h2>
 <div class="hgrid" id="houseCards"></div>
@@ -342,25 +344,96 @@ function houseBadges(casas){
 /* ---------- CONSENSO matrix ---------- */
 const CM=D.consensoMatriz;
 (function(){
-  const tot=CM.length, c4=CM.filter(x=>x.n_casas>=3).length, lead=CM[0];
+  const tot=CM.length,c4=CM.filter(x=>x.n_casas>=3).length,lead=CM[0];
   $("#consSummary").innerHTML=
     '<div class="s"><b>'+tot+'</b><small>fundos cobertos</small></div>'+
     '<div class="s"><b>'+c4+'</b><small>com 3+ casas</small></div>'+
     '<div class="s"><b>'+lead.t+'</b><small>maior consenso ('+lead.n_casas+' casas)</small></div>'+
     '<div class="s"><b>6</b><small>casas integradas</small></div>';
 })();
+
+/* seg filter populate */
+(function(){
+  const segs=[...new Set(CM.map(x=>x.seg||""))].filter(s=>s).sort();
+  $("#cmSeg").innerHTML='<option value="">Todos os segmentos</option>'+segs.map(s=>'<option>'+s+'</option>').join("");
+})();
+
+/* mudancas map */
+const mudMap={};
+function parseMud(txt,casa){
+  if(!txt)return;
+  txt.split(/[;,]/).forEach(tok=>{
+    const low=tok.toLowerCase().trim();
+    let tipo=null;
+    if(/inclu|mont/.test(low))tipo='entrou';
+    else if(/exclu|retir|remov/.test(low))tipo='saiu';
+    else if(/ampli|aumentou|refor/.test(low))tipo='peso+';
+    else if(/reduz/.test(low))tipo='peso-';
+    if(!tipo)return;
+    (tok.match(/[A-Z]{4}11/g)||[]).forEach(tk=>{
+      if(!mudMap[tk])mudMap[tk]=[];
+      mudMap[tk].push({casa,tipo});
+    });
+  });
+}
+parseMud(D.casas.XP.mudancas,'XP');
+parseMud(D.casas.BTG.mudancas,'BTG');
+Object.entries(D.casasParcial).forEach(([k,v])=>parseMud(v.mudancas,k));
+
+function mudBadge(tk){
+  const ch=mudMap[tk];
+  if(!ch||!ch.length)return '<span style="color:var(--mut);font-size:11px">—</span>';
+  const ic={entrou:'▲',saiu:'▼','peso+':'↑','peso-':'↓'};
+  const cl={entrou:'#4CAF50',saiu:'#F44336','peso+':'#64B5F6','peso-':'#FFB74D'};
+  return ch.map(c=>'<span style="color:'+cl[c.tipo]+';font-weight:700;font-size:11px;white-space:nowrap">'+ic[c.tipo]+' '+c.casa+'</span>').join('<br>');
+}
+
+/* chart top-10 consenso */
+(function(){
+  const top=CM.slice(0,10);
+  const segCol={'Recebíveis':'#1E5BB8','Logística':'#FFC100','Shoppings':'#EC7000','Lajes':'#0B8A57','FOF/Multi':'#9A7400','Híbrido':'#CC092F','Renda urbana':'#8E44AD','':'#71727A'};
+  new Chart(document.getElementById('chartConsenso'),{
+    type:'bar',
+    data:{
+      labels:top.map(x=>x.t),
+      datasets:[{
+        label:'Casas',
+        data:top.map(x=>x.n_casas),
+        backgroundColor:top.map(x=>(segCol[x.seg||'']||'#71727A')+'CC'),
+        borderColor:top.map(x=>segCol[x.seg||'']||'#71727A'),
+        borderWidth:1,
+        borderRadius:4,
+        borderSkipped:false
+      }]
+    },
+    options:{
+      indexAxis:'y',
+      responsive:true,
+      plugins:{
+        legend:{display:false},
+        tooltip:{callbacks:{label:ctx=>{const f=top[ctx.dataIndex];return [ctx.raw+' de 6 casas',(f.seg||'Sem segmento'),f.n].filter(Boolean);}}}
+      },
+      scales:{
+        x:{min:0,max:6,ticks:{stepSize:1,color:'#71727A'},grid:{color:'rgba(255,255,255,0.04)'},border:{display:false}},
+        y:{grid:{display:false},ticks:{color:'#F4F4F5',font:{weight:'700',size:12}}}
+      }
+    }
+  });
+})();
+
 let cmSort={k:"n_casas",dir:-1};
 function renderCM(){
-  const q=$("#cmQ").value.trim().toUpperCase(),fc=$("#cmF").value,mn=+$("#cmMin").value;
-  let r=CM.filter(x=>(!q||x.t.includes(q)||(x.n||"").toUpperCase().includes(q))&&(!fc||x.casas.includes(fc))&&x.n_casas>=mn);
+  const q=$("#cmQ").value.trim().toUpperCase(),fc=$("#cmF").value,mn=+$("#cmMin").value,fs=$("#cmSeg").value;
+  let r=CM.filter(x=>(!q||x.t.includes(q)||(x.n||"").toUpperCase().includes(q))&&(!fc||x.casas.includes(fc))&&x.n_casas>=mn&&(!fs||(x.seg||"")===fs));
   r.sort((a,b)=>{let va=a[cmSort.k],vb=b[cmSort.k];if(cmSort.k==="pvpa"||cmSort.k==="dy12m"||cmSort.k==="n_casas"){va=num(va)||-1;vb=num(vb)||-1;}else{va=(""+va);vb=(""+vb);} return va>vb?cmSort.dir:va<vb?-cmSort.dir:0;});
-  $("#cmT tbody").innerHTML=r.length?r.map(x=>'<tr data-tk="'+x.t+'"><td class="tk">'+x.t+'</td><td class="sub">'+(x.n||"")+'</td><td class="sub">'+(x.seg||"-")+'</td>'+
+  $("#cmT tbody").innerHTML=r.length?r.map(x=>'<tr data-tk="'+x.t+'"><td class="tk">'+x.t+'</td><td class="sub">'+(x.n||"")+'</td><td class="sub">'+(x.seg||"—")+'</td>'+
     '<td class="c"><span class="cnt '+(x.n_casas>=3?"":x.n_casas==2?"c2":"c1")+'">'+x.n_casas+'</span></td>'+
-    '<td>'+houseBadges(x.casas)+'</td><td class="r pvp-cell">'+(x.pvpa||"-")+'</td><td class="r">'+(x.dy12m||"-")+'</td></tr>').join("")
-    :'<tr><td colspan="7" class="empty">Nenhum fundo encontrado.</td></tr>';
+    '<td>'+houseBadges(x.casas)+'</td><td class="r pvp-cell">'+(x.pvpa||"—")+'</td><td class="r">'+(x.dy12m||"—")+'</td>'+
+    '<td style="font-size:11px;line-height:1.7;padding:6px 8px">'+mudBadge(x.t)+'</td></tr>').join("")
+    :'<tr><td colspan="8" class="empty">Nenhum fundo encontrado.</td></tr>';
   $$("#cmT tbody tr[data-tk]").forEach(tr=>tr.onclick=()=>openDrawer(tr.dataset.tk));
 }
-$("#cmQ").oninput=renderCM;$("#cmF").onchange=renderCM;$("#cmMin").onchange=renderCM;
+$("#cmQ").oninput=renderCM;$("#cmF").onchange=renderCM;$("#cmMin").onchange=renderCM;$("#cmSeg").onchange=renderCM;
 $$("#cmT th[data-k]").forEach(th=>th.onclick=()=>{const k=th.dataset.k;cmSort.dir=cmSort.k===k?-cmSort.dir:(k==="t"||k==="n"||k==="seg"?1:-1);cmSort.k=k;renderCM();});
 renderCM();
 
