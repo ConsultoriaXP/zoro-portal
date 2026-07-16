@@ -1,0 +1,50 @@
+name: add-screener
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Patch index.html
+        run: |
+          python3 - <<'PYEOF'
+          s = open('index.html', encoding='utf-8').read()
+          if 'id="screener"' in s:
+              print('Screener ja existe, nada a fazer.')
+              raise SystemExit(0)
+          navA = '<button data-t="news">Radar de Noticias</button>'
+          btn = '<button data-t="screener">Screener <span class="tag">NOVO</span></button>'
+          paneA = '<div class="tabpane" id="news">'
+          pane = ('<div class="tabpane" id="screener"><div class="hero">'
+                  '<div class="eyebrow">Ferramenta do Consultor</div>'
+                  '<h1>Screener &middot; Posicao do Cliente em FIIs</h1>'
+                  '<p>Envie o extrato "Posicao Consolidada" (XP) do cliente e veja o resumo da posicao em Fundos Imobiliarios. '
+                  'Processamento 100% local no navegador &mdash; nenhum dado sai desta maquina.</p></div>'
+                  '<div class="card" style="padding:0;overflow:hidden;background:#0a0a0a">'
+                  '<iframe id="scrFrame" src="https://consultoriaxp.github.io/resumo-fiis/" loading="lazy" '
+                  'style="width:100%;height:900px;border:none;display:block" title="Screener FIIs"></iframe></div>'
+                  '<scr' 'ipt>(function(){var nv=document.getElementById(\'nav\');'
+                  'if(nv){nv.addEventListener(\'click\',function(e){var b=e.target.closest(\'button\');if(!b)return;'
+                  'var t=b.getAttribute(\'data-t\');var p=document.getElementById(t);if(!p)return;'
+                  'document.querySelectorAll(\'#nav button\').forEach(function(x){x.classList.toggle(\'on\',x===b)});'
+                  'document.querySelectorAll(\'.tabpane\').forEach(function(x){x.classList.toggle(\'on\',x===p)});});}'
+                  'setInterval(function(){var f=document.getElementById(\'scrFrame\');if(!f)return;'
+                  'try{var h=f.contentDocument.body.scrollHeight+40;'
+                  'if(h>500&&Math.abs(h-f.offsetHeight)>30)f.style.height=h+\'px\'}catch(e){}},900);})();'
+                  '</scr' 'ipt></div>')
+          assert s.count(navA) == 1, 'ancora nav nao unica'
+          assert s.count(paneA) == 1, 'ancora pane nao unica'
+          s = s.replace(navA, navA + btn, 1)
+          s = s.replace(paneA, pane + paneA, 1)
+          open('index.html', 'w', encoding='utf-8').write(s)
+          print('Patch aplicado.')
+          PYEOF
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git diff --cached --quiet || git commit -m "Adiciona aba Screener (resumo-fiis embutido)"
+          git push
