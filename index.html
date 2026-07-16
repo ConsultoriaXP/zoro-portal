@@ -152,7 +152,7 @@ transform:translateX(100%);transition:transform .26s;z-index:100;overflow-y:auto
 <button data-t="rec">Recomendacoes XP</button>
 <button data-t="mercado">Mercado &middot; Clube FII</button>
 <button data-t="teses">Teses</button>
-<button data-t="news">Radar de Noticias</button>
+<button data-t="news">Radar de Noticias</button><button data-t="screener">Screener <span class="tag">NOVO</span></button>
 </nav>
 
 <div class="wrap">
@@ -260,7 +260,7 @@ transform:translateX(100%);transition:transform .26s;z-index:100;overflow-y:auto
 </div>
 
 <!-- ============ NEWS ============ -->
-<div class="tabpane" id="news">
+<div class="tabpane" id="screener"><div class="hero"><div class="eyebrow">Ferramenta do Consultor</div><h1>Screener &middot; Posicao do Cliente em FIIs</h1><p>Envie o extrato "Posicao Consolidada" (XP) do cliente e veja o resumo da posicao em Fundos Imobiliarios. Processamento 100% local no navegador &mdash; nenhum dado sai desta maquina.</p></div><div class="card" style="padding:0;overflow:hidden;background:#0a0a0a"><iframe id="scrFrame" src="https://consultoriaxp.github.io/resumo-fiis/" loading="lazy" style="width:100%;height:900px;border:none;display:block" title="Screener FIIs"></iframe></div><script>(function(){var nv=document.getElementById('nav');if(nv){nv.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var t=b.getAttribute('data-t');var p=document.getElementById(t);if(!p)return;document.querySelectorAll('#nav button').forEach(function(x){x.classList.toggle('on',x===b)});document.querySelectorAll('.tabpane').forEach(function(x){x.classList.toggle('on',x===p)});});}setInterval(function(){var f=document.getElementById('scrFrame');if(!f)return;try{var h=f.contentDocument.body.scrollHeight+40;if(h>500&&Math.abs(h-f.offsetHeight)>30)f.style.height=h+'px'}catch(e){}},900);})();</script></div><div class="tabpane" id="news">
 <div class="hero"><div class="eyebrow">XP &middot; Radar Imobiliario</div>
 <h1>Radar de Noticias</h1>
 <p id="newsSub"></p></div>
