@@ -1,0 +1,215 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZORO | Ofertas em Andamento - XP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+--yellow:#FFC100;--yellow-d:#B88A00;--yellow-l:#FFF3CC;--black:#0B0B0C;--ink:#16171A;--ink2:#3A3B40;--mut:#71727A;
+--bg:#FFFFFF;--bg2:#F4F5F7;--bg3:#E9EAEE;--bd:#E1E2E7;--bd2:#D2D3DA;
+--green:#0B8A57;--green-bg:#E1F4EC;--red:#D62B1F;--red-bg:#FCEBE9;--neu:#9A7400;--neu-bg:#FFF4D1;--blue:#1E5BB8;--blue-bg:#E7F0FC;
+--shadow:0 1px 2px rgba(16,17,26,.04),0 4px 16px rgba(16,17,26,.06)}
+body{font-family:'Inter',-apple-system,Segoe UI,sans-serif;color:var(--ink);background:var(--bg2);line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.topbar{background:var(--black);color:#fff;padding:11px 26px;display:flex;align-items:center;gap:14px}
+.logo{background:var(--yellow);color:#000;font-weight:900;font-size:15px;padding:5px 9px;border-radius:6px;letter-spacing:.5px}
+.brand{font-weight:800;font-size:16px;letter-spacing:.3px}
+.brand b{color:var(--yellow)}
+.brand span{color:#8A8B92;font-weight:500;font-size:13px}
+.topbar .meta{margin-left:auto;font-size:11.5px;color:#9A9BA2;text-align:right;line-height:1.4}
+.topbar .meta b{color:#fff}
+.priv{display:inline-block;background:#23242A;border:1px solid #34353C;color:#C9CAD0;font-size:10px;font-weight:700;padding:2px 8px;border-radius:5px;letter-spacing:.5px;text-transform:uppercase}
+.nav{background:var(--black);padding:0 18px;display:flex;gap:2px;border-top:1px solid #232228;overflow-x:auto}
+.nav button{background:none;border:none;color:#A7A8B0;font-family:inherit;font-size:13px;font-weight:600;padding:13px 16px;cursor:pointer;border-bottom:3px solid transparent;white-space:nowrap;display:flex;align-items:center;gap:6px}
+.nav button:hover{color:#fff}
+.nav button.on{color:var(--yellow);border-color:var(--yellow)}
+.nav .tag{background:var(--yellow);color:#000;font-size:9px;font-weight:800;padding:1px 5px;border-radius:4px;letter-spacing:.3px}
+.wrap{max-width:1240px;margin:0 auto;padding:26px 26px 60px}
+.hero{margin-bottom:22px}
+.eyebrow{font-size:11px;font-weight:800;letter-spacing:1.3px;text-transform:uppercase;color:var(--yellow-d)}
+.hero h1{font-size:25px;font-weight:800;letter-spacing:-.5px;margin-top:5px}
+.hero p{color:var(--mut);font-size:13.5px;margin-top:5px;max-width:760px}
+.grid{display:grid;gap:15px}
+.kpis{grid-template-columns:repeat(auto-fit,minmax(190px,1fr));margin-bottom:18px}
+.kpi{background:var(--bg);border:1px solid var(--bd);border-radius:14px;padding:16px 18px;position:relative;overflow:hidden;box-shadow:var(--shadow)}
+.kpi::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:var(--yellow)}
+.kpi .lbl{font-size:10.5px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--mut)}
+.kpi .val{font-size:27px;font-weight:800;margin-top:6px;letter-spacing:-.8px}
+.kpi .val small{font-size:13px;color:var(--mut);font-weight:600;letter-spacing:0}
+.kpi .note{font-size:11.5px;color:var(--mut);margin-top:3px;font-weight:500}
+.pos{color:var(--green)}.neg{color:var(--red)}
+.card{background:var(--bg);border:1px solid var(--bd);border-radius:14px;padding:20px;box-shadow:var(--shadow)}
+.card h2{font-size:15px;font-weight:800;margin-bottom:15px;display:flex;align-items:center;gap:9px;letter-spacing:-.2px}
+.card h2 .ic{width:5px;height:17px;background:var(--yellow);border-radius:3px}
+.card h2 small{margin-left:auto;font-size:11px;font-weight:600;color:var(--mut);text-transform:none;letter-spacing:0}
+.controls{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+.tabs2{display:flex;gap:6px;flex-wrap:wrap}
+.tab2{padding:6px 13px;border-radius:8px;background:var(--bg2);border:1px solid var(--bd);cursor:pointer;font-size:12px;font-weight:600;color:var(--mut)}
+.tab2.on{background:var(--yellow);color:#000;border-color:var(--yellow)}
+input{background:var(--bg);border:1px solid var(--bd2);color:var(--ink);padding:10px 13px;border-radius:10px;font-size:13px;font-family:inherit}
+input:focus{outline:2px solid var(--yellow);border-color:var(--yellow)}
+.search{flex:1;min-width:240px;font-size:14px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{text-align:left;padding:9px 11px;border-bottom:1px solid var(--bd)}
+th{font-size:10px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;color:var(--mut);cursor:pointer;user-select:none;background:var(--bg2);white-space:nowrap}
+th.r,td.r{text-align:right}
+th:hover{color:var(--ink)}
+tbody tr{transition:background .12s}tbody tr:hover{background:var(--yellow-l)}
+.tk{font-weight:800;letter-spacing:.2px}
+.sub{font-size:11px;color:var(--mut)}
+.badge{display:inline-block;font-size:10px;font-weight:800;padding:3px 9px;border-radius:6px;letter-spacing:.3px;white-space:nowrap}
+.b-fii{background:var(--blue-bg);color:var(--blue)}
+.b-fiagro{background:var(--green-bg);color:var(--green)}
+.b-fidc{background:var(--neu-bg);color:var(--neu)}
+.b-aberta{background:var(--green-bg);color:var(--green)}
+.b-sobras{background:var(--neu-bg);color:var(--neu)}
+.b-encerrando{background:var(--red-bg);color:var(--red)}
+td a{color:var(--blue);font-weight:700}
+td a:hover{text-decoration:underline}
+.notice{background:var(--yellow-l);border:1px solid #F0DDA0;border-radius:11px;padding:12px 16px;font-size:12px;color:#5C4A00;margin-bottom:18px}
+.notice b{color:#3D3000}
+.foot{color:var(--mut);font-size:11px;margin-top:26px;padding:18px 0 4px;border-top:1px solid var(--bd);line-height:1.6}
+.foot b{color:var(--ink2)}
+@media(max-width:900px){.wrap{padding:18px}}
+</style></head><body>
+
+<div class="topbar">
+<span class="logo">XP</span>
+<span class="brand"><b>ZORO</b> <span>&middot; Hub de Fundos Imobiliarios</span></span>
+<span class="meta"><span class="priv">Uso interno</span> &nbsp; Atualizado <b>17/07/2026</b><br>Ofertas: fontes publicas 17/07/2026</span>
+</div>
+<nav class="nav">
+<button onclick="location.href='index.html'">Painel</button>
+<button onclick="location.href='index.html#consenso'">Consenso das Casas <span class="tag">NOVO</span></button>
+<button onclick="location.href='index.html#rec'">Recomendacoes XP</button>
+<button onclick="location.href='index.html#mercado'">Mercado &middot; Clube FII</button>
+<button onclick="location.href='index.html#teses'">Teses</button>
+<button onclick="location.href='index.html#news'">Radar de Noticias</button>
+<button onclick="location.href='index.html#screener'">Screener <span class="tag">NOVO</span></button>
+<button class="on">Ofertas <span class="tag">NOVO</span></button>
+</nav>
+
+<div class="wrap">
+<div class="hero">
+<div class="eyebrow">Mercado Primario</div>
+<h1>Ofertas em Andamento</h1>
+<p>Emissoes de cotas de FIIs, Fiagros e FIDCs em curso: preco de emissao, volume, cronograma e documentacao. Fontes publicas (CVM, B3, Fundos.NET e imprensa especializada).</p>
+</div>
+
+<div class="grid kpis" id="kpis"></div>
+
+<div class="notice"><b>Atencao aos prazos:</b> os periodos de preferencia de MXRF11 (16/07), SNEL11 (15/07) e URPR11 (16/07) ja se encerraram — ofertas seguem em fase de sobras / publico geral.</div>
+
+<div class="card">
+<h2><span class="ic"></span>Ofertas em curso <small id="count"></small></h2>
+<div class="controls">
+<div class="tabs2" id="ftabs">
+<div class="tab2 on" data-f="all">Todas</div>
+<div class="tab2" data-f="FII">FIIs</div>
+<div class="tab2" data-f="Fiagro">Fiagros</div>
+<div class="tab2" data-f="FIDC">FIDCs</div>
+</div>
+<input class="search" id="q" placeholder="Buscar fundo, coordenador...">
+</div>
+<table><thead><tr>
+<th data-k="ticker">Ticker</th>
+<th data-k="tipo">Tipo</th>
+<th data-k="emissao">Emissao</th>
+<th data-k="preco" class="r">Preco (R$)</th>
+<th data-k="volume" class="r">Volume (R$ mi)</th>
+<th data-k="cronograma">Cronograma</th>
+<th data-k="status">Status</th>
+<th>Docs</th>
+</tr></thead><tbody id="rows"></tbody></table>
+</div>
+
+<div class="foot">
+<b>Fontes:</b> CVM (registros e ritos automaticos), B3, Fundos.NET, fiis.com.br, Funds Explorer e anuncios de inicio/prospectos dos coordenadores (17/07/2026).<br>
+<b>Aviso:</b> material de uso interno e informativo, restrito aos consultores. Nao constitui recomendacao de investimento. Precos e cronogramas sujeitos a alteracao conforme documentos oficiais das ofertas. ZORO - 17/07/2026.
+</div>
+</div>
+
+<script>
+/* OFERTAS_DATA_START */
+const OFERTAS = [
+  { ticker: "MXRF11", nome: "Maxi Renda", tipo: "FII", emissao: "12ª", preco: 9.37, volume: 1250.0,
+    cronograma: "Preferencia 13–16/07; sobras a partir desta semana", status: "sobras", statusLabel: "Sobras",
+    coord: "XP Investimentos", taxa: "2,88%",
+    link: "https://fiis.com.br/noticias/urpr11-mxrf11-veja-agenda-oferta-fundos-imobiliarios-desta-semana-fii-13072026-jj/" },
+  { ticker: "SNEL11", nome: "Suno Energias Limpas", tipo: "FII", emissao: "5ª", preco: 8.32, volume: 2301.7,
+    cronograma: "Preferencia 10–15/07 (encerrada); sobras em curso", status: "sobras", statusLabel: "Sobras",
+    coord: "QI Tech", taxa: "3,97%",
+    link: "https://fiis.com.br/noticias/urpr11-mxrf11-veja-agenda-oferta-fundos-imobiliarios-desta-semana-fii-13072026-jj/" },
+  { ticker: "URPR11", nome: "Urca Prime Renda", tipo: "FII", emissao: "9ª (restrita)", preco: 21.00, volume: 300.0,
+    cronograma: "Preferencia 06–16/07 (encerrada)", status: "encerrando", statusLabel: "Pos-preferencia",
+    coord: "Max Capital", taxa: "5,24%",
+    link: "https://fiis.com.br/noticias/urpr11-fundo-imobiliario-9-emissao-cotas-oferta-preco-direito-preferencia-jj/" },
+  { ticker: "RECR11", nome: "REC Recebiveis Imobiliarios", tipo: "FII", emissao: "13ª", preco: 89.00, volume: 409.9,
+    cronograma: "Registro CVM 03/07; oferta em curso (min. R$ 30 mi)", status: "aberta", statusLabel: "Aberta",
+    coord: "—", taxa: "—",
+    link: "https://fiis.com.br/noticias/recr11-anuncia-oferta-de-r-4099-milhoes-na-13a-emissao-de-cotas/" },
+  { ticker: "ICDI11", nome: "Itau CDI (FII do Itau)", tipo: "FII", emissao: "2ª", preco: 100.10, volume: 300.3,
+    cronograma: "Anunciada; subscricao a R$ 101,37", status: "aberta", statusLabel: "Aberta",
+    coord: "Itau", taxa: "—",
+    link: "https://fiis.com.br/noticias/fii-do-itau-anuncia-oferta-de-ate-r-3003-mi-em-nova-emissao-de-cotas/" },
+  { ticker: "INHF11", nome: "Inter Hedge FII", tipo: "FII", emissao: "2ª", preco: 10.35, volume: 250.0,
+    cronograma: "Protocolada 16/07 (rito automatico)", status: "aberta", statusLabel: "Aberta",
+    coord: "Inter Asset (gestora)", taxa: "—",
+    link: "https://fiis.com.br/noticias/fii-da-inter-asset-anuncia-emissao-de-r-250-mi-em-meio-a-proposta-de-consolidacao-de-fundos/" },
+  { ticker: "FIDC Parana Banco", nome: "Parana Banco FIDC — 1ª emissao", tipo: "FIDC", emissao: "1ª", preco: null, volume: null,
+    cronograma: "Anuncio de inicio 02/07/2026", status: "aberta", statusLabel: "Aberta",
+    coord: "Santander", taxa: "—",
+    link: "https://cms.santander.com.br/sites/WPS/documentos/arq-Parana-Banco-FIDC-2026-AI/26-07-02_142341_fidc+ai.pdf" }
+];
+/* OFERTAS_DATA_END */
+
+const fmt = v => v == null ? "—" : v.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+const tipoClass = { FII: "b-fii", Fiagro: "b-fiagro", FIDC: "b-fidc" };
+let filter = "all", query = "", sortK = null, sortAsc = true;
+
+function kpis() {
+  const vol = OFERTAS.reduce((s, o) => s + (o.volume || 0), 0);
+  const abertas = OFERTAS.filter(o => o.status === "aberta").length;
+  document.getElementById("kpis").innerHTML = `
+<div class="kpi"><div class="lbl">Ofertas ativas</div><div class="val">${OFERTAS.length}</div><div class="note">${abertas} abertas ao publico</div></div>
+<div class="kpi"><div class="lbl">Volume total</div><div class="val">R$ ${(vol/1000).toLocaleString("pt-BR",{maximumFractionDigits:2})} <small>bi</small></div><div class="note">soma das emissoes em curso</div></div>
+<div class="kpi"><div class="lbl">Novas na semana</div><div class="val pos">1</div><div class="note">INHF11 protocolada 16/07</div></div>
+<div class="kpi"><div class="lbl">Fases encerradas</div><div class="val neg">3</div><div class="note">preferencias MXRF11, SNEL11 e URPR11</div></div>`;
+}
+
+function render() {
+  const rows = OFERTAS
+    .filter(o => filter === "all" || o.tipo === filter)
+    .filter(o => !query || (o.ticker + " " + o.nome + " " + o.coord).toLowerCase().includes(query))
+    .sort((a, b) => {
+      if (!sortK) return 0;
+      const va = a[sortK] ?? "", vb = b[sortK] ?? "";
+      const c = typeof va === "number" && typeof vb === "number" ? va - vb : String(va).localeCompare(String(vb), "pt-BR");
+      return sortAsc ? c : -c;
+    });
+  document.getElementById("rows").innerHTML = rows.map(o => `
+<tr>
+<td><span class="tk">${o.ticker}</span><br><span class="sub">${o.nome}</span></td>
+<td><span class="badge ${tipoClass[o.tipo]}">${o.tipo}</span></td>
+<td>${o.emissao}</td>
+<td class="r">${fmt(o.preco)}</td>
+<td class="r">${o.volume == null ? "—" : fmt(o.volume)}</td>
+<td>${o.cronograma}<br><span class="sub">Coord.: ${o.coord} &middot; Taxa: ${o.taxa}</span></td>
+<td><span class="badge b-${o.status}">${o.statusLabel}</span></td>
+<td><a href="${o.link}" target="_blank" rel="noopener">Ver ↗</a></td>
+</tr>`).join("") || `<tr><td colspan="8" style="text-align:center;color:var(--mut);padding:24px">Nenhuma oferta encontrada</td></tr>`;
+  document.getElementById("count").textContent = rows.length + " de " + OFERTAS.length + " ofertas";
+  document.querySelectorAll("#ftabs .tab2").forEach(t => t.classList.toggle("on", t.dataset.f === filter));
+}
+
+document.querySelectorAll("#ftabs .tab2").forEach(t => t.addEventListener("click", () => { filter = t.dataset.f; render(); }));
+document.getElementById("q").addEventListener("input", e => { query = e.target.value.toLowerCase(); render(); });
+document.querySelectorAll("th[data-k]").forEach(th => th.addEventListener("click", () => {
+  const k = th.dataset.k;
+  if (sortK === k) sortAsc = !sortAsc; else { sortK = k; sortAsc = true; }
+  render();
+}));
+kpis(); render();
+</script>
+</body></html>
