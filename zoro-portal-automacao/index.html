@@ -1,0 +1,563 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZORO | Hub de Fundos Imobiliarios - XP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+--yellow:#FFC100;--yellow-d:#B88A00;--yellow-l:#FFF3CC;--black:#0B0B0C;--ink:#16171A;--ink2:#3A3B40;--mut:#71727A;
+--bg:#FFFFFF;--bg2:#F4F5F7;--bg3:#E9EAEE;--bd:#E1E2E7;--bd2:#D2D3DA;
+--green:#0B8A57;--green-bg:#E1F4EC;--red:#D62B1F;--red-bg:#FCEBE9;--neu:#9A7400;--neu-bg:#FFF4D1;--blue:#1E5BB8;--blue-bg:#E7F0FC;
+--xp:#FFC100;--btg:#0E2A47;--ita:#EC7000;--san:#EC0000;--saf:#16306B;--bra:#CC092F;
+--shadow:0 1px 2px rgba(16,17,26,.04),0 4px 16px rgba(16,17,26,.06)}
+body{font-family:'Inter',-apple-system,Segoe UI,sans-serif;color:var(--ink);background:var(--bg2);line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.topbar{background:var(--black);color:#fff;padding:11px 26px;display:flex;align-items:center;gap:14px}
+.logo{background:var(--yellow);color:#000;font-weight:900;font-size:15px;padding:5px 9px;border-radius:6px;letter-spacing:.5px}
+.brand{font-weight:800;font-size:16px;letter-spacing:.3px}
+.brand b{color:var(--yellow)}
+.brand span{color:#8A8B92;font-weight:500;font-size:13px}
+.topbar .meta{margin-left:auto;font-size:11.5px;color:#9A9BA2;text-align:right;line-height:1.4}
+.topbar .meta b{color:#fff}
+.priv{display:inline-block;background:#23242A;border:1px solid #34353C;color:#C9CAD0;font-size:10px;font-weight:700;
+padding:3px 8px;border-radius:5px;letter-spacing:.4px;text-transform:uppercase}
+.nav{background:var(--black);padding:0 18px;display:flex;gap:2px;border-top:1px solid #232228;overflow-x:auto}
+.nav button{background:none;border:none;color:#A7A8B0;font-family:inherit;font-size:13px;font-weight:600;padding:13px 16px;
+cursor:pointer;border-bottom:3px solid transparent;white-space:nowrap;display:flex;align-items:center;gap:7px}
+.nav button:hover{color:#fff}
+.nav button.on{color:var(--yellow);border-color:var(--yellow)}
+.nav .tag{background:var(--yellow);color:#000;font-size:9px;font-weight:800;padding:1px 5px;border-radius:4px;letter-spacing:.3px}
+.wrap{max-width:1240px;margin:0 auto;padding:26px 26px 60px}
+.tabpane{display:none;animation:fade .25s ease}.tabpane.on{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+.hero{margin-bottom:22px}
+.eyebrow{font-size:11px;font-weight:800;letter-spacing:1.3px;text-transform:uppercase;color:var(--yellow-d)}
+.hero h1{font-size:25px;font-weight:800;letter-spacing:-.5px;margin-top:5px}
+.hero p{color:var(--mut);font-size:13.5px;margin-top:5px;max-width:760px}
+.card{background:var(--bg);border:1px solid var(--bd);border-radius:14px;padding:20px;box-shadow:var(--shadow)}
+.card h2{font-size:15px;font-weight:800;margin-bottom:15px;display:flex;align-items:center;gap:9px;letter-spacing:-.2px}
+.card h2 .ic{width:5px;height:17px;background:var(--yellow);border-radius:3px}
+.card h2 small{margin-left:auto;font-size:11px;font-weight:600;color:var(--mut);text-transform:none;letter-spacing:0}
+.grid{display:grid;gap:15px}
+.kpis{grid-template-columns:repeat(auto-fit,minmax(190px,1fr));margin-bottom:18px}
+.kpi{background:var(--bg);border:1px solid var(--bd);border-radius:14px;padding:16px 18px;position:relative;overflow:hidden;box-shadow:var(--shadow)}
+.kpi::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:var(--yellow)}
+.kpi .lbl{font-size:10.5px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--mut)}
+.kpi .val{font-size:27px;font-weight:800;margin-top:6px;letter-spacing:-.8px}
+.kpi .val small{font-size:13px;color:var(--mut);font-weight:600;letter-spacing:0}
+.kpi .note{font-size:11.5px;color:var(--mut);margin-top:3px;font-weight:500}
+.pos{color:var(--green)}.neg{color:var(--red)}
+.row2{grid-template-columns:1.2fr .8fr;margin-bottom:15px}
+.row1{margin-bottom:15px}
+@media(max-width:900px){.row2{grid-template-columns:1fr}.wrap{padding:18px}}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{text-align:left;padding:9px 11px;border-bottom:1px solid var(--bd)}
+th{font-size:10px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;color:var(--mut);cursor:pointer;user-select:none;
+background:var(--bg2);position:sticky;top:0;z-index:2;white-space:nowrap}
+th.r,td.r{text-align:right}th.c,td.c{text-align:center}
+th:hover{color:var(--ink)}
+tbody tr{cursor:pointer;transition:background .12s}tbody tr:hover{background:var(--yellow-l)}
+.tk{font-weight:800;letter-spacing:.2px}
+.sub{font-size:11px;color:var(--mut)}
+.badge{display:inline-block;font-size:10px;font-weight:800;padding:3px 9px;border-radius:6px;letter-spacing:.3px;white-space:nowrap}
+.b-compra{background:var(--green-bg);color:var(--green)}.b-neutro{background:var(--neu-bg);color:var(--neu)}.b-venda{background:var(--red-bg);color:var(--red)}
+.hb{display:inline-block;font-size:9.5px;font-weight:800;padding:2px 6px;border-radius:5px;letter-spacing:.2px;margin:1px;color:#fff}
+.hb.XP{background:var(--xp);color:#000}.hb.BTG{background:var(--btg)}.hb.Itau{background:var(--ita)}
+.hb.Santander{background:var(--san)}.hb.Safra{background:var(--saf)}.hb.Bradesco{background:var(--bra)}
+.hb.off{background:var(--bg3);color:#B3B4BB}
+.cnt{display:inline-flex;align-items:center;justify-content:center;min-width:24px;height:24px;border-radius:7px;
+font-weight:800;font-size:13px;background:var(--yellow);color:#000;padding:0 6px}
+.cnt.c1{background:var(--bg3);color:var(--ink2)}.cnt.c2{background:var(--yellow-l);color:var(--yellow-d)}
+.pvp-cell{font-weight:700}
+.controls{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+input,select{background:var(--bg);border:1px solid var(--bd2);color:var(--ink);padding:10px 13px;border-radius:10px;font-size:13px;font-family:inherit}
+input:focus,select:focus{outline:2px solid var(--yellow);border-color:var(--yellow)}
+.search{flex:1;min-width:240px;font-size:14px}
+.scroll{max-height:600px;overflow-y:auto;border-radius:10px;border:1px solid var(--bd)}
+.scroll table th{border-top:none}
+.subtabs{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:15px}
+.subtab{padding:8px 15px;border-radius:9px;background:var(--bg);border:1px solid var(--bd);cursor:pointer;font-size:12.5px;font-weight:700;color:var(--mut)}
+.subtab.on{background:var(--black);color:var(--yellow);border-color:var(--black)}
+.tabs2{display:flex;gap:6px;flex-wrap:wrap}
+.tab2{padding:6px 13px;border-radius:8px;background:var(--bg2);border:1px solid var(--bd);cursor:pointer;font-size:12px;font-weight:600;color:var(--mut)}
+.tab2.on{background:var(--yellow);color:#000;border-color:var(--yellow)}
+.notice{background:var(--yellow-l);border:1px solid #F0DDA0;border-radius:11px;padding:12px 16px;font-size:12px;color:#5C4A00;margin-bottom:18px}
+.notice b{color:#3D3000}
+.note-blue{background:var(--blue-bg);border:1px solid #BBD4F5;border-radius:11px;padding:12px 16px;font-size:12px;color:#143a73;margin-bottom:16px}
+.foot{color:var(--mut);font-size:11px;margin-top:26px;padding:18px 0 4px;border-top:1px solid var(--bd);line-height:1.6}
+.foot b{color:var(--ink2)}
+canvas{max-height:280px}
+.hgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:15px}
+.hcard{background:var(--bg);border:1px solid var(--bd);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.hcard .hh{padding:14px 17px;color:#fff;display:flex;align-items:center;gap:10px}
+.hcard .hh .nm{font-weight:800;font-size:15px}
+.hcard .hh .pill{margin-left:auto;background:rgba(255,255,255,.18);font-size:10px;font-weight:700;padding:3px 9px;border-radius:20px}
+.hcard.XP .hh{background:var(--xp);color:#000}.hcard.XP .hh .pill{background:rgba(0,0,0,.12)}
+.hcard.BTG .hh{background:var(--btg)}.hcard.Itau .hh{background:var(--ita)}
+.hcard.Santander .hh{background:var(--san)}.hcard.Safra .hh{background:var(--saf)}.hcard.Bradesco .hh{background:var(--bra)}
+.hcard .hbody{padding:14px 17px;font-size:12.5px}
+.hcard .meta-row{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:11px}
+.hcard .meta-row .m{font-size:11px;color:var(--mut)}.hcard .meta-row .m b{display:block;font-size:15px;color:var(--ink);font-weight:800;margin-top:1px}
+.hcard .mv{font-size:12px;color:var(--ink2);background:var(--bg2);border-radius:9px;padding:9px 11px;margin-bottom:11px}
+.hcard .mv b{color:var(--ink)}
+.hcard table{font-size:12px}.hcard td,.hcard th{padding:6px 7px}
+.hcard .src{font-size:11px;font-weight:700;color:var(--yellow-d);padding:11px 17px;border-top:1px solid var(--bd);margin-top:auto}
+.hcard .src:hover{text-decoration:underline}
+.miniseg{display:flex;height:8px;border-radius:5px;overflow:hidden;margin:4px 0 12px;border:1px solid var(--bd)}
+.miniseg span{height:100%}
+.seglegend{display:flex;flex-wrap:wrap;gap:8px;font-size:10.5px;color:var(--mut);margin-bottom:8px}
+.seglegend i{width:9px;height:9px;border-radius:2px;display:inline-block;margin-right:3px;vertical-align:middle}
+.tese{border:1px solid var(--bd);border-left:4px solid var(--yellow);border-radius:0 12px 12px 0;padding:15px 18px;margin-bottom:12px;background:var(--bg);box-shadow:var(--shadow)}
+.tese h3{font-size:14.5px;font-weight:700}.tese p{font-size:13px;color:var(--ink2);margin:6px 0 9px}
+.lnk{font-size:12px;font-weight:700;color:var(--yellow-d)}.lnk:hover{text-decoration:underline}
+.chip{display:inline-block;font-size:10px;font-weight:700;padding:2px 8px;border-radius:5px;background:var(--black);color:var(--yellow);margin:1px}
+.daygrp{margin-bottom:18px}
+.daygrp .dh{font-size:11.5px;font-weight:800;color:var(--ink);background:var(--bg3);padding:5px 12px;border-radius:7px;display:inline-block;margin-bottom:9px}
+.nitem{border-bottom:1px solid var(--bd);padding:11px 4px}.nitem:hover{background:var(--yellow-l)}
+.nitem .tt{font-size:14px;font-weight:600;display:block}.nitem .tt:hover{color:var(--yellow-d)}
+.nitem .d{font-size:12.5px;color:var(--mut);margin-top:3px}
+.nitem .m{margin-top:5px;display:flex;gap:5px;align-items:center;flex-wrap:wrap}
+.empty{color:var(--mut);font-size:13px;padding:14px 2px}
+.drawer{position:fixed;top:0;right:0;width:460px;max-width:95vw;height:100%;background:var(--bg);box-shadow:-8px 0 34px rgba(0,0,0,.2);
+transform:translateX(100%);transition:transform .26s;z-index:100;overflow-y:auto}
+.drawer.on{transform:translateX(0)}
+.drawer .dhd{background:var(--black);color:#fff;padding:20px 22px;position:sticky;top:0;z-index:3}
+.drawer .dhd .x{position:absolute;top:15px;right:18px;cursor:pointer;font-size:23px;color:#9A9BA2}
+.drawer .dhd .x:hover{color:#fff}
+.drawer .dhd .tkr{font-size:23px;font-weight:900}
+.drawer .dhd .nm{font-size:13px;color:#A7A8B0;margin-top:2px}
+.drawer .db{padding:20px 22px}
+.mgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:6px 0 16px}
+.mgrid .mi{background:var(--bg2);border:1px solid var(--bd);border-radius:10px;padding:10px 12px}
+.mgrid .mi .l{font-size:9.5px;font-weight:700;text-transform:uppercase;color:var(--mut);letter-spacing:.4px}
+.mgrid .mi .v{font-size:17px;font-weight:800;margin-top:3px}
+.dsec{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.6px;color:var(--mut);margin:18px 0 9px;padding-bottom:5px;border-bottom:2px solid var(--yellow)}
+.ov{position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:99;display:none}.ov.on{display:block}
+.summary{display:flex;gap:22px;flex-wrap:wrap;margin-bottom:16px}
+.summary .s b{font-size:23px;font-weight:800}.summary .s small{display:block;font-size:10.5px;color:var(--mut);text-transform:uppercase;letter-spacing:.4px}
+.barwrap{background:var(--bg3);border-radius:5px;height:7px;width:100%;min-width:46px;overflow:hidden;display:inline-block;vertical-align:middle}
+.barwrap i{display:block;height:100%;background:var(--yellow);border-radius:5px}
+</style></head><body>
+
+<div class="topbar">
+<span class="logo">XP</span>
+<span class="brand"><b>ZORO</b> <span>&middot; Hub de Fundos Imobiliarios</span></span>
+<span class="meta"><span class="priv">Uso interno</span> &nbsp; Atualizado <b id="mUpd">--</b><br><span id="mRef"></span></span>
+</div>
+<nav class="nav" id="nav">
+<button data-t="painel" class="on">Painel</button>
+<button data-t="consenso">Consenso das Casas <span class="tag">NOVO</span></button>
+<button data-t="rec">Recomendacoes XP</button>
+<button data-t="mercado">Mercado &middot; Clube FII</button>
+<button data-t="teses">Teses</button>
+<button data-t="news">Radar de Noticias</button><button data-t="screener">Screener <span class="tag">NOVO</span></button><button data-t="rer">Rel. Patrimonial <span class="tag">NOVO</span></button><a href="ofertas.html" style="color:#A7A8B0;font-size:13px;font-weight:600;padding:13px 16px;border-bottom:3px solid transparent;white-space:nowrap;display:flex;align-items:center;gap:6px">Ofertas <span class="tag">NOVO</span></a>
+</nav>
+
+<div class="wrap">
+
+<!-- ============ PAINEL ============ -->
+<div class="tabpane on" id="painel">
+<div class="hero"><div class="eyebrow">Inteligencia de Mercado</div>
+<h1>Painel de Fundos Imobiliarios</h1>
+<p>Visao consolidada do mercado de FIIs: IFIX, performance por segmento e o consenso das principais casas de research. Ponto de partida para a tomada de decisao do consultor.</p></div>
+<div class="grid kpis" id="kpis"></div>
+<div class="grid row2">
+<div class="card"><h2><span class="ic"></span>Evolucao do IFIX <small id="ifixSub"></small></h2><canvas id="cEvo"></canvas>
+<p class="sub" style="margin-top:10px">Pontos de fechamento confirmados. O IFIX recuou em maio/2026, distanciando-se da maxima de 52 semanas (3.944).</p></div>
+<div class="card"><h2><span class="ic"></span>Performance por segmento</h2>
+<div class="tabs2" style="margin-bottom:13px"><div class="tab2 on" data-s="mes">No mes</div><div class="tab2" data-s="12m">12 meses</div></div>
+<canvas id="cSeg"></canvas></div>
+</div>
+<div class="card row1"><h2><span class="ic"></span>Top consenso &middot; mais recomendados pelas casas <small>matriz de 6 casas</small></h2>
+<div id="painelConsenso"></div></div>
+</div>
+
+<!-- ============ CONSENSO ============ -->
+<div class="tabpane" id="consenso">
+<div class="hero"><div class="eyebrow">Research Consolidado &middot; XP &middot; BTG &middot; Itau &middot; Bradesco &middot; Santander &middot; Safra</div>
+<h1>Consenso das Casas</h1>
+<p>O diferencial do ZORO: as recomendacoes das 6 casas relevantes reunidas em um so lugar, sem o vies de cada portal. Veja onde os analistas concordam e onde divergem.</p></div>
+<div class="note-blue"><b>Como ler.</b> A matriz mostra quantas das 6 casas recomendam cada fundo na carteira do mes. <b>XP e BTG</b> com carteira completa e pesos; <b>Itau, Santander, Bradesco</b> com as posicoes de maior destaque divulgadas (a contagem pode subestima-las). P/VP e DY (12m) via Clube FII.</div>
+<div class="summary" id="consSummary"></div>
+<div class="controls">
+<input class="search" id="cmQ" placeholder="Buscar ticker na matriz de consenso...">
+<select id="cmF"><option value="">Todas as casas</option><option value="XP">XP</option><option value="BTG">BTG</option><option value="Itau">Itau</option><option value="Santander">Santander</option><option value="Safra">Safra</option><option value="Bradesco">Bradesco</option></select>
+<select id="cmMin"><option value="1">Qualquer cobertura</option><option value="2">2+ casas</option><option value="3">3+ casas</option><option value="4">4+ casas</option></select>
+</div>
+<div class="card" style="padding:6px 6px 2px;margin-bottom:22px"><div class="scroll">
+<table id="cmT"><thead><tr>
+<th data-k="t">Ticker</th><th data-k="n">Fundo</th><th data-k="seg">Segmento</th>
+<th class="c" data-k="n_casas">Casas</th><th>Quem recomenda (XP / BTG / ITA / SAN / SAF / BRA)</th>
+<th class="r" data-k="pvpa">P/VP</th><th class="r" data-k="dy12m">DY 12m</th>
+</tr></thead><tbody></tbody></table></div></div>
+<h2 style="font-size:17px;font-weight:800;margin:6px 0 14px;letter-spacing:-.3px">Carteiras por casa &middot; Maio/2026</h2>
+<div class="hgrid" id="houseCards"></div>
+<div class="card row1" style="margin-top:20px"><h2><span class="ic"></span>Consenso de mercado &middot; levantamento Money Times <small id="mtSub"></small></h2>
+<p class="sub" style="margin-bottom:12px">Ranking independente que cruza 12 carteiras (Andbank, BB, BTG, Daycoval, Empiricus, EQI, Genial, Itau BBA, Monte Bravo, RB, Santander e XP) - referencia de mercado mais ampla.</p>
+<div id="mtRank"></div></div>
+</div>
+
+<!-- ============ REC XP ============ -->
+<div class="tabpane" id="rec">
+<div class="hero"><div class="eyebrow">XP Research &middot; Top Fundos Imobiliarios</div>
+<h1>Recomendacoes XP</h1>
+<p id="recSub"></p></div>
+<div class="notice"><b>Conteudo XP Research.</b> Extraido do relatorio "Top Fundos Imobiliarios" da XP (data-base 11/05/2026). P/VP e DY 12m atualizados via Clube FII (29/05/2026). Cota e target sao do relatorio XP. Uso interno.</div>
+<div class="summary" id="recCards"></div>
+<div class="controls">
+<input class="search" id="recQ" placeholder="Buscar ticker ou nome do fundo (ex.: KNCR11, shopping)...">
+<select id="recF"><option value="">Toda recomendacao</option><option>COMPRA</option><option>NEUTRO</option></select>
+<select id="recC"><option value="">Toda categoria</option></select>
+</div>
+<div class="card" style="padding:6px 6px 2px"><div class="scroll">
+<table id="recT"><thead><tr>
+<th data-k="ticker">Ticker</th><th data-k="nome">Nome</th><th data-k="categoria">Categoria</th>
+<th data-k="recomendacao">Recom.</th><th class="r" data-k="cota">Cota XP</th>
+<th class="r" data-k="cota_target">Target</th><th class="r" data-k="potencial_pct">Potencial</th>
+<th class="r" data-k="dy_anualizado_pct">DY (XP)</th><th class="r" data-k="cf_pvpa">P/VP</th>
+</tr></thead><tbody></tbody></table></div></div>
+<p class="sub" style="margin-top:9px">Clique em um fundo para ver detalhe completo, consenso das casas, P/VP, DY e noticias relacionadas.</p>
+</div>
+
+<!-- ============ MERCADO ============ -->
+<div class="tabpane" id="mercado">
+<div class="hero"><div class="eyebrow">Clube FII &middot; B3 / IFIX</div>
+<h1>Mercado &middot; Curtissimo Prazo</h1>
+<p>Dados de fechamento, P/VP e yield do ranking Clube FII e a composicao oficial do IFIX.</p></div>
+<div class="subtabs">
+<div class="subtab on" data-m="rank">Ranking Clube FII <small></small></div>
+<div class="subtab" data-m="univ">Composicao IFIX</div>
+</div>
+<div id="mRank">
+<div class="note-blue"><b>Fonte: Clube FII (29/05/2026).</b> P/VP (P/VPA), yield do mes e yield acumulado 12 meses. Clique no fundo para o detalhe.</div>
+<div class="controls">
+<input class="search" id="cfQ" placeholder="Buscar ticker ou nome...">
+<select id="cfF"><option value="">Ordenar: P/VP (cres.)</option><option value="dy">Maior DY 12m</option><option value="pvp">Maior P/VP</option></select>
+</div>
+<div class="card" style="padding:6px 6px 2px"><div class="scroll">
+<table id="cfT"><thead><tr><th data-k="t">Ticker</th><th data-k="n">Nome</th>
+<th class="r" data-k="pvpa">P/VP</th><th class="r" data-k="y1m">Yield mes</th><th class="r" data-k="y12m">Yield 12m</th></tr></thead><tbody></tbody></table>
+</div></div></div>
+<div id="mUniv" style="display:none">
+<div class="controls">
+<input class="search" id="uQ" placeholder="Buscar ticker ou nome...">
+<select id="uF"><option value="">Todos os segmentos</option></select></div>
+<div class="card" style="padding:6px 6px 2px"><div class="scroll">
+<table id="uT"><thead><tr><th data-k="t">Ticker</th><th data-k="n">Nome</th>
+<th data-k="s">Segmento</th><th class="r" data-k="p">% IFIX</th><th>Peso</th></tr></thead><tbody></tbody></table>
+</div></div></div>
+</div>
+
+<!-- ============ TESES ============ -->
+<div class="tabpane" id="teses">
+<div class="hero"><div class="eyebrow">XP Research</div>
+<h1>Teses &amp; Analises por Ativo</h1>
+<p>Analises dedicadas sobre fundos especificos. Modelo de hyperlink: titulo e resumo curto + link para o material completo.</p></div>
+<div class="controls"><input class="search" id="tQ" placeholder="Buscar tese por ticker ou tema..."></div>
+<div id="tList"></div>
+</div>
+
+<!-- ============ NEWS ============ -->
+<div class="tabpane" id="screener"><div class="hero"><div class="eyebrow">Ferramenta do Consultor</div><h1>Screener &middot; Posicao do Cliente em FIIs</h1><p>Envie o extrato "Posicao Consolidada" (XP) do cliente e veja o resumo da posicao em Fundos Imobiliarios. Processamento 100% local no navegador &mdash; nenhum dado sai desta maquina.</p></div><div class="card" style="padding:0;overflow:hidden;background:#0a0a0a"><iframe id="scrFrame" src="https://consultoriaxp.github.io/resumo-fiis/" loading="lazy" style="width:100%;height:900px;border:none;display:block" title="Screener FIIs"></iframe></div><script>(function(){var nv=document.getElementById('nav');if(nv){nv.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var t=b.getAttribute('data-t');var p=document.getElementById(t);if(!p)return;document.querySelectorAll('#nav button').forEach(function(x){x.classList.toggle('on',x===b)});document.querySelectorAll('.tabpane').forEach(function(x){x.classList.toggle('on',x===p)});});}setInterval(function(){var f=document.getElementById('scrFrame');if(!f)return;try{var h=f.contentDocument.body.scrollHeight+40;if(h>500&&Math.abs(h-f.offsetHeight)>30)f.style.height=h+'px'}catch(e){}},900);})();</script></div><div class="tabpane" id="rer"><div class="hero"><div class="eyebrow">Ferramenta do Consultor</div><h1>Relatorio Patrimonial Imobiliario</h1><p>Gerador de relatorio patrimonial: dados do cliente, imoveis, pontos de atencao e exportacao em PDF ou planilha. Processamento 100% local no navegador &mdash; nenhum dado sai desta maquina.</p></div><div class="card" style="padding:0;overflow:hidden;background:#0a0a0a"><iframe id="rerFrame" src="https://consultoriaxp.github.io/RER/" loading="lazy" style="width:100%;height:1200px;border:none;display:block" title="Relatorio Patrimonial"></iframe></div><script>setInterval(function(){var f=document.getElementById('rerFrame');if(!f)return;try{var h=f.contentDocument.body.scrollHeight+40;if(h>600&&Math.abs(h-f.offsetHeight)>30)f.style.height=h+'px'}catch(e){}},900);</script></div><div class="tabpane" id="news">
+<div class="hero"><div class="eyebrow">XP &middot; Radar Imobiliario</div>
+<h1>Radar de Noticias</h1>
+<p id="newsSub"></p></div>
+<div class="notice"><b>Resumo de noticias.</b> Itens do Radar Imobiliario da XP. Cada noticia abre o conteudo original na fonte (modelo de hyperlink).</div>
+<div class="controls">
+<input class="search" id="nQ" placeholder="Buscar noticia...">
+<select id="nF"><option value="">Todos os ativos</option></select>
+</div>
+<div id="nList"></div>
+</div>
+
+<div class="foot" id="foot"></div>
+</div>
+
+<div class="ov" id="ov"></div>
+<div class="drawer" id="drawer">
+<div class="dhd"><span class="x" id="dX">&times;</span><div class="tkr" id="dTk"></div><div class="nm" id="dNm"></div></div>
+<div class="db" id="dBody"></div>
+</div>
+
+<script src="dados/zoro.js"></script>
+<script>
+Chart.defaults.font.family="Inter";Chart.defaults.color="#71727A";Chart.defaults.font.size=11;
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const HOUSES=["XP","BTG","Itau","Santander","Safra","Bradesco"];
+const HLABEL={XP:"XP",BTG:"BTG",Itau:"ITA",Santander:"SAN",Safra:"SAF",Bradesco:"BRA"};
+const HFULL={XP:"XP Investimentos",BTG:"BTG Pactual",Itau:"Itau BBA",Santander:"Santander",Safra:"Banco Safra",Bradesco:"Bradesco BBI"};
+const num=s=>{if(s==null)return NaN;if(typeof s==="number")return s;return parseFloat((""+s).replace(/[^0-9,.-]/g,"").replace(/\.(?=\d{3}\b)/g,"").replace(",","."));};
+const recCls=r=>r==="COMPRA"?"b-compra":r==="VENDA"?"b-venda":"b-neutro";
+
+/* ---------- META ---------- */
+$("#mUpd").textContent=D.meta.atualizado;
+$("#mRef").textContent=D.meta.data_ref_mercado;
+
+/* ---------- NAV ---------- */
+$$("#nav button").forEach(b=>b.onclick=()=>{
+  $$("#nav button").forEach(x=>x.classList.remove("on"));b.classList.add("on");
+  $$(".tabpane").forEach(p=>p.classList.remove("on"));$("#"+b.dataset.t).classList.add("on");
+  window.scrollTo(0,0);
+});
+
+/* ---------- KPIs ---------- */
+(function(){
+  const f=D.ifix, abaixo=((f.fech/f.max_52s-1)*100);
+  const k=[
+    {l:"IFIX &middot; fech. "+f.data,v:f.fech.toLocaleString("pt-BR",{minimumFractionDigits:2}),n:'<span class="'+(f.var_dia_pct>=0?"pos":"neg")+'">'+(f.var_dia_pct>=0?"+":"")+(""+f.var_dia_pct).replace(".",",")+'% no dia</span>'},
+    {l:"Maxima 52 semanas",v:f.max_52s.toLocaleString("pt-BR",{minimumFractionDigits:2}),n:'<span class="neg">'+abaixo.toFixed(1).replace(".",",")+'% vs. fech.</span>'},
+    {l:"Tendencia de maio",v:'<span class="neg">Queda</span>',n:"IFIX recuou ~2% no mes"},
+    {l:"Research consolidado",v:"6 <small>casas</small>",n:"XP, BTG, Itau, Santander, Safra, Bradesco"},
+    {l:"Fundos monitorados",v:D.clubefii.length+" <small>/ "+D.rec.fundos.length+" rec.</small>",n:"Ranking Clube FII / recom. XP"}
+  ];
+  $("#kpis").innerHTML=k.map(x=>'<div class="kpi"><div class="lbl">'+x.l+'</div><div class="val">'+x.v+'</div><div class="note">'+x.n+'</div></div>').join("");
+})();
+
+/* ---------- CHARTS ---------- */
+new Chart($("#cEvo"),{type:"line",data:{labels:D.ifixEvo.map(e=>e.label),
+  datasets:[{data:D.ifixEvo.map(e=>e.v),borderColor:"#B88A00",backgroundColor:"rgba(255,193,0,.14)",fill:true,tension:.32,
+  pointBackgroundColor:"#0B0B0C",pointRadius:4,borderWidth:2.5}]},
+  options:{plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>c.parsed.y.toLocaleString("pt-BR")+" pts"}}},
+  scales:{y:{ticks:{callback:v=>v.toLocaleString("pt-BR")}}}}});
+let segChart;
+function drawSeg(key){
+  const arr=key==="mes"?D.segMes:D.seg12;
+  if(segChart)segChart.destroy();
+  segChart=new Chart($("#cSeg"),{type:"bar",data:{labels:arr.map(s=>s.seg),
+    datasets:[{data:arr.map(s=>s.v),backgroundColor:arr.map(s=>s.v>=0?"#0B8A57":"#D62B1F"),borderRadius:5}]},
+    options:{indexAxis:"y",plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>(c.parsed.x>=0?"+":"")+(""+c.parsed.x).replace(".",",")+"%"}}},
+    scales:{x:{ticks:{callback:v=>v+"%"}}}}});
+}
+drawSeg("mes");
+$$("#painel .tab2").forEach(t=>t.onclick=()=>{$$("#painel .tab2").forEach(x=>x.classList.remove("on"));t.classList.add("on");drawSeg(t.dataset.s);});
+$("#ifixSub").textContent="ate "+D.ifix.data;
+
+/* ---------- house badges helper ---------- */
+function houseBadges(casas){
+  return HOUSES.map(h=>'<span class="hb '+h+(casas.includes(h)?"":" off")+'">'+HLABEL[h]+'</span>').join("");
+}
+
+/* ---------- CONSENSO matrix ---------- */
+const CM=D.consensoMatriz;
+(function(){
+  const tot=CM.length, c4=CM.filter(x=>x.n_casas>=3).length, lead=CM[0];
+  $("#consSummary").innerHTML=
+    '<div class="s"><b>'+tot+'</b><small>fundos cobertos</small></div>'+
+    '<div class="s"><b>'+c4+'</b><small>com 3+ casas</small></div>'+
+    '<div class="s"><b>'+lead.t+'</b><small>maior consenso ('+lead.n_casas+' casas)</small></div>'+
+    '<div class="s"><b>6</b><small>casas integradas</small></div>';
+})();
+let cmSort={k:"n_casas",dir:-1};
+function renderCM(){
+  const q=$("#cmQ").value.trim().toUpperCase(),fc=$("#cmF").value,mn=+$("#cmMin").value;
+  let r=CM.filter(x=>(!q||x.t.includes(q)||(x.n||"").toUpperCase().includes(q))&&(!fc||x.casas.includes(fc))&&x.n_casas>=mn);
+  r.sort((a,b)=>{let va=a[cmSort.k],vb=b[cmSort.k];if(cmSort.k==="pvpa"||cmSort.k==="dy12m"||cmSort.k==="n_casas"){va=num(va)||-1;vb=num(vb)||-1;}else{va=(""+va);vb=(""+vb);} return va>vb?cmSort.dir:va<vb?-cmSort.dir:0;});
+  $("#cmT tbody").innerHTML=r.length?r.map(x=>'<tr data-tk="'+x.t+'"><td class="tk">'+x.t+'</td><td class="sub">'+(x.n||"")+'</td><td class="sub">'+(x.seg||"-")+'</td>'+
+    '<td class="c"><span class="cnt '+(x.n_casas>=3?"":x.n_casas==2?"c2":"c1")+'">'+x.n_casas+'</span></td>'+
+    '<td>'+houseBadges(x.casas)+'</td><td class="r pvp-cell">'+(x.pvpa||"-")+'</td><td class="r">'+(x.dy12m||"-")+'</td></tr>').join("")
+    :'<tr><td colspan="7" class="empty">Nenhum fundo encontrado.</td></tr>';
+  $$("#cmT tbody tr[data-tk]").forEach(tr=>tr.onclick=()=>openDrawer(tr.dataset.tk));
+}
+$("#cmQ").oninput=renderCM;$("#cmF").onchange=renderCM;$("#cmMin").onchange=renderCM;
+$$("#cmT th[data-k]").forEach(th=>th.onclick=()=>{const k=th.dataset.k;cmSort.dir=cmSort.k===k?-cmSort.dir:(k==="t"||k==="n"||k==="seg"?1:-1);cmSort.k=k;renderCM();});
+renderCM();
+
+/* painel top consenso (top 8) */
+$("#painelConsenso").innerHTML='<div class="scroll" style="max-height:none;border:none"><table><thead><tr><th>Ticker</th><th>Segmento</th><th class="c">Casas</th><th>Quem recomenda</th><th class="r">P/VP</th><th class="r">DY 12m</th></tr></thead><tbody>'+
+  CM.slice(0,8).map(x=>'<tr data-tk="'+x.t+'"><td class="tk">'+x.t+'</td><td class="sub">'+(x.seg||"-")+'</td><td class="c"><span class="cnt '+(x.n_casas>=3?"":x.n_casas==2?"c2":"c1")+'">'+x.n_casas+'</span></td><td>'+houseBadges(x.casas)+'</td><td class="r pvp-cell">'+(x.pvpa||"-")+'</td><td class="r">'+(x.dy12m||"-")+'</td></tr>').join("")+'</tbody></table></div>';
+$$("#painelConsenso tr[data-tk]").forEach(tr=>tr.onclick=()=>{$$("#nav button").forEach(x=>x.classList.remove("on"));document.querySelector('#nav button[data-t="consenso"]').classList.add("on");$$(".tabpane").forEach(p=>p.classList.remove("on"));$("#consenso").classList.add("on");window.scrollTo(0,0);});
+
+/* ---------- HOUSE CARDS ---------- */
+(function(){
+  const segColors=["#FFC100","#0E2A47","#EC7000","#1E5BB8","#0B8A57","#9A7400","#CC092F","#71727A"];
+  let html="";
+  // full houses
+  ["XP","BTG"].forEach(h=>{
+    const c=D.casas[h];const segs=Object.entries(c.setorial||{});
+    const segTot=segs.reduce((a,b)=>a+b[1],0)||1;
+    let bar='<div class="miniseg">'+segs.map((s,i)=>'<span style="width:'+(s[1]/segTot*100)+'%;background:'+segColors[i%segColors.length]+'" title="'+s[0]+' '+s[1]+'%"></span>').join("")+'</div>';
+    let leg='<div class="seglegend">'+segs.map((s,i)=>'<span><i style="background:'+segColors[i%segColors.length]+'"></i>'+s[0]+' '+(""+s[1]).replace(".",",")+'%</span>').join("")+'</div>';
+    let rows=c.fundos.map(f=>'<tr data-tk="'+f.t+'"><td class="tk">'+f.t+'</td><td class="sub">'+f.seg+'</td><td class="r" style="font-weight:700">'+(""+f.peso).replace(".",",")+'%</td><td class="r">'+(""+f.dy).replace(".",",")+'%</td></tr>').join("");
+    const perf=c.perf_2026_pct!=null?'<div class="m">2026<b class="'+(c.perf_2026_pct>=c.bench_2026_pct?"pos":"")+'">'+(""+c.perf_2026_pct).replace(".",",")+'%</b></div><div class="m">vs IFIX<b>'+(""+c.bench_2026_pct).replace(".",",")+'%</b></div>':"";
+    const dyc=(c.dy_anual_pct||c.dy_medio_pct);
+    html+='<div class="hcard '+h+'"><div class="hh"><span class="nm">'+HFULL[h]+'</span><span class="pill">'+c.fundos.length+' fundos &middot; '+c.data+'</span></div>'+
+      '<div class="hbody"><div class="meta-row">'+perf+(dyc?'<div class="m">DY medio<b>'+(""+dyc).replace(".",",")+'%</b></div>':"")+'</div>'+
+      leg+bar+
+      '<div class="mv"><b>Movimentos do mes:</b> '+c.mudancas+'</div>'+
+      '<table><thead><tr><th>Ticker</th><th>Segmento</th><th class="r">Peso</th><th class="r">DY</th></tr></thead><tbody>'+rows+'</tbody></table></div>'+
+      '<div class="src" onclick="openDrawerHouse(\''+h+'\')">Ver fundos no detalhe &rarr;</div></div>';
+  });
+  // partial houses
+  Object.keys(D.casasParcial).forEach(key=>{
+    const c=D.casasParcial[key];const h=key;
+    let chips=c.preferidos.map(t=>'<span class="chip" data-tk="'+t+'">'+t+'</span>').join(" ");
+    const extra=(c.dy_2026_pct?'<div class="m">DY 2026<b>'+(""+c.dy_2026_pct).replace(".",",")+'%</b></div>':"")+(c.n_total?'<div class="m">Carteira<b>'+c.n_total+' fundos</b></div>':"");
+    html+='<div class="hcard '+h+'"><div class="hh"><span class="nm">'+c.casa+'</span><span class="pill">'+c.data+'</span></div>'+
+      '<div class="hbody"><div class="meta-row">'+extra+'</div>'+
+      '<div style="font-size:11px;font-weight:700;color:var(--mut);text-transform:uppercase;letter-spacing:.4px;margin-bottom:7px">Posicoes em destaque</div>'+
+      '<div style="margin-bottom:11px">'+chips+'</div>'+
+      '<div class="mv"><b>Movimentos:</b> '+c.mudancas+'</div>'+
+      '<div style="font-size:12px;color:var(--ink2)">'+c.tese+'</div></div>'+
+      '<a class="src" href="'+c.fonte_url+'" target="_blank">Fonte: '+c.fonte+' &rarr;</a></div>';
+  });
+  $("#houseCards").innerHTML=html;
+  $$("#houseCards tr[data-tk]").forEach(tr=>tr.onclick=()=>openDrawer(tr.dataset.tk));
+  $$("#houseCards .chip[data-tk]").forEach(ch=>ch.onclick=()=>openDrawer(ch.dataset.tk));
+})();
+
+/* MT consensus ranking */
+$("#mtSub").textContent=D.consensoMT.data;
+$("#mtRank").innerHTML='<div class="scroll" style="max-height:none;border:none"><table><thead><tr><th>#</th><th>Ticker</th><th>Fundo</th><th>Segmento</th><th class="c">Carteiras</th><th>Forca</th></tr></thead><tbody>'+
+  D.consensoMT.ranking.map((x,i)=>'<tr data-tk="'+x.t+'"><td class="sub">'+(i+1)+'</td><td class="tk">'+x.t+'</td><td class="sub">'+x.n+'</td><td class="sub">'+x.seg+'</td><td class="c" style="font-weight:800">'+x.rec+'</td><td><div class="barwrap"><i style="width:'+(x.rec/7*100)+'%"></i></div></td></tr>').join("")+'</tbody></table></div>';
+$$("#mtRank tr[data-tk]").forEach(tr=>tr.onclick=()=>openDrawer(tr.dataset.tk));
+
+/* ---------- REC XP ---------- */
+const REC=D.rec.fundos;
+$("#recSub").textContent="Relatorio "+D.rec.fonte+" - data-base "+D.rec.data_base+" - "+D.rec.analistas;
+(function(){const cats=[...new Set(REC.map(f=>f.categoria))].sort();$("#recC").innerHTML='<option value="">Toda categoria</option>'+cats.map(c=>'<option>'+c+'</option>').join("");})();
+(function(){const cp=REC.filter(f=>f.recomendacao==="COMPRA").length,nt=REC.filter(f=>f.recomendacao==="NEUTRO").length;
+  const avg=(REC.reduce((a,f)=>a+(f.potencial_pct||0),0)/REC.length).toFixed(0);
+  $("#recCards").innerHTML='<div class="s"><b>'+REC.length+'</b><small>fundos cobertos</small></div><div class="s"><b class="pos">'+cp+'</b><small>compra</small></div><div class="s"><b class="neu" style="color:var(--neu)">'+nt+'</b><small>neutro</small></div><div class="s"><b>'+avg+'%</b><small>potencial medio</small></div>';})();
+let recSort={k:"potencial_pct",dir:-1};
+function renderRec(){
+  const q=$("#recQ").value.trim().toUpperCase(),fr=$("#recF").value,fc=$("#recC").value;
+  let r=REC.filter(f=>(!q||f.ticker.includes(q)||f.nome.toUpperCase().includes(q))&&(!fr||f.recomendacao===fr)&&(!fc||f.categoria===fc));
+  r.sort((a,b)=>{let va=a[recSort.k],vb=b[recSort.k];if(typeof va==="string"&&isNaN(num(va))){va=(""+va).toUpperCase();vb=(""+vb).toUpperCase();}else{va=num(va);vb=num(vb);} return va>vb?recSort.dir:va<vb?-recSort.dir:0;});
+  $("#recT tbody").innerHTML=r.length?r.map(f=>'<tr data-tk="'+f.ticker+'"><td class="tk">'+f.ticker+'</td><td class="sub">'+f.nome+'</td><td class="sub">'+f.categoria+'</td>'+
+    '<td><span class="badge '+recCls(f.recomendacao)+'">'+f.recomendacao+'</span></td>'+
+    '<td class="r">R$ '+(""+f.cota).replace(".",",")+'</td><td class="r">R$ '+(""+f.cota_target).replace(".",",")+'</td>'+
+    '<td class="r '+(f.potencial_pct>=0?"pos":"neg")+'">'+(f.potencial_pct>=0?"+":"")+f.potencial_pct+'%</td>'+
+    '<td class="r">'+(""+f.dy_anualizado_pct).replace(".",",")+'%</td><td class="r pvp-cell">'+(f.cf_pvpa||"-")+'</td></tr>').join("")
+    :'<tr><td colspan="9" class="empty">Nenhum fundo encontrado.</td></tr>';
+  $$("#recT tbody tr").forEach(tr=>tr.dataset.tk&&(tr.onclick=()=>openDrawer(tr.dataset.tk)));
+}
+$("#recQ").oninput=renderRec;$("#recF").onchange=renderRec;$("#recC").onchange=renderRec;
+$$("#recT th[data-k]").forEach(th=>th.onclick=()=>{const k=th.dataset.k;recSort.dir=recSort.k===k?-recSort.dir:(["ticker","nome","categoria","recomendacao"].includes(k)?1:-1);recSort.k=k;renderRec();});
+renderRec();
+
+/* ---------- MERCADO: Clube FII ranking ---------- */
+const CF=D.clubefii;
+$('.subtab[data-m="rank"] small').textContent=" ("+CF.length+")";
+let cfSort={k:"pvpa",dir:1};
+function renderCF(){
+  const q=$("#cfQ").value.trim().toUpperCase(),ord=$("#cfF").value;
+  let r=CF.filter(x=>!q||x.t.includes(q)||(x.n||"").toUpperCase().includes(q));
+  if(ord==="dy")r.sort((a,b)=>num(b.y12m)-num(a.y12m));
+  else if(ord==="pvp")r.sort((a,b)=>num(b.pvpa)-num(a.pvpa));
+  else r.sort((a,b)=>{let va=num(a[cfSort.k]),vb=num(b[cfSort.k]);if(isNaN(va)){va=(""+a[cfSort.k]).toUpperCase();vb=(""+b[cfSort.k]).toUpperCase();}return va>vb?cfSort.dir:va<vb?-cfSort.dir:0;});
+  $("#cfT tbody").innerHTML=r.length?r.map(x=>'<tr data-tk="'+x.t+'"><td class="tk">'+x.t+'</td><td class="sub">'+(x.n||"")+'</td><td class="r pvp-cell">'+x.pvpa+'</td><td class="r">'+x.y1m+'</td><td class="r">'+x.y12m+'</td></tr>').join(""):'<tr><td colspan="5" class="empty">Nada encontrado.</td></tr>';
+  $$("#cfT tbody tr[data-tk]").forEach(tr=>tr.onclick=()=>openDrawer(tr.dataset.tk));
+}
+$("#cfQ").oninput=renderCF;$("#cfF").onchange=()=>{renderCF();};
+$$("#cfT th[data-k]").forEach(th=>th.onclick=()=>{const k=th.dataset.k;cfSort.dir=cfSort.k===k?-cfSort.dir:1;cfSort.k=k;$("#cfF").value="";renderCF();});
+renderCF();
+$$("#mercado .subtab").forEach(s=>s.onclick=()=>{$$("#mercado .subtab").forEach(x=>x.classList.remove("on"));s.classList.add("on");
+  $("#mRank").style.display=s.dataset.m==="rank"?"block":"none";$("#mUniv").style.display=s.dataset.m==="univ"?"block":"none";});
+
+/* IFIX universe */
+const UNI=D.ifixComp;
+(function(){const segs=[...new Set(UNI.map(x=>x.s))].sort();$("#uF").innerHTML='<option value="">Todos os segmentos</option>'+segs.map(s=>'<option>'+s+'</option>').join("");})();
+const maxP=Math.max(...UNI.map(x=>x.p));
+let uSort={k:"p",dir:-1};
+function renderU(){
+  const q=$("#uQ").value.trim().toUpperCase(),fs=$("#uF").value;
+  let r=UNI.filter(x=>(!q||x.t.includes(q)||x.n.toUpperCase().includes(q))&&(!fs||x.s===fs));
+  r.sort((a,b)=>{let va=a[uSort.k],vb=b[uSort.k];if(typeof va==="string"){va=va.toUpperCase();vb=vb.toUpperCase();}return va>vb?uSort.dir:va<vb?-uSort.dir:0;});
+  $("#uT tbody").innerHTML=r.length?r.map(x=>'<tr data-tk="'+x.t+'"><td class="tk">'+x.t+'</td><td class="sub">'+x.n+'</td><td class="sub">'+x.s+'</td><td class="r">'+(""+x.p).replace(".",",")+'%</td><td><div class="barwrap"><i style="width:'+(x.p/maxP*100)+'%"></i></div></td></tr>').join(""):'<tr><td colspan="5" class="empty">Nada encontrado.</td></tr>';
+  $$("#uT tbody tr[data-tk]").forEach(tr=>tr.onclick=()=>openDrawer(tr.dataset.tk));
+}
+$("#uQ").oninput=renderU;$("#uF").onchange=renderU;
+$$("#uT th[data-k]").forEach(th=>th.onclick=()=>{const k=th.dataset.k;uSort.dir=uSort.k===k?-uSort.dir:(k==="p"?-1:1);uSort.k=k;renderU();});
+renderU();
+
+/* ---------- TESES ---------- */
+const TES=D.teses.itens;
+function renderTeses(){
+  const q=$("#tQ").value.trim().toUpperCase();
+  let r=TES.filter(t=>!q||(t.titulo+(t.tickers||[]).join(" ")).toUpperCase().includes(q));
+  $("#tList").innerHTML=r.length?r.map(t=>'<div class="tese"><h3>'+t.titulo+'</h3><p>'+t.desc+'</p>'+
+    (t.tickers||[]).map(k=>'<span class="chip">'+k+'</span>').join(" ")+' &nbsp; <a class="lnk" href="'+t.url+'" target="_blank">Ler material completo &rarr;</a></div>').join(""):'<div class="empty">Nenhuma tese encontrada.</div>';
+}
+$("#tQ").oninput=renderTeses;renderTeses();
+
+/* ---------- NEWS ---------- */
+const NW=D.news.itens;
+$("#newsSub").textContent=NW.length+" itens - fonte "+D.news.fonte;
+(function(){const tks=[...new Set(NW.flatMap(n=>n.tickers||[]))].sort();$("#nF").innerHTML='<option value="">Todos os ativos</option>'+tks.map(t=>'<option>'+t+'</option>').join("");})();
+function renderNews(){
+  const q=$("#nQ").value.trim().toUpperCase(),fk=$("#nF").value;
+  let r=NW.filter(n=>(!q||(n.titulo+n.desc).toUpperCase().includes(q))&&(!fk||(n.tickers||[]).includes(fk)));
+  const groups={};r.forEach(n=>{(groups[n.dia]=groups[n.dia]||[]).push(n);});
+  let html=Object.keys(groups).map(d=>'<div class="daygrp"><div class="dh">'+d+'</div>'+groups[d].map(n=>
+    '<div class="nitem"><a class="tt" href="'+n.url+'" target="_blank">'+n.titulo+'</a><div class="d">'+n.desc+'</div><div class="m">'+(n.tickers||[]).map(k=>'<span class="chip">'+k+'</span>').join("")+'<span class="sub">'+(n.data||"")+'</span></div></div>').join("")+'</div>').join("");
+  $("#nList").innerHTML=html||'<div class="empty">Nenhuma noticia encontrada.</div>';
+}
+$("#nQ").oninput=renderNews;$("#nF").onchange=renderNews;renderNews();
+
+/* ---------- DRAWER ---------- */
+function fundData(tk){
+  const rec=REC.find(f=>f.ticker===tk);
+  const cf=CF.find(f=>f.t===tk);
+  const uni=UNI.find(f=>f.t===tk);
+  const cons=CM.find(f=>f.t===tk);
+  const mt=D.consensoMT.ranking.find(f=>f.t===tk);
+  const news=NW.filter(n=>(n.tickers||[]).includes(tk)).slice(0,5);
+  const teses=TES.filter(t=>(t.tickers||[]).includes(tk));
+  const name=(rec&&rec.nome)||(cf&&cf.n)||(uni&&uni.n)||(cons&&cons.n)||tk;
+  return {rec,cf,uni,cons,mt,news,teses,name};
+}
+function openDrawer(tk){
+  const d=fundData(tk);
+  $("#dTk").textContent=tk;$("#dNm").textContent=d.name;
+  let h="";
+  const mi=(l,v)=>'<div class="mi"><div class="l">'+l+'</div><div class="v">'+v+'</div></div>';
+  h+='<div class="mgrid">';
+  if(d.rec)h+=mi("Recom. XP",'<span class="badge '+recCls(d.rec.recomendacao)+'">'+d.rec.recomendacao+'</span>');
+  if(d.rec)h+=mi("Cota XP","R$ "+(""+d.rec.cota).replace(".",","));
+  if(d.rec)h+=mi("Target","R$ "+(""+d.rec.cota_target).replace(".",","));
+  if(d.rec)h+=mi("Potencial",'<span class="'+(d.rec.potencial_pct>=0?"pos":"neg")+'">'+(d.rec.potencial_pct>=0?"+":"")+d.rec.potencial_pct+'%</span>');
+  if(d.cf)h+=mi("P/VP (Clube FII)",d.cf.pvpa);
+  if(d.cf)h+=mi("DY 12m",d.cf.y12m);
+  if(d.cf)h+=mi("Yield mes",d.cf.y1m);
+  if(d.uni)h+=mi("% no IFIX",(""+d.uni.p).replace(".",",")+"%");
+  h+='</div>';
+  // consensus
+  if(d.cons){
+    h+='<div class="dsec">Consenso das casas ('+d.cons.n_casas+'/6)</div><div>'+houseBadges(d.cons.casas)+'</div>';
+    h+='<p class="sub" style="margin-top:7px">Recomendam: <b>'+d.cons.casas.map(c=>HFULL[c]).join(", ")+'</b>.</p>';
+  }
+  if(d.mt)h+='<p class="sub" style="margin-top:6px">Consenso Money Times: <b>'+d.mt.rec+' carteiras</b> (de 12).</p>';
+  if(!d.cons&&!d.mt)h+='<div class="dsec">Consenso das casas</div><p class="sub">Sem cobertura nas carteiras recomendadas mapeadas.</p>';
+  // teses
+  if(d.teses.length){h+='<div class="dsec">Teses</div>'+d.teses.map(t=>'<div class="tese" style="margin-bottom:9px"><h3 style="font-size:13px">'+t.titulo+'</h3><p style="font-size:12px;margin:5px 0 7px">'+t.desc+'</p><a class="lnk" href="'+t.url+'" target="_blank">Ler &rarr;</a></div>').join("");}
+  // news
+  if(d.news.length){h+='<div class="dsec">Noticias recentes</div>'+d.news.map(n=>'<div class="nitem"><a class="tt" style="font-size:13px" href="'+n.url+'" target="_blank">'+n.titulo+'</a><div class="d" style="font-size:11.5px">'+(n.data||n.dia||"")+'</div></div>').join("");}
+  $("#dBody").innerHTML=h;
+  $("#drawer").classList.add("on");$("#ov").classList.add("on");
+}
+function openDrawerHouse(h){
+  const c=D.casas[h];
+  $("#dTk").textContent=HFULL[h];$("#dNm").textContent=c.carteira+" - "+c.data;
+  let html='<div class="mgrid">';
+  const mi=(l,v)=>'<div class="mi"><div class="l">'+l+'</div><div class="v">'+v+'</div></div>';
+  html+=mi("Fundos",c.fundos.length);
+  if(c.perf_2026_pct!=null)html+=mi("2026",(""+c.perf_2026_pct).replace(".",",")+"%");
+  if(c.bench_2026_pct!=null)html+=mi("IFIX 2026",(""+c.bench_2026_pct).replace(".",",")+"%");
+  const dyc=c.dy_anual_pct||c.dy_medio_pct;if(dyc)html+=mi("DY medio",(""+dyc).replace(".",",")+"%");
+  html+='</div><div class="mv" style="margin-bottom:13px"><b>Movimentos:</b> '+c.mudancas+'</div>';
+  html+='<table><thead><tr><th>Ticker</th><th>Segmento</th><th class="r">Peso</th><th class="r">DY</th></tr></thead><tbody>'+
+    c.fundos.map(f=>'<tr data-tk="'+f.t+'"><td class="tk">'+f.t+'</td><td class="sub">'+f.seg+'</td><td class="r" style="font-weight:700">'+(""+f.peso).replace(".",",")+'%</td><td class="r">'+(""+f.dy).replace(".",",")+'%</td></tr>').join("")+'</tbody></table>';
+  $("#dBody").innerHTML=html;
+  $$("#dBody tr[data-tk]").forEach(tr=>tr.onclick=()=>openDrawer(tr.dataset.tk));
+  $("#drawer").classList.add("on");$("#ov").classList.add("on");
+}
+$("#dX").onclick=$("#ov").onclick=()=>{$("#drawer").classList.remove("on");$("#ov").classList.remove("on");};
+
+/* ---------- FOOT ---------- */
+$("#foot").innerHTML='<b>Fontes:</b> Clube FII (ranking P/VP e yield, 29/05/2026); B3/IFIX (composicao e fechamento); XP Research - Top Fundos Imobiliarios (data-base 11/05/2026) e Radar Imobiliario; carteiras recomendadas de maio/2026 de XP, BTG, Itau BBA, Santander, Banco Safra e Bradesco BBI (relatorios das casas e cobertura da imprensa especializada). Consenso de mercado: levantamento Money Times.<br>'+
+'<b>Aviso de direitos autorais:</b> relatorios e carteiras sao de propriedade de suas respectivas instituicoes. Material de uso interno e informativo, restrito aos consultores. Modelo de hyperlink para o conteudo original.<br>'+
+'<b>Aviso:</b> nao constitui recomendacao de investimento. Rentabilidade passada nao garante resultados futuros. ZORO - '+D.meta.atualizado+'.';
+</script>
+</body></html>
