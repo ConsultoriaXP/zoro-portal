@@ -1,0 +1,85 @@
+name: atualiza-mercado
+
+on:
+  schedule:
+    - cron: "40 21 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: atualiza-mercado
+  cancel-in-progress: false
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Organizar arquivos na raiz (so na primeira vez)
+        run: |
+          if [ -d zoro-portal-automacao ]; then
+            echo "Movendo arquivos de zoro-portal-automacao/ para a raiz..."
+            mkdir -p dados scripts
+            [ -f zoro-portal-automacao/index.html ] && mv -f zoro-portal-automacao/index.html index.html
+            [ -d zoro-portal-automacao/dados ]   && mv -f zoro-portal-automacao/dados/*   dados/
+            [ -d zoro-portal-automacao/scripts ] && mv -f zoro-portal-automacao/scripts/* scripts/
+            rm -rf zoro-portal-automacao
+            echo "Pronto."
+          else
+            echo "Nada a organizar."
+          fi
+          ls -la . dados scripts
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Atualizar dados de mercado
+        run: python3 scripts/atualiza_mercado.py
+
+      - name: Validar os dados gerados
+        run: |
+          python3 - <<'PYEOF'
+          import json, sys
+          D = json.load(open('dados/zoro.json', encoding='utf-8'))
+          erros = []
+          for chave in ('meta','ifix','ifixComp','clubefii','consensoMatriz','rec','casas','consensoMT','mercado'):
+              if chave not in D:
+                  erros.append('chave ausente: %s' % chave)
+          precos = [r.get('preco') for r in D.get('ifixComp', []) if r.get('preco')]
+          if len(precos) < 100:
+              erros.append('apenas %d precos na composicao do IFIX (esperado > 100)' % len(precos))
+          if not D.get('mercado', {}).get('fundos'):
+              erros.append('bloco mercado.fundos vazio')
+          if erros:
+              print('FALHA NA VALIDACAO:')
+              for e in erros:
+                  print(' -', e)
+              sys.exit(1)
+          print('OK: %d precos no IFIX, %d fundos no bloco mercado, atualizado em %s'
+                % (len(precos), len(D['mercado']['fundos']), D['meta']['atualizado']))
+          PYEOF
+
+      - name: Verificar se o index.html carrega os dados externos
+        run: |
+          if grep -q 'dados/zoro.js' index.html; then
+            echo "OK: index.html aponta para dados/zoro.js"
+          else
+            echo "ERRO: o index.html da raiz nao e a versao nova (nao referencia dados/zoro.js)."
+            exit 1
+          fi
+
+      - name: Commitar se houver mudanca
+        run: |
+          git config user.name  "zoro-bot"
+          git config user.email "actions@github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Nenhuma mudanca; nada a commitar."
+            exit 0
+          fi
+          git commit -m "dados: atualizacao automatica de mercado ($(TZ=America/Sao_Paulo date '+%d/%m/%Y %H:%M'))"
+          git push
