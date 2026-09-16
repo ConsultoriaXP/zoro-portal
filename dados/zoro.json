@@ -9,9 +9,9 @@
   "data": "16/09/2026",
   "var_dia_pct": 0.36,
   "var_mes_pct": -0.0126,
-  "max_52s": 3744.89,
+  "max_52s": 3941.62,
   "obs": "IFIX em 3744,89 pontos no fechamento de 16/09/2026 (fonte: Yahoo (IFIX.SA))",
-  "min_52s": 3744.89
+  "min_52s": 3554.56
  },
  "ifixEvo": [
   {
@@ -5437,7 +5437,7 @@
  "mercado": {
   "fonte": "Yahoo Finance",
   "completo": false,
-  "atualizado_em": "16/09/2026 02:57 (BRT)",
+  "atualizado_em": "16/09/2026 03:03 (BRT)",
   "sem_cotacao": [
    "ARCT11",
    "BCFF11",
@@ -5655,7 +5655,8 @@
     "vpa": 102.16,
     "vm": 74963022.0,
     "pvp": 0.1517,
-    "dy12m": 58.32
+    "dy12m": 58.32,
+    "dy_atipico": true
    },
    "CARE11": {
     "preco": 3.49,
@@ -5882,7 +5883,8 @@
     "vpa": 50.42,
     "vm": 268954004.94,
     "pvp": 3.0428,
-    "dy12m": 103.0
+    "dy12m": 103.0,
+    "dy_atipico": true
    },
    "HGRE11": {
     "preco": 115.4,
@@ -6801,5 +6803,11 @@
     "dy12m": 14.47
    }
   }
- }
+ },
+ "ifixHist": [
+  {
+   "d": "16/09/2026",
+   "v": 3744.89
+  }
+ ]
 }
