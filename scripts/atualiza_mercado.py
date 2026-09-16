@@ -23,6 +23,8 @@ O QUE ESTE SCRIPT NUNCA SOBRESCREVE (curadoria manual / mensal)
 
 Os indicadores calculados no dia ficam em D.mercado.fundos[TICKER]:
   {preco, vm, pvp, dy12m, prov12m, cotas, vpa}
+O fechamento diario do IFIX vai para D.ifixHist, que alimenta a faixa de 52
+semanas e a variacao mensal assim que houver historico suficiente.
 
 Uso
     python3 scripts/atualiza_mercado.py
@@ -55,6 +57,16 @@ SI_FIIS = ("https://statusinvest.com.br/category/advancedsearchresultpaginated"
 SI_IFIX = "https://statusinvest.com.br/indices/ifix"
 YF = ("https://query1.finance.yahoo.com/v8/finance/chart/{sym}"
       "?interval=1d&range=1y&events=div")
+
+# IFIX.SA no Yahoo devolve apenas o nivel de hoje e o fechamento anterior - nao
+# tem serie historica. Por isso a faixa de 52 semanas comeca destes valores,
+# lidos na pagina do IFIX no Status Invest em 16/09/2026, e passa a sair do
+# historico que o proprio script acumula em D.ifixHist quando ele tiver
+# IFIX_HIST_MINIMO pontos (cerca de um ano de pregoes). Ate la a faixa e o
+# maior/menor entre a semente e o que ja foi observado.
+IFIX_52S_SEMENTE = {"min_52s": 3554.56, "max_52s": 3941.62}
+IFIX_HIST_MINIMO = 250
+IFIX_HIST_MAXIMO = 400
 
 avisos = []
 
@@ -213,6 +225,9 @@ def completar_com_bases(fiis, bases):
             n_pvp += 1
         if preco and d.get("prov12m"):
             d["dy12m"] = round(d["prov12m"] / preco * 100, 2)
+            # amortizacao ou provento extraordinario distorce o yield
+            if d["dy12m"] > 40:
+                d["dy_atipico"] = True
     log("Calculados a partir das bases: %d valores de mercado, %d P/VP" % (n_vm, n_pvp))
     return fiis
 
@@ -244,14 +259,16 @@ def ifix_yahoo():
     ant = m.get("chartPreviousClose") or (serie[-2][1] if len(serie) > 1 else None)
     if ant:
         out["var_dia_pct"] = round((nivel / ant - 1) * 100, 2)
-    valores = [c for _, c in serie]
-    out["max_52s"], out["min_52s"] = r2(max(valores)), r2(min(valores))
-    # variacao no mes: contra o ultimo fechamento do mes anterior
-    mes_atual = datetime.fromtimestamp(serie[-1][0], BRT).month
-    anterior = [c for t, c in serie
-                if datetime.fromtimestamp(t, BRT).month != mes_atual]
-    if anterior:
-        out["var_mes_pct"] = round((nivel / anterior[-1] - 1) * 100, 2)
+    # a serie do IFIX.SA costuma vir com um unico ponto; so usa a faixa e a
+    # variacao mensal quando ha historico de verdade
+    if len(serie) >= 30:
+        valores = [c for _, c in serie]
+        out["max_52s"], out["min_52s"] = r2(max(valores)), r2(min(valores))
+        mes_atual = datetime.fromtimestamp(serie[-1][0], BRT).month
+        anterior = [c for t, c in serie
+                    if datetime.fromtimestamp(t, BRT).month != mes_atual]
+        if anterior:
+            out["var_mes_pct"] = round((nivel / anterior[-1] - 1) * 100, 2)
     return out
 
 
@@ -299,6 +316,32 @@ def universo(D):
                for r in D.get("rec", {}).get("fundos", []))
     tks.discard("")
     return tks
+
+
+def atualizar_hist_ifix(D, nivel, data_br):
+    """Acumula o fechamento do IFIX em D.ifixHist e devolve faixa e variacao
+    mensal quando ja houver historico suficiente."""
+    hist = [h for h in D.get("ifixHist", []) if h.get("d") and h.get("v")]
+    hist = [h for h in hist if h["d"] != data_br]
+    hist.append({"d": data_br, "v": nivel})
+    hist = hist[-IFIX_HIST_MAXIMO:]
+    D["ifixHist"] = hist
+    out = {}
+    vals = [h["v"] for h in hist]
+    if len(hist) >= IFIX_HIST_MINIMO:
+        out["max_52s"], out["min_52s"] = r2(max(vals)), r2(min(vals))
+    else:
+        # historico ainda curto: usa a semente, mas acompanha se o indice
+        # romper a faixa desde que o acompanhamento comecou
+        out["max_52s"] = r2(max([IFIX_52S_SEMENTE["max_52s"]] + vals))
+        out["min_52s"] = r2(min([IFIX_52S_SEMENTE["min_52s"]] + vals))
+    mes_atual = data_br[3:]
+    anteriores = [h["v"] for h in hist if h["d"][3:] != mes_atual]
+    if anteriores:
+        out["var_mes_pct"] = round((nivel / anteriores[-1] - 1) * 100, 2)
+    log("Historico do IFIX: %d pontos (faixa 52s %s a %s)"
+        % (len(hist), out.get("min_52s"), out.get("max_52s")))
+    return out
 
 
 def atualizar(D, fiis, ifix, fonte, completo):
@@ -358,9 +401,13 @@ def atualizar(D, fiis, ifix, fonte, completo):
         D.setdefault("ifix", {})
         D["ifix"]["fech"] = ifix["fech"]
         D["ifix"]["data"] = data_br
+        derivado = atualizar_hist_ifix(D, ifix["fech"], data_br)
         for k in ("var_dia_pct", "var_mes_pct", "max_52s", "min_52s"):
-            if ifix.get(k) is not None:
-                D["ifix"][k] = ifix[k]
+            v = ifix.get(k, derivado.get(k))
+            if v is None:
+                v = derivado.get(k)
+            if v is not None:
+                D["ifix"][k] = v
         D["ifix"]["obs"] = ("IFIX em %s pontos no fechamento de %s (fonte: %s)"
                             % (("%.2f" % ifix["fech"]).replace(".", ","),
                                data_br, ifix.get("fonte", fonte)))
