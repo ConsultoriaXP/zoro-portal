@@ -1,16 +1,16 @@
 {
  "meta": {
-  "atualizado": "09/10/2026",
+  "atualizado": "12/10/2026",
   "data_ref_research": "Maio/2026",
-  "data_ref_mercado": "Cotacoes, valor de mercado, P/VP e DY 12m: Yahoo Finance, 09/10/2026. Ranking Clube FII e consenso das casas: Maio/2026."
+  "data_ref_mercado": "Cotacoes, valor de mercado, P/VP e DY 12m: Yahoo Finance, 12/10/2026. Ranking Clube FII e consenso das casas: Maio/2026."
  },
  "ifix": {
   "fech": 3988.54,
-  "data": "09/10/2026",
+  "data": "12/10/2026",
   "var_dia_pct": 0.98,
   "var_mes_pct": 6.21,
   "max_52s": 3988.54,
-  "obs": "IFIX em 3988,54 pontos no fechamento de 09/10/2026 (fonte: Yahoo (IFIX.SA))",
+  "obs": "IFIX em 3988,54 pontos no fechamento de 12/10/2026 (fonte: Yahoo (IFIX.SA))",
   "min_52s": 3554.56
  },
  "ifixEvo": [
@@ -5432,12 +5432,12 @@
  ],
  "precoFonte": {
   "fonte": "Yahoo Finance",
-  "data": "09/10/2026"
+  "data": "12/10/2026"
  },
  "mercado": {
   "fonte": "Yahoo Finance",
   "completo": false,
-  "atualizado_em": "09/10/2026 22:13 (BRT)",
+  "atualizado_em": "12/10/2026 23:42 (BRT)",
   "sem_cotacao": [
    "ARCT11",
    "BBPO11",
@@ -5665,21 +5665,21 @@
    },
    "CCME11": {
     "preco": 9.06,
-    "prov12m": 1.03,
+    "prov12m": 1.12,
     "cotas": 67797053,
     "vpa": 10.52,
     "vm": 614241300.18,
     "pvp": 0.8612,
-    "dy12m": 11.37
+    "dy12m": 12.36
    },
    "CLIN11": {
     "preco": 88.96,
-    "prov12m": 12.01,
+    "prov12m": 13.01,
     "cotas": 4346763,
     "vpa": 98.77,
     "vm": 386688036.48,
     "pvp": 0.9007,
-    "dy12m": 13.5
+    "dy12m": 14.62
    },
    "CNES11": {
     "preco": 1.69,
@@ -5745,10 +5745,10 @@
    },
    "FGAA11": {
     "preco": 8.2,
-    "prov12m": 1.26,
+    "prov12m": 1.38,
     "cotas": null,
     "vpa": null,
-    "dy12m": 15.37
+    "dy12m": 16.83
    },
    "FIIB11": {
     "preco": 449.98,
@@ -6233,12 +6233,12 @@
    },
    "PCIP11": {
     "preco": 80.06,
-    "prov12m": 9.74,
+    "prov12m": 10.39,
     "cotas": 17011707,
     "vpa": 91.88,
     "vm": 1361957262.42,
     "pvp": 0.8714,
-    "dy12m": 12.17
+    "dy12m": 12.98
    },
    "PLCR11": {
     "preco": 79.1,
@@ -6277,12 +6277,12 @@
    },
    "PSEC11": {
     "preco": 57.1,
-    "prov12m": 4.2,
+    "prov12m": 4.8,
     "cotas": 18399378,
     "vpa": 72.29,
     "vm": 1050604483.8,
     "pvp": 0.7899,
-    "dy12m": 7.36
+    "dy12m": 8.41
    },
    "PVBI11": {
     "preco": 72.53,
@@ -6859,6 +6859,10 @@
   },
   {
    "d": "09/10/2026",
+   "v": 3988.54
+  },
+  {
+   "d": "12/10/2026",
    "v": 3988.54
   }
  ]
