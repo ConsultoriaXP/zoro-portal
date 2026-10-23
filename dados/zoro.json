@@ -1,16 +1,16 @@
 {
  "meta": {
-  "atualizado": "22/10/2026",
+  "atualizado": "23/10/2026",
   "data_ref_research": "Maio/2026",
-  "data_ref_mercado": "Cotacoes, valor de mercado, P/VP e DY 12m: Yahoo Finance, 22/10/2026. Ranking Clube FII e consenso das casas: Maio/2026."
+  "data_ref_mercado": "Cotacoes, valor de mercado, P/VP e DY 12m: Yahoo Finance, 23/10/2026. Ranking Clube FII e consenso das casas: Maio/2026."
  },
  "ifix": {
-  "fech": 3973.66,
-  "data": "22/10/2026",
-  "var_dia_pct": -0.04,
-  "var_mes_pct": 5.82,
-  "max_52s": 3988.54,
-  "obs": "IFIX em 3973,66 pontos no fechamento de 22/10/2026 (fonte: Yahoo (IFIX.SA))",
+  "fech": 3990.57,
+  "data": "23/10/2026",
+  "var_dia_pct": 0.43,
+  "var_mes_pct": 6.27,
+  "max_52s": 3990.57,
+  "obs": "IFIX em 3990,57 pontos no fechamento de 23/10/2026 (fonte: Yahoo (IFIX.SA))",
   "min_52s": 3554.56
  },
  "ifixEvo": [
@@ -82,112 +82,112 @@
    "n": "Kinea Rendimentos Imobiliários",
    "p": 7.097,
    "s": "Recebíveis (Papel)",
-   "preco": 105.7,
-   "vm": 11319373045.4
+   "preco": 105.55,
+   "vm": 11303309602.1
   },
   {
    "t": "KNIP11",
    "n": "Kinea Índice de Preços",
    "p": 4.886,
    "s": "Recebíveis (Papel)",
-   "preco": 93.89,
-   "vm": 7518540883.54
+   "preco": 93.2,
+   "vm": 7463286935.2
   },
   {
    "t": "XPML11",
    "n": "XP Malls",
    "p": 4.549,
    "s": "Shoppings",
-   "preco": 104.7,
-   "vm": 6733053358.5
+   "preco": 104.61,
+   "vm": 6727265633.55
   },
   {
    "t": "HGLG11",
    "n": "CGHG Logística",
    "p": 4.418,
    "s": "Logística",
-   "preco": 157.04,
-   "vm": 7161298034.8
+   "preco": 159.66,
+   "vm": 7280774606.7
   },
   {
    "t": "BTLG11",
    "n": "Btg Pactual Logistica Fdo Inv Imob – Fii",
    "p": 3.69,
    "s": "Logística",
-   "preco": 104.32,
-   "vm": 7238728079.36
+   "preco": 104.8,
+   "vm": 7272035110.4
   },
   {
    "t": "KNRI11",
    "n": "Kinea Renda Imobiliária",
    "p": 3.154,
    "s": "Híbrido/Outros",
-   "preco": 162.7,
-   "vm": 4588798446.9
+   "preco": 162.3,
+   "vm": 4577516828.1
   },
   {
    "t": "MXRF11",
    "n": "Maxi Renda",
    "p": 2.978,
    "s": "Recebíveis (Papel)",
-   "preco": 9.48,
-   "vm": 5377115468.04
+   "preco": 9.44,
+   "vm": 5354427217.12
   },
   {
    "t": "VISC11",
    "n": "Vinci Shopping Centers",
    "p": 2.087,
    "s": "Shoppings",
-   "preco": 113.55,
-   "vm": 3273492072.0
+   "preco": 114.2,
+   "vm": 3292230688.0
   },
   {
    "t": "XPLG11",
    "n": "XP Log",
    "p": 2.076,
    "s": "Logística",
-   "preco": 100.67,
-   "vm": 5173441064.99
+   "preco": 101.0,
+   "vm": 5190399797.0
   },
   {
    "t": "KNHY11",
    "n": "Kinea High Yield CRI",
    "p": 2.07,
    "s": "Recebíveis (Papel)",
-   "preco": 100.89,
-   "vm": 3145052343.87
+   "preco": 99.71,
+   "vm": 3108268105.93
   },
   {
    "t": "TRXF11",
    "n": "TRX Real Estate",
    "p": 1.986,
    "s": "Híbrido/Outros",
-   "preco": 71.89,
-   "vm": 4488143166.78
+   "preco": 71.9,
+   "vm": 4488767473.8
   },
   {
    "t": "HGRU11",
    "n": "CSHG Renda Urbana",
    "p": 1.98,
    "s": "Renda Urbana",
-   "preco": 124.9,
-   "vm": 3101792079.6
+   "preco": 125.47,
+   "vm": 3115947575.88
   },
   {
    "t": "HGBS11",
    "n": "CSHG Brasil Shopping",
    "p": 1.778,
    "s": "Shoppings",
-   "preco": 19.42,
-   "vm": 2803388198.92
+   "preco": 19.6,
+   "vm": 2829372229.6
   },
   {
    "t": "CPTS11",
    "n": "Capitania Securities II",
    "p": 1.756,
    "s": "Recebíveis (Papel)",
-   "preco": 7.71,
-   "vm": 2802609263.37
+   "preco": 7.77,
+   "vm": 2824419452.19
   },
   {
    "t": "IRDM11",
@@ -202,24 +202,24 @@
    "n": "Kinea Unique Hy Cdi Fundo De Investimento Imob",
    "p": 1.493,
    "s": "Recebíveis (Papel)",
-   "preco": 101.34,
-   "vm": 2177262538.2
+   "preco": 101.88,
+   "vm": 2188864292.4
   },
   {
    "t": "GGRC11",
    "n": "GGR Covepi Renda",
    "p": 1.448,
    "s": "Logística",
-   "preco": 9.18,
-   "vm": 3173612815.26
+   "preco": 9.31,
+   "vm": 3218555044.67
   },
   {
    "t": "RECR11",
    "n": "FII REC Recebíveis Imobiliários",
    "p": 1.422,
    "s": "Recebíveis (Papel)",
-   "preco": 76.49,
-   "vm": 2022521808.5
+   "preco": 77.77,
+   "vm": 2056367120.5
   },
   {
    "t": "BCFF11",
@@ -233,56 +233,56 @@
    "n": "Fdo. Inv. Imob. Vbi Prime Properties",
    "p": 1.379,
    "s": "Lajes Corporativas",
-   "preco": 76.11,
-   "vm": 2064869399.37
+   "preco": 77.29,
+   "vm": 2096882878.43
   },
   {
    "t": "HSML11",
    "n": "Hsi Mall Fdo Inv Imob",
    "p": 1.345,
    "s": "Shoppings",
-   "preco": 94.38,
-   "vm": 2013123134.88
+   "preco": 94.5,
+   "vm": 2015682732.0
   },
   {
    "t": "KNHF11",
    "n": "Kinea Hedge Fund Fdo De Inv Imob",
    "p": 1.289,
    "s": "Híbrido/Outros",
-   "preco": 95.85,
-   "vm": 1884721074.75
+   "preco": 96.61,
+   "vm": 1899665133.35
   },
   {
    "t": "BTHF11",
    "n": "",
    "p": 1.269,
    "s": "Híbrido/Outros",
-   "preco": 9.02,
-   "vm": 1856739398.8
+   "preco": 9.12,
+   "vm": 1877324092.8
   },
   {
    "t": "BRCO11",
    "n": "Bresco Logística – Fdo Inv Imob",
    "p": 1.22,
    "s": "Logística",
-   "preco": 113.96,
-   "vm": 2053707689.88
+   "preco": 114.0,
+   "vm": 2054428542.0
   },
   {
    "t": "KNSC11",
    "n": "Kinea Securities Fdo. De Inv. Imob. – Fii",
    "p": 1.22,
    "s": "Recebíveis (Papel)",
-   "preco": 9.11,
-   "vm": 1842063727.35
+   "preco": 9.18,
+   "vm": 1856217894.3
   },
   {
    "t": "ALZR11",
    "n": "Alianza Trust Renda Imobiliária",
    "p": 1.21,
    "s": "Logística",
-   "preco": 10.39,
-   "vm": 1708578365.39
+   "preco": 10.45,
+   "vm": 1718445035.45
   },
   {
    "t": "GALG11",
@@ -296,32 +296,32 @@
    "n": "Fundo De Investimento Imobiliário Riza Terrax",
    "p": 1.184,
    "s": "Híbrido/Outros",
-   "preco": 79.15,
-   "vm": 1492113638.0
+   "preco": 79.9,
+   "vm": 1506252428.0
   },
   {
    "t": "LVBI11",
    "n": "Fdo Inv Imob – Vbi Logístico",
    "p": 1.162,
    "s": "Logística",
-   "preco": 107.05,
-   "vm": 1725492383.25
+   "preco": 107.49,
+   "vm": 1732584551.85
   },
   {
    "t": "TGAR11",
    "n": "TG Ativo Real",
    "p": 1.12,
    "s": "Híbrido/Outros",
-   "preco": 51.96,
-   "vm": 1224591617.28
+   "preco": 51.95,
+   "vm": 1224355937.6
   },
   {
    "t": "MCCI11",
    "n": "Fdo Inv. Maua Capital Recebiveis Imob. – Fii",
    "p": 1.081,
    "s": "Recebíveis (Papel)",
-   "preco": 94.3,
-   "vm": 1599330263.2
+   "preco": 95.8,
+   "vm": 1624770299.2
   },
   {
    "t": "BBPO11",
@@ -335,56 +335,56 @@
    "n": "Hedge Top FOFII 3",
    "p": 1.043,
    "s": "Fundos de Fundos",
-   "preco": 6.69,
-   "vm": 1457282700.0
+   "preco": 6.67,
+   "vm": 1452926100.0
   },
   {
    "t": "TVRI11",
    "n": "O Tivio Renda Imobiliária Fundo de Investimento Imobiliário, iniciou suas negociações na B3 em dezembro de 2012. Seu administrador é a Bem Distribuidora de Títulos e Valores Mobiliários LTDA, enquanto a gestão é feita pela BV Distribuidora de Títulos e Valores Mobiliários S.A. Seu objetivo é investir em imóveis comerciais para locação ou ativos de […]",
    "p": 1.032,
    "s": "Híbrido/Outros",
-   "preco": 87.9,
-   "vm": 1399340751.0
+   "preco": 87.44,
+   "vm": 1392017693.6
   },
   {
    "t": "RBVA11",
    "n": "Rio Bravo Renda Varejo",
    "p": 1.011,
    "s": "Shoppings",
-   "preco": 9.07,
-   "vm": 1498982057.01
+   "preco": 9.05,
+   "vm": 1495676694.15
   },
   {
    "t": "PMLL11",
    "n": "Malls Brasil Plural",
    "p": 1.008,
    "s": "Shoppings",
-   "preco": 109.86,
-   "vm": 1950066304.62
+   "preco": 110.0,
+   "vm": 1952551370.0
   },
   {
    "t": "HGCR11",
    "n": "CGHG Recebíveis Imobiliários",
    "p": 0.999,
    "s": "Recebíveis (Papel)",
-   "preco": 98.13,
-   "vm": 1512978741.78
+   "preco": 98.69,
+   "vm": 1521612881.14
   },
   {
    "t": "VILG11",
    "n": "Vinci Logística Fdo Inv Imob",
    "p": 0.996,
    "s": "Logística",
-   "preco": 102.0,
-   "vm": 1529734392.0
+   "preco": 103.02,
+   "vm": 1545031735.92
   },
   {
    "t": "HGRE11",
    "n": "CSHG Real Estate",
    "p": 0.977,
    "s": "Lajes Corporativas",
-   "preco": 129.0,
-   "vm": 1524491943.0
+   "preco": 130.6,
+   "vm": 1543400370.2
   },
   {
    "t": "CVBI11",
@@ -398,32 +398,32 @@
    "n": "Valora RE III",
    "p": 0.956,
    "s": "Recebíveis (Papel)",
-   "preco": 9.58,
-   "vm": 1399650329.46
+   "preco": 9.59,
+   "vm": 1401111342.33
   },
   {
    "t": "RBRR11",
    "n": "RBR Rendimento High Grade",
    "p": 0.913,
    "s": "Recebíveis (Papel)",
-   "preco": 74.86,
-   "vm": 1220238586.5
+   "preco": 76.0,
+   "vm": 1238820900.0
   },
   {
    "t": "JSRE11",
    "n": "JS Real Estate Multigestão",
    "p": 0.907,
    "s": "Lajes Corporativas",
-   "preco": 69.1,
-   "vm": 1435022364.8
+   "preco": 71.41,
+   "vm": 1482994892.48
   },
   {
    "t": "RBRX11",
    "n": "Fii Rbr Mult",
    "p": 0.841,
    "s": "Híbrido/Outros",
-   "preco": 7.79,
-   "vm": 1140100012.58
+   "preco": 7.72,
+   "vm": 1129855211.44
   },
   {
    "t": "FEXC11",
@@ -437,32 +437,32 @@
    "n": "BTG Pactual Corporate Office",
    "p": 0.826,
    "s": "Lajes Corporativas",
-   "preco": 45.76,
-   "vm": 1218964123.52
+   "preco": 46.09,
+   "vm": 1227754730.18
   },
   {
    "t": "RBRY11",
    "n": "Fdo Inv Imob Rbr Private Crédito Imob",
    "p": 0.824,
    "s": "Recebíveis (Papel)",
-   "preco": 86.62,
-   "vm": 1106095129.44
+   "preco": 89.16,
+   "vm": 1138529689.92
   },
   {
    "t": "GARE11",
    "n": "Guardian Logistica",
    "p": 0.815,
    "s": "Logística",
-   "preco": 8.72,
-   "vm": 2521705739.36
+   "preco": 8.76,
+   "vm": 2533273196.88
   },
   {
    "t": "VRTA11",
    "n": "Fator Verita",
    "p": 0.803,
    "s": "Recebíveis (Papel)",
-   "preco": 76.23,
-   "vm": 1188610481.52
+   "preco": 75.67,
+   "vm": 1179878724.08
   },
   {
    "t": "RVBI11",
@@ -476,24 +476,24 @@
    "n": "Hsi Logística",
    "p": 0.771,
    "s": "Logística",
-   "preco": 83.35,
-   "vm": 1055216584.45
+   "preco": 83.2,
+   "vm": 1053317574.4
   },
   {
    "t": "VGHF11",
    "n": "Valora Hedge Fund",
    "p": 0.766,
    "s": "Recebíveis (Papel)",
-   "preco": 5.79,
-   "vm": 953738544.57
+   "preco": 5.82,
+   "vm": 958680195.06
   },
   {
    "t": "VCJR11",
    "n": "Vectis Juros Real Fdo Inv. Imob. – Fii",
    "p": 0.761,
    "s": "Recebíveis (Papel)",
-   "preco": 75.5,
-   "vm": 1111659735.0
+   "preco": 76.9,
+   "vm": 1132273293.0
   },
   {
    "t": "RBRF11",
@@ -515,32 +515,32 @@
    "n": "Fdo Inv Imob Green Towers",
    "p": 0.669,
    "s": "Híbrido/Outros",
-   "preco": 81.1,
-   "vm": 973200000.0
+   "preco": 81.0,
+   "vm": 972000000.0
   },
   {
    "t": "GZIT11",
    "n": "Fii Gazit",
    "p": 0.644,
    "s": "Híbrido/Outros",
-   "preco": 41.0,
-   "vm": 955211276.0
+   "preco": 40.26,
+   "vm": 937970877.36
   },
   {
    "t": "VGIP11",
    "n": "Valora Cri Índice De Preço Fdo Invest. Imob. Fii",
    "p": 0.627,
    "s": "Recebíveis (Papel)",
-   "preco": 77.02,
-   "vm": 907853763.94
+   "preco": 77.0,
+   "vm": 907618019.0
   },
   {
    "t": "BTCI11",
    "n": "O Fundo de Investimento Imobiliário BTG Pactual Crédito Imobiliário (BTCI11) foi constituído em maio de 2008 e é administrado pela BTG Pactual Serviços Financeiros S.A. DTVM. Seu objetivo é investir em empreendimentos imobiliários através da aquisição de ativos como letras hipotecárias (LH), letras de crédito imobiliário (LCI), certificados de recebíveis imobiliários (CRI) e outros ativos […]",
    "p": 0.618,
    "s": "Recebíveis (Papel)",
-   "preco": 9.07,
-   "vm": 902657030.04
+   "preco": 9.2,
+   "vm": 915594782.4
   },
   {
    "t": "SNEL11",
@@ -562,8 +562,8 @@
    "n": "Shoppings Aaa Fdo De Inv Imob",
    "p": 0.559,
    "s": "Shoppings",
-   "preco": 10.09,
-   "vm": 1242723185.96
+   "preco": 10.11,
+   "vm": 1245186462.84
   },
   {
    "t": "SDIL11",
@@ -584,32 +584,32 @@
    "n": "Riza Akin",
    "p": 0.501,
    "s": "Híbrido/Outros",
-   "preco": 79.87,
-   "vm": 703485774.95
+   "preco": 79.75,
+   "vm": 702428828.75
   },
   {
    "t": "XPCI11",
    "n": "Xp Credito Imobiliário – Fdo Inv Imob",
    "p": 0.489,
    "s": "Recebíveis (Papel)",
-   "preco": 81.45,
-   "vm": 708741328.95
+   "preco": 82.4,
+   "vm": 717007802.4
   },
   {
    "t": "BPML11",
    "n": "Fdo Inv Imob Btg Pactual Shoppings",
    "p": 0.469,
    "s": "Shoppings",
-   "preco": 91.16,
-   "vm": 678389474.2
+   "preco": 91.0,
+   "vm": 677198795.0
   },
   {
    "t": "KORE11",
    "n": "Kore11",
    "p": 0.467,
    "s": "Híbrido/Outros",
-   "preco": 73.13,
-   "vm": 703876250.0
+   "preco": 74.8,
+   "vm": 719950000.0
   },
   {
    "t": "BBIG11",
@@ -624,64 +624,64 @@
    "n": "Brpr Corporate Offices Fdo De Inv Imob",
    "p": 0.465,
    "s": "Lajes Corporativas",
-   "preco": 62.03,
-   "vm": 720218668.36
+   "preco": 62.57,
+   "vm": 726488506.84
   },
   {
    "t": "RBRP11",
    "n": "RBR Properties",
    "p": 0.427,
    "s": "Lajes Corporativas",
-   "preco": 52.8,
-   "vm": 643061020.8
+   "preco": 52.97,
+   "vm": 645131482.42
   },
   {
    "t": "CCME11",
    "n": "Fii Canuma",
    "p": 0.413,
    "s": "Híbrido/Outros",
-   "preco": 9.29,
-   "vm": 629834622.37
+   "preco": 9.21,
+   "vm": 624410858.13
   },
   {
    "t": "HABT11",
    "n": "Habitat Ii – Fdo Inv Imob",
    "p": 0.411,
    "s": "Recebíveis (Papel)",
-   "preco": 70.48,
-   "vm": 572775665.84
+   "preco": 70.7,
+   "vm": 574563558.1
   },
   {
    "t": "JSAF11",
    "n": "Js Ativos Financeiros Fundo De Investimento Imobil",
    "p": 0.401,
    "s": "Híbrido/Outros",
-   "preco": 7.68,
-   "vm": 595378867.2
+   "preco": 7.97,
+   "vm": 617860621.3
   },
   {
    "t": "TRBL11",
    "n": "O Fundo de Investimento Imobiliário Tellus Rio Bravo Renda Logística – FII (TRBL11) foi estabelecido em 16/11/2012 como um FII de condomínio fechado, administrado pela Rio Bravo Investimentos Distribuidora de Títulos e Valores Mobiliários LTDA. A gestão exclusiva dos Ativos Imobiliários é da responsabilidade da Instituição Administradora. Seu objetivo é investir em empreendimentos imobiliários de […]",
    "p": 0.399,
    "s": "Logística",
-   "preco": 54.08,
-   "vm": 418530095.36
+   "preco": 53.58,
+   "vm": 414660549.36
   },
   {
    "t": "KFOF11",
    "n": "Fundo De Fdo Inv Imob Kinea Fii",
    "p": 0.392,
    "s": "Fundos de Fundos",
-   "preco": 83.09,
-   "vm": 582840205.85
+   "preco": 83.54,
+   "vm": 585996760.1
   },
   {
    "t": "RBRL11",
    "n": "Rbr Log Fundo De Investimento Imobiliário",
    "p": 0.385,
    "s": "Logística",
-   "preco": 84.8,
-   "vm": 567060568.0
+   "preco": 84.07,
+   "vm": 562179032.45
   },
   {
    "t": "XPIN11",
@@ -696,39 +696,39 @@
    "n": "Itri11",
    "p": 0.358,
    "s": "Híbrido/Outros",
-   "preco": 82.27,
-   "vm": 514187500.0
+   "preco": 82.3,
+   "vm": 514375000.0
   },
   {
    "t": "BTAL11",
    "n": "Btg Pactual Agro Logística",
    "p": 0.356,
    "s": "Logística",
-   "preco": 84.32
+   "preco": 88.05
   },
   {
    "t": "AFHI11",
    "n": "Af Invest Cri",
    "p": 0.347,
    "s": "Híbrido/Outros",
-   "preco": 96.03,
-   "vm": 507884520.33
+   "preco": 96.93,
+   "vm": 512644450.23
   },
   {
    "t": "RCRB11",
    "n": "Fdo Inv Imob Rio Bravo Renda Corporativa",
    "p": 0.346,
    "s": "Lajes Corporativas",
-   "preco": 146.49,
-   "vm": 540649910.55
+   "preco": 151.97,
+   "vm": 560874919.15
   },
   {
    "t": "MFII11",
    "n": "Mérito Desenvolvimento Imobiliário",
    "p": 0.311,
    "s": "Híbrido/Outros",
-   "preco": 37.46,
-   "vm": 254728000.0
+   "preco": 38.0,
+   "vm": 258400000.0
   },
   {
    "t": "ARCT11",
@@ -750,64 +750,64 @@
    "n": "Fundo De Investimento Imobiliário Athena I",
    "p": 0.298,
    "s": "Híbrido/Outros",
-   "preco": 89.9,
-   "vm": 615184801.0
+   "preco": 88.79,
+   "vm": 607589082.1
   },
   {
    "t": "HCTR11",
    "n": "Hectare Ce – Fdo Inv Imob",
    "p": 0.296,
    "s": "Recebíveis (Papel)",
-   "preco": 13.72,
-   "vm": 302995251.44
+   "preco": 13.54,
+   "vm": 299020095.08
   },
   {
    "t": "FIIB11",
    "n": "Industrial do Brasil",
    "p": 0.294,
    "s": "Híbrido/Outros",
-   "preco": 447.99,
-   "vm": 306873150.0
+   "preco": 449.98,
+   "vm": 308236300.0
   },
   {
    "t": "VINO11",
    "n": "Vinci Offices Fdo Inv Imob",
    "p": 0.276,
    "s": "Shoppings",
-   "preco": 4.66,
-   "vm": 385970534.7
+   "preco": 4.71,
+   "vm": 390111849.45
   },
   {
    "t": "CLIN11",
    "n": "",
    "p": 0.268,
    "s": "Híbrido/Outros",
-   "preco": 93.69,
-   "vm": 407248225.47
+   "preco": 95.0,
+   "vm": 412942485.0
   },
   {
    "t": "URPR11",
    "n": "Urca Prime Renda Fundo De Investimento Imobiliário",
    "p": 0.267,
    "s": "Recebíveis (Papel)",
-   "preco": 21.98,
-   "vm": 257911012.1
+   "preco": 21.51,
+   "vm": 252396081.45
   },
   {
    "t": "BCRI11",
    "n": "Banestes Recebíveis Imobiliários",
    "p": 0.264,
    "s": "Recebíveis (Papel)",
-   "preco": 58.75,
-   "vm": 367650038.75
+   "preco": 58.4,
+   "vm": 365459783.2
   },
   {
    "t": "HTMX11",
    "n": "Hotel Maxinvest",
    "p": 0.263,
    "s": "Hotéis",
-   "preco": 142.0,
-   "vm": 410109348.0
+   "preco": 141.43,
+   "vm": 408463134.42
   },
   {
    "t": "BARI11",
@@ -822,56 +822,56 @@
    "n": "O Riza Arctium Real Estate Fundo de Investimento Imobiliário (RZAT11) iniciou suas atividades em julho de 2017 como um FII Híbrido Gestão Ativa, administrado pela BTG Pactual Serviços Financeiros S.A. DTVM e gerido pela Riza Gestora de Recursos Ltda. Seu objetivo é rentabilizar os investimentos dos cotistas por meio da aquisição de direitos reais sobre […]",
    "p": 0.258,
    "s": "Híbrido/Outros",
-   "preco": 85.34,
-   "vm": 361418484.28
+   "preco": 85.98,
+   "vm": 364128911.16
   },
   {
    "t": "CACR11",
    "n": "Cartesia Fii",
    "p": 0.257,
    "s": "Recebíveis (Papel)",
-   "preco": 14.51,
-   "vm": 70175061.24
+   "preco": 14.6,
+   "vm": 70610330.4
   },
   {
    "t": "TEPP11",
    "n": "Tellus Properties – Fdo Inv. Imob",
    "p": 0.254,
    "s": "Lajes Corporativas",
-   "preco": 7.79,
-   "vm": 386515830.17
+   "preco": 7.84,
+   "vm": 388996676.32
   },
   {
    "t": "ICRI11",
    "n": "",
    "p": 0.253,
    "s": "Híbrido/Outros",
-   "preco": 94.37,
-   "vm": 364018968.83
+   "preco": 95.0,
+   "vm": 366449105.0
   },
   {
    "t": "SNCI11",
    "n": "Suno Recebíveis Imobiliários Fdo De Inv Imob",
    "p": 0.252,
    "s": "Recebíveis (Papel)",
-   "preco": 85.94,
-   "vm": 360948000.0
+   "preco": 85.5,
+   "vm": 359100000.0
   },
   {
    "t": "MANA11",
    "n": "Fii Manati",
    "p": 0.232,
    "s": "Híbrido/Outros",
-   "preco": 9.26,
-   "vm": 347584656.4
+   "preco": 9.3,
+   "vm": 349086102.0
   },
   {
    "t": "LIFE11",
    "n": "Fii Life",
    "p": 0.231,
    "s": "Híbrido/Outros",
-   "preco": 7.43,
-   "vm": 295428569.12
+   "preco": 7.6,
+   "vm": 302188038.4
   },
   {
    "t": "MCHF11",
@@ -885,24 +885,24 @@
    "n": "Bradesco Carteira Imobiliária Ativa",
    "p": 0.23,
    "s": "Fundos de Fundos",
-   "preco": 89.83,
-   "vm": 334081183.54
+   "preco": 90.94,
+   "vm": 338209315.72
   },
   {
    "t": "VRTM11",
    "n": "Vrtm11",
    "p": 0.228,
    "s": "Híbrido/Outros",
-   "preco": 6.85,
-   "vm": 321753028.25
+   "preco": 6.92,
+   "vm": 325041015.4
   },
   {
    "t": "DEVA11",
    "n": "Devant Recebíveis Imobiliários",
    "p": 0.224,
    "s": "Recebíveis (Papel)",
-   "preco": 18.19,
-   "vm": 255476876.52
+   "preco": 18.0,
+   "vm": 252808344.0
   },
   {
    "t": "PATL11",
@@ -917,32 +917,32 @@
    "n": "Fdo Inv Imob – Fii Ubs (Br) Office",
    "p": 0.222,
    "s": "Recebíveis (Papel)",
-   "preco": 35.01,
-   "vm": 299107689.93
+   "preco": 35.47,
+   "vm": 303037696.71
   },
   {
    "t": "TOPP11",
    "n": "",
    "p": 0.222,
    "s": "Híbrido/Outros",
-   "preco": 72.0,
-   "vm": 326033280.0
+   "preco": 72.32,
+   "vm": 327482316.8
   },
   {
    "t": "CYCR11",
    "n": "Cyrela Crédito – Fundo De Investimento Imobiliário",
    "p": 0.22,
    "s": "Recebíveis (Papel)",
-   "preco": 8.67,
-   "vm": 316883688.15
+   "preco": 8.84,
+   "vm": 323097093.8
   },
   {
    "t": "KCRE11",
    "n": "Fii Kinea Cr",
    "p": 0.217,
    "s": "Recebíveis (Papel)",
-   "preco": 8.95,
-   "vm": 322200000.0
+   "preco": 8.97,
+   "vm": 322920000.0
   },
   {
    "t": "QAGR11",
@@ -956,16 +956,16 @@
    "n": "",
    "p": 0.214,
    "s": "Híbrido/Outros",
-   "preco": 7.25,
-   "vm": 303939495.25
+   "preco": 7.26,
+   "vm": 304358722.14
   },
   {
    "t": "PORD11",
    "n": "Polo Recebíveis Imobiliários II",
    "p": 0.209,
    "s": "Recebíveis (Papel)",
-   "preco": 8.58,
-   "vm": 319894575.0
+   "preco": 8.6,
+   "vm": 320640250.0
   },
   {
    "t": "KISU11",
@@ -980,8 +980,8 @@
    "n": "Hospital Nossa Sra Lourdes",
    "p": 0.204,
    "s": "Saúde",
-   "preco": 191.88,
-   "vm": 248155717.68
+   "preco": 193.0,
+   "vm": 249604198.0
   },
   {
    "t": "BPFF11",
@@ -1011,8 +1011,8 @@
    "n": "Fii Rbr Pr",
    "p": 0.196,
    "s": "Híbrido/Outros",
-   "preco": 80.65,
-   "vm": 279994863.2
+   "preco": 81.99,
+   "vm": 284646978.72
   },
   {
    "t": "LGCP11",
@@ -1026,40 +1026,40 @@
    "n": "Xp Selection Fdo De Fundos Inv Imob – Fii",
    "p": 0.194,
    "s": "Fundos de Fundos",
-   "preco": 6.6,
-   "vm": 285794124.0
+   "preco": 6.67,
+   "vm": 288825273.8
   },
   {
    "t": "INLG11",
    "n": "",
    "p": 0.191,
    "s": "Híbrido/Outros",
-   "preco": 65.03,
-   "vm": 293422058.09
+   "preco": 65.22,
+   "vm": 294279357.66
   },
   {
    "t": "OUJP11",
    "n": "Ourinvest Jpp",
    "p": 0.186,
    "s": "Recebíveis (Papel)",
-   "preco": 70.7,
-   "vm": 229943548.8
+   "preco": 71.2,
+   "vm": 231569740.8
   },
   {
    "t": "AJFI11",
    "n": "",
    "p": 0.179,
    "s": "Híbrido/Outros",
-   "preco": 8.6,
-   "vm": 289183410.8
+   "preco": 8.65,
+   "vm": 290864709.7
   },
   {
    "t": "AIEC11",
    "n": "Autonomy Edifícios Corporativos Fund. Inv. Imob.",
    "p": 0.178,
    "s": "Lajes Corporativas",
-   "preco": 73.24,
-   "vm": 353382047.88
+   "preco": 72.3,
+   "vm": 348846560.1
   },
   {
    "t": "VTLT11",
@@ -1082,16 +1082,16 @@
    "n": "",
    "p": 0.149,
    "s": "Recebíveis (Papel)",
-   "preco": 6.2,
-   "vm": 217134763.2
+   "preco": 6.22,
+   "vm": 217835197.92
   },
   {
    "t": "GRUL11",
    "n": "",
    "p": 0.147,
    "s": "Híbrido/Outros",
-   "preco": 8.24,
-   "vm": 203528000.0
+   "preco": 8.21,
+   "vm": 202787000.0
   },
   {
    "t": "MORE11",
@@ -1112,8 +1112,8 @@
    "n": "Rio Bravo Credito Imob High Grade",
    "p": 0.136,
    "s": "Recebíveis (Papel)",
-   "preco": 62.03,
-   "vm": 134478372.71
+   "preco": 61.55,
+   "vm": 133437753.35
   },
   {
    "t": "MORC11",
@@ -1135,8 +1135,8 @@
    "n": "Hsi Ativos Financeiros Fundo De Investimento Imobi",
    "p": 0.133,
    "s": "Recebíveis (Papel)",
-   "preco": 77.08,
-   "vm": 194731828.8
+   "preco": 77.73,
+   "vm": 196373962.8
   },
   {
    "t": "RBFF11",
@@ -1166,16 +1166,16 @@
    "n": "",
    "p": 0.122,
    "s": "Híbrido/Outros",
-   "preco": 8.02,
-   "vm": 177539542.0
+   "preco": 7.98,
+   "vm": 176654058.0
   },
   {
    "t": "VCRI11",
    "n": "Fii Vinci Cr",
    "p": 0.117,
    "s": "Recebíveis (Papel)",
-   "preco": 7.46,
-   "vm": 153255725.98
+   "preco": 7.47,
+   "vm": 153461162.61
   },
   {
    "t": "SPXS11",
@@ -1204,23 +1204,23 @@
    "n": "Bluemacaw Logística",
    "p": 0.1,
    "s": "Fundos de Fundos",
-   "preco": 32.15,
-   "vm": 149336750.0
+   "preco": 32.54,
+   "vm": 151148300.0
   },
   {
    "t": "BTRA11",
    "n": "Fdo Inv Imob Btg Pactual Terras Agrícolas",
    "p": 0.099,
    "s": "Agro",
-   "preco": 71.85
+   "preco": 71.0
   },
   {
    "t": "ARRI11",
    "n": "Fdo. Inv. Imob. Átrio Reit Recebíveis Imobiliários",
    "p": 0.098,
    "s": "Recebíveis (Papel)",
-   "preco": 4.69,
-   "vm": 97209503.37
+   "preco": 4.58,
+   "vm": 94929536.34
   },
   {
    "t": "XPPR11",
@@ -1234,32 +1234,32 @@
    "n": "Fii Kivo",
    "p": 0.094,
    "s": "Híbrido/Outros",
-   "preco": 57.83,
-   "vm": 128540822.88
+   "preco": 58.2,
+   "vm": 129363235.2
   },
   {
    "t": "HOFC11",
    "n": "Rb Capital Office Income Fdo Inv. Imob.",
    "p": 0.091,
    "s": "Híbrido/Outros",
-   "preco": 36.69,
-   "vm": 132051529.35
+   "preco": 37.0,
+   "vm": 133167255.0
   },
   {
    "t": "JPPA11",
    "n": "Jpp Allocation Mogno – Fdo Inv Imob",
    "p": 0.079,
    "s": "Híbrido/Outros",
-   "preco": 81.79,
-   "vm": 73942249.5
+   "preco": 77.98,
+   "vm": 70497819.0
   },
   {
    "t": "PMIS11",
    "n": "",
    "p": 0.079,
    "s": "Híbrido/Outros",
-   "preco": 8.0,
-   "vm": 118425936.0
+   "preco": 8.06,
+   "vm": 119314130.52
   },
   {
    "t": "ZAVI11",
@@ -1282,16 +1282,16 @@
    "n": "SP Downtown",
    "p": 0.068,
    "s": "Híbrido/Outros",
-   "preco": 34.77,
-   "vm": 62516460.0
+   "preco": 34.7,
+   "vm": 62390600.0
   },
   {
    "t": "IBCR11",
    "n": "Fdo De Inv Imobiliário De Cri Integral Brei",
    "p": 0.064,
    "s": "Híbrido/Outros",
-   "preco": 46.8,
-   "vm": 44854196.4
+   "preco": 46.97,
+   "vm": 45017128.31
   },
   {
    "t": "RELG11",
@@ -1306,8 +1306,8 @@
    "n": "Brazilian Graveyard and Death Care",
    "p": 0.057,
    "s": "Híbrido/Outros",
-   "preco": 3.94,
-   "vm": 28372830.44
+   "preco": 3.93,
+   "vm": 28300818.18
   },
   {
    "t": "VIFI11",
@@ -1321,16 +1321,16 @@
    "n": "Cenesp",
    "p": 0.043,
    "s": "Híbrido/Outros",
-   "preco": 1.58,
-   "vm": 53933023.5
+   "preco": 1.6,
+   "vm": 54615720.0
   },
   {
    "t": "VIUR11",
    "n": "Vinci Imóveis Urbanos",
    "p": 0.037,
    "s": "Híbrido/Outros",
-   "preco": 2.43,
-   "vm": 65479314.6
+   "preco": 2.53,
+   "vm": 68173936.6
   },
   {
    "t": "TORD11",
@@ -1367,8 +1367,8 @@
     "perf_12m_pct": 24.9,
     "cf_pvpa": "0,51",
     "cf_dy12m": "11,16%",
-    "preco_atual": 45.76,
-    "pot_atual": 58
+    "preco_atual": 46.09,
+    "pot_atual": 57
    },
    {
     "ticker": "JSRE11",
@@ -1389,8 +1389,8 @@
     "perf_12m_pct": 7.7,
     "cf_pvpa": "0,60",
     "cf_dy12m": "9,37%",
-    "preco_atual": 69.1,
-    "pot_atual": 37
+    "preco_atual": 71.41,
+    "pot_atual": 32
    },
    {
     "ticker": "HGRE11",
@@ -1411,8 +1411,8 @@
     "perf_12m_pct": 30.1,
     "cf_pvpa": "0,88",
     "cf_dy12m": "9,63%",
-    "preco_atual": 129.0,
-    "pot_atual": 2
+    "preco_atual": 130.6,
+    "pot_atual": 1
    },
    {
     "ticker": "TEPP11",
@@ -1433,7 +1433,7 @@
     "perf_12m_pct": 16,
     "cf_pvpa": "0,90",
     "cf_dy12m": "12,56%",
-    "preco_atual": 7.79,
+    "preco_atual": 7.84,
     "pot_atual": 26
    },
    {
@@ -1455,8 +1455,8 @@
     "perf_12m_pct": 8,
     "cf_pvpa": "0,68",
     "cf_dy12m": "7,40%",
-    "preco_atual": 76.11,
-    "pot_atual": 32
+    "preco_atual": 77.29,
+    "pot_atual": 30
    },
    {
     "ticker": "BRCO11",
@@ -1477,7 +1477,7 @@
     "perf_12m_pct": 19.2,
     "cf_pvpa": "1,00",
     "cf_dy12m": "9,27%",
-    "preco_atual": 113.96,
+    "preco_atual": 114.0,
     "pot_atual": 16
    },
    {
@@ -1499,8 +1499,8 @@
     "perf_12m_pct": 13.7,
     "cf_pvpa": "1,00",
     "cf_dy12m": "9,23%",
-    "preco_atual": 104.32,
-    "pot_atual": 6
+    "preco_atual": 104.8,
+    "pot_atual": 5
    },
    {
     "ticker": "HGLG11",
@@ -1521,8 +1521,8 @@
     "perf_12m_pct": 6.4,
     "cf_pvpa": "0,93",
     "cf_dy12m": "8,51%",
-    "preco_atual": 157.04,
-    "pot_atual": 8
+    "preco_atual": 159.66,
+    "pot_atual": 6
    },
    {
     "ticker": "LVBI11",
@@ -1543,8 +1543,8 @@
     "perf_12m_pct": 18.4,
     "cf_pvpa": "0,89",
     "cf_dy12m": "8,43%",
-    "preco_atual": 107.05,
-    "pot_atual": 16
+    "preco_atual": 107.49,
+    "pot_atual": 15
    },
    {
     "ticker": "VILG11",
@@ -1565,8 +1565,8 @@
     "perf_12m_pct": 30.9,
     "cf_pvpa": "0,85",
     "cf_dy12m": "9,40%",
-    "preco_atual": 102.0,
-    "pot_atual": 6
+    "preco_atual": 103.02,
+    "pot_atual": 5
    },
    {
     "ticker": "HGBS11",
@@ -1587,8 +1587,8 @@
     "perf_12m_pct": 16.4,
     "cf_pvpa": "0,97",
     "cf_dy12m": "9,43%",
-    "preco_atual": 19.42,
-    "pot_atual": 14
+    "preco_atual": 19.6,
+    "pot_atual": 13
    },
    {
     "ticker": "HSML11",
@@ -1609,7 +1609,7 @@
     "perf_12m_pct": 22.5,
     "cf_pvpa": "0,87",
     "cf_dy12m": "9,09%",
-    "preco_atual": 94.38,
+    "preco_atual": 94.5,
     "pot_atual": 12
    },
    {
@@ -1631,7 +1631,7 @@
     "perf_12m_pct": 18.1,
     "cf_pvpa": "0,92",
     "cf_dy12m": "10,15%",
-    "preco_atual": 109.86,
+    "preco_atual": 110.0,
     "pot_atual": 13
    },
    {
@@ -1653,8 +1653,8 @@
     "perf_12m_pct": 19.7,
     "cf_pvpa": "0,92",
     "cf_dy12m": "9,23%",
-    "preco_atual": 113.55,
-    "pot_atual": 21
+    "preco_atual": 114.2,
+    "pot_atual": 20
    },
    {
     "ticker": "PCIP11",
@@ -1675,8 +1675,8 @@
     "perf_12m_pct": 13.2,
     "cf_pvpa": "0,89",
     "cf_dy12m": "13,29%",
-    "preco_atual": 81.28,
-    "pot_atual": 15
+    "preco_atual": 82.36,
+    "pot_atual": 13
    },
    {
     "ticker": "HABT11",
@@ -1697,8 +1697,8 @@
     "perf_12m_pct": 8.7,
     "cf_pvpa": "0,77",
     "cf_dy12m": "16,40%",
-    "preco_atual": 70.48,
-    "pot_atual": 36
+    "preco_atual": 70.7,
+    "pot_atual": 35
    },
    {
     "ticker": "HGCR11",
@@ -1719,8 +1719,8 @@
     "perf_12m_pct": 18.1,
     "cf_pvpa": "0,98",
     "cf_dy12m": "12,51%",
-    "preco_atual": 98.13,
-    "pot_atual": 1
+    "preco_atual": 98.69,
+    "pot_atual": 0
    },
    {
     "ticker": "KNCR11",
@@ -1741,7 +1741,7 @@
     "perf_12m_pct": 19.8,
     "cf_pvpa": "1,04",
     "cf_dy12m": "13,70%",
-    "preco_atual": 105.7,
+    "preco_atual": 105.55,
     "pot_atual": -3
    },
    {
@@ -1763,7 +1763,7 @@
     "perf_12m_pct": 16,
     "cf_pvpa": "0,99",
     "cf_dy12m": "10,18%",
-    "preco_atual": 93.89,
+    "preco_atual": 93.2,
     "pot_atual": 0
    },
    {
@@ -1785,7 +1785,7 @@
     "perf_12m_pct": 20.1,
     "cf_pvpa": "1,04",
     "cf_dy12m": "12,34%",
-    "preco_atual": 9.11,
+    "preco_atual": 9.18,
     "pot_atual": -4
    },
    {
@@ -1807,8 +1807,8 @@
     "perf_12m_pct": 30.6,
     "cf_pvpa": "1,00",
     "cf_dy12m": "12,40%",
-    "preco_atual": 94.3,
-    "pot_atual": 1
+    "preco_atual": 95.8,
+    "pot_atual": -1
    },
    {
     "ticker": "MXRF11",
@@ -1829,7 +1829,7 @@
     "perf_12m_pct": 20.9,
     "cf_pvpa": "1,06",
     "cf_dy12m": "12,01%",
-    "preco_atual": 9.48,
+    "preco_atual": 9.44,
     "pot_atual": -1
    },
    {
@@ -1851,8 +1851,8 @@
     "perf_12m_pct": 12.4,
     "cf_pvpa": "0,89",
     "cf_dy12m": "11,85%",
-    "preco_atual": 74.86,
-    "pot_atual": 24
+    "preco_atual": 76.0,
+    "pot_atual": 22
    },
    {
     "ticker": "RECR11",
@@ -1873,8 +1873,8 @@
     "perf_12m_pct": 12.3,
     "cf_pvpa": "0,91",
     "cf_dy12m": "13,11%",
-    "preco_atual": 76.49,
-    "pot_atual": 16
+    "preco_atual": 77.77,
+    "pot_atual": 14
    },
    {
     "ticker": "VGIR11",
@@ -1895,7 +1895,7 @@
     "perf_12m_pct": 20.2,
     "cf_pvpa": "0,99",
     "cf_dy12m": "15,77%",
-    "preco_atual": 9.58,
+    "preco_atual": 9.59,
     "pot_atual": 2
    },
    {
@@ -1917,8 +1917,8 @@
     "perf_12m_pct": 19.4,
     "cf_pvpa": "0,95",
     "cf_dy12m": "12,95%",
-    "preco_atual": 81.45,
-    "pot_atual": 9
+    "preco_atual": 82.4,
+    "pot_atual": 8
    },
    {
     "ticker": "CPTS11",
@@ -1939,8 +1939,8 @@
     "perf_12m_pct": 19.6,
     "cf_pvpa": "0,86",
     "cf_dy12m": "14,01%",
-    "preco_atual": 7.71,
-    "pot_atual": 17
+    "preco_atual": 7.77,
+    "pot_atual": 16
    },
    {
     "ticker": "KFOF11",
@@ -1961,7 +1961,7 @@
     "perf_12m_pct": 19.5,
     "cf_pvpa": "0,87",
     "cf_dy12m": "11,65%",
-    "preco_atual": 83.09,
+    "preco_atual": 83.54,
     "pot_atual": 12
    },
    {
@@ -1983,8 +1983,8 @@
     "perf_12m_pct": 23.2,
     "cf_pvpa": "0,85",
     "cf_dy12m": "12,99%",
-    "preco_atual": 7.79,
-    "pot_atual": 26
+    "preco_atual": 7.72,
+    "pot_atual": 27
    },
    {
     "ticker": "HFOF11",
@@ -2005,8 +2005,8 @@
     "perf_12m_pct": 26.6,
     "cf_pvpa": "0,84",
     "cf_dy12m": "10,28%",
-    "preco_atual": 6.69,
-    "pot_atual": 18
+    "preco_atual": 6.67,
+    "pot_atual": 19
    },
    {
     "ticker": "XPSF11",
@@ -2027,8 +2027,8 @@
     "perf_12m_pct": 22.6,
     "cf_pvpa": "0,82",
     "cf_dy12m": "12,12%",
-    "preco_atual": 6.6,
-    "pot_atual": 22
+    "preco_atual": 6.67,
+    "pot_atual": 21
    },
    {
     "ticker": "HGRU11",
@@ -2049,7 +2049,7 @@
     "perf_12m_pct": 21.7,
     "cf_pvpa": "1,01",
     "cf_dy12m": "9,60%",
-    "preco_atual": 124.9,
+    "preco_atual": 125.47,
     "pot_atual": 10
    },
    {
@@ -2071,7 +2071,7 @@
     "perf_12m_pct": 28.6,
     "cf_pvpa": "0,99",
     "cf_dy12m": "7,66%",
-    "preco_atual": 162.7,
+    "preco_atual": 162.3,
     "pot_atual": 6
    },
    {
@@ -2093,7 +2093,7 @@
     "perf_12m_pct": 15.3,
     "cf_pvpa": "0,63",
     "cf_dy12m": "9,38%",
-    "preco_atual": 52.8,
+    "preco_atual": 52.97,
     "pot_atual": 40
    },
    {
@@ -2115,7 +2115,7 @@
     "perf_12m_pct": -12.8,
     "cf_pvpa": "0,54",
     "cf_dy12m": "18,19%",
-    "preco_atual": 51.96,
+    "preco_atual": 51.95,
     "pot_atual": 113
    },
    {
@@ -2155,8 +2155,8 @@
     "perf_1m_pct": 1,
     "perf_ano_pct": 2.3,
     "perf_12m_pct": 12.5,
-    "preco_atual": 91.03,
-    "pot_atual": 13
+    "preco_atual": 91.6,
+    "pot_atual": 12
    },
    {
     "ticker": "RZAG11",
@@ -2175,8 +2175,8 @@
     "perf_1m_pct": 1.2,
     "perf_ano_pct": 1.8,
     "perf_12m_pct": 22.1,
-    "preco_atual": 8.77,
-    "pot_atual": 10
+    "preco_atual": 8.86,
+    "pot_atual": 9
    },
    {
     "ticker": "VGIA11",
@@ -2195,8 +2195,8 @@
     "perf_1m_pct": 1.1,
     "perf_ano_pct": 6.6,
     "perf_12m_pct": 33,
-    "preco_atual": 9.07,
-    "pot_atual": 7
+    "preco_atual": 9.1,
+    "pot_atual": 6
    },
    {
     "ticker": "XPCA11",
@@ -2215,7 +2215,7 @@
     "perf_1m_pct": -1.6,
     "perf_ano_pct": 3.1,
     "perf_12m_pct": 26.1,
-    "preco_atual": 7.78,
+    "preco_atual": 7.79,
     "pot_atual": 24
    },
    {
@@ -2235,8 +2235,8 @@
     "perf_1m_pct": null,
     "perf_ano_pct": null,
     "perf_12m_pct": null,
-    "preco_atual": 195.0,
-    "pot_atual": 39
+    "preco_atual": 200.25,
+    "pot_atual": 35
    }
   ]
  },
@@ -3727,7 +3727,7 @@
    "pvpa": "0,89",
    "y1m": "0,90%",
    "y12m": "12,05%",
-   "preco": 142.0
+   "preco": 141.43
   },
   {
    "t": "HGBS11",
@@ -3735,7 +3735,7 @@
    "pvpa": "0,97",
    "y1m": "0,85%",
    "y12m": "9,43%",
-   "preco": 19.42
+   "preco": 19.6
   },
   {
    "t": "RCRB11",
@@ -3743,7 +3743,7 @@
    "pvpa": "0,71",
    "y1m": "0,76%",
    "y12m": "7,66%",
-   "preco": 146.49
+   "preco": 151.97
   },
   {
    "t": "HGLG11",
@@ -3751,7 +3751,7 @@
    "pvpa": "0,93",
    "y1m": "0,71%",
    "y12m": "8,51%",
-   "preco": 157.04
+   "preco": 159.66
   },
   {
    "t": "HGRE11",
@@ -3759,7 +3759,7 @@
    "pvpa": "0,88",
    "y1m": "0,65%",
    "y12m": "9,63%",
-   "preco": 129.0
+   "preco": 130.6
   },
   {
    "t": "KNRI11",
@@ -3767,7 +3767,7 @@
    "pvpa": "0,99",
    "y1m": "0,68%",
    "y12m": "7,66%",
-   "preco": 162.7
+   "preco": 162.3
   },
   {
    "t": "HGCR11",
@@ -3775,7 +3775,7 @@
    "pvpa": "0,98",
    "y1m": "0,99%",
    "y12m": "12,51%",
-   "preco": 98.13
+   "preco": 98.69
   },
   {
    "t": "BTCI11",
@@ -3783,7 +3783,7 @@
    "pvpa": "0,91",
    "y1m": "1,03%",
    "y12m": "12,55%",
-   "preco": 9.07
+   "preco": 9.2
   },
   {
    "t": "VRTA11",
@@ -3791,7 +3791,7 @@
    "pvpa": "0,91",
    "y1m": "1,10%",
    "y12m": "13,25%",
-   "preco": 76.23
+   "preco": 75.67
   },
   {
    "t": "MXRF11",
@@ -3799,7 +3799,7 @@
    "pvpa": "1,06",
    "y1m": "1,01%",
    "y12m": "12,01%",
-   "preco": 9.48
+   "preco": 9.44
   },
   {
    "t": "TVRI11",
@@ -3807,7 +3807,7 @@
    "pvpa": "0,88",
    "y1m": "1,15%",
    "y12m": "13,70%",
-   "preco": 87.9
+   "preco": 87.44
   },
   {
    "t": "KNCR11",
@@ -3815,7 +3815,7 @@
    "pvpa": "1,04",
    "y1m": "1,03%",
    "y12m": "13,70%",
-   "preco": 105.7
+   "preco": 105.55
   },
   {
    "t": "BTLG11",
@@ -3823,7 +3823,7 @@
    "pvpa": "1,00",
    "y1m": "0,79%",
    "y12m": "9,23%",
-   "preco": 104.32
+   "preco": 104.8
   },
   {
    "t": "RBVA11",
@@ -3831,7 +3831,7 @@
    "pvpa": "0,90",
    "y1m": "0,94%",
    "y12m": "11,25%",
-   "preco": 9.07
+   "preco": 9.05
   },
   {
    "t": "PORD11",
@@ -3839,7 +3839,7 @@
    "pvpa": "0,87",
    "y1m": "1,18%",
    "y12m": "14,19%",
-   "preco": 8.58
+   "preco": 8.6
   },
   {
    "t": "MFII11",
@@ -3847,7 +3847,7 @@
    "pvpa": "0,55",
    "y1m": "1,69%",
    "y12m": "23,49%",
-   "preco": 37.46
+   "preco": 38.0
   },
   {
    "t": "HGRU11",
@@ -3855,7 +3855,7 @@
    "pvpa": "1,01",
    "y1m": "0,73%",
    "y12m": "9,60%",
-   "preco": 124.9
+   "preco": 125.47
   },
   {
    "t": "CPTS11",
@@ -3863,7 +3863,7 @@
    "pvpa": "0,86",
    "y1m": "1,18%",
    "y12m": "14,01%",
-   "preco": 7.71
+   "preco": 7.77
   },
   {
    "t": "RZAT11",
@@ -3871,7 +3871,7 @@
    "pvpa": "0,93",
    "y1m": "1,76%",
    "y12m": "13,31%",
-   "preco": 85.34
+   "preco": 85.98
   },
   {
    "t": "BCIA11",
@@ -3879,7 +3879,7 @@
    "pvpa": "0,88",
    "y1m": "0,94%",
    "y12m": "11,17%",
-   "preco": 89.83
+   "preco": 90.94
   },
   {
    "t": "GGRC11",
@@ -3887,7 +3887,7 @@
    "pvpa": "0,91",
    "y1m": "0,99%",
    "y12m": "11,94%",
-   "preco": 9.18
+   "preco": 9.31
   },
   {
    "t": "KNHY11",
@@ -3895,7 +3895,7 @@
    "pvpa": "1,01",
    "y1m": "1,15%",
    "y12m": "13,34%",
-   "preco": 100.89
+   "preco": 99.71
   },
   {
    "t": "KNIP11",
@@ -3903,7 +3903,7 @@
    "pvpa": "0,99",
    "y1m": "1,18%",
    "y12m": "10,18%",
-   "preco": 93.89
+   "preco": 93.2
   },
   {
    "t": "BRCR11",
@@ -3911,7 +3911,7 @@
    "pvpa": "0,51",
    "y1m": "0,93%",
    "y12m": "11,16%",
-   "preco": 45.76
+   "preco": 46.09
   },
   {
    "t": "BCRI11",
@@ -3919,7 +3919,7 @@
    "pvpa": "0,72",
    "y1m": "1,14%",
    "y12m": "16,07%",
-   "preco": 58.75
+   "preco": 58.4
   },
   {
    "t": "OUJP11",
@@ -3927,7 +3927,7 @@
    "pvpa": "0,87",
    "y1m": "1,37%",
    "y12m": "15,04%",
-   "preco": 70.7
+   "preco": 71.2
   },
   {
    "t": "VGIR11",
@@ -3935,7 +3935,7 @@
    "pvpa": "0,99",
    "y1m": "1,24%",
    "y12m": "15,77%",
-   "preco": 9.58
+   "preco": 9.59
   },
   {
    "t": "RBRY11",
@@ -3943,7 +3943,7 @@
    "pvpa": "0,93",
    "y1m": "1,07%",
    "y12m": "14,90%",
-   "preco": 86.62
+   "preco": 89.16
   },
   {
    "t": "ALZR11",
@@ -3951,7 +3951,7 @@
    "pvpa": "0,98",
    "y1m": "0,80%",
    "y12m": "9,74%",
-   "preco": 10.39
+   "preco": 10.45
   },
   {
    "t": "RECR11",
@@ -3959,7 +3959,7 @@
    "pvpa": "0,91",
    "y1m": "1,30%",
    "y12m": "13,11%",
-   "preco": 76.49
+   "preco": 77.77
   },
   {
    "t": "VISC11",
@@ -3967,7 +3967,7 @@
    "pvpa": "0,92",
    "y1m": "0,79%",
    "y12m": "9,23%",
-   "preco": 113.55
+   "preco": 114.2
   },
   {
    "t": "PMLL11",
@@ -3975,7 +3975,7 @@
    "pvpa": "0,92",
    "y1m": "0,93%",
    "y12m": "10,15%",
-   "preco": 109.86
+   "preco": 110.0
   },
   {
    "t": "TGAR11",
@@ -3983,7 +3983,7 @@
    "pvpa": "0,54",
    "y1m": "1,20%",
    "y12m": "18,19%",
-   "preco": 51.96
+   "preco": 51.95
   },
   {
    "t": "TRBL11",
@@ -3991,7 +3991,7 @@
    "pvpa": "0,81",
    "y1m": "1,30%",
    "y12m": "11,92%",
-   "preco": 54.08
+   "preco": 53.58
   },
   {
    "t": "JSRE11",
@@ -3999,7 +3999,7 @@
    "pvpa": "0,60",
    "y1m": "0,78%",
    "y12m": "9,37%",
-   "preco": 69.1
+   "preco": 71.41
   },
   {
    "t": "SNEL11",
@@ -4015,7 +4015,7 @@
    "pvpa": "0,97",
    "y1m": "0,86%",
    "y12m": "10,34%",
-   "preco": 104.7
+   "preco": 104.61
   },
   {
    "t": "BRCO11",
@@ -4023,7 +4023,7 @@
    "pvpa": "1,00",
    "y1m": "0,82%",
    "y12m": "9,27%",
-   "preco": 113.96
+   "preco": 114.0
   },
   {
    "t": "LVBI11",
@@ -4031,7 +4031,7 @@
    "pvpa": "0,89",
    "y1m": "0,70%",
    "y12m": "8,43%",
-   "preco": 107.05
+   "preco": 107.49
   },
   {
    "t": "MCRE11",
@@ -4039,7 +4039,7 @@
    "pvpa": "0,90",
    "y1m": "1,20%",
    "y12m": "14,35%",
-   "preco": 8.62
+   "preco": 8.8
   },
   {
    "t": "XPLG11",
@@ -4047,7 +4047,7 @@
    "pvpa": "0,92",
    "y1m": "0,85%",
    "y12m": "10,17%",
-   "preco": 100.67
+   "preco": 101.0
   },
   {
    "t": "HABT11",
@@ -4055,7 +4055,7 @@
    "pvpa": "0,77",
    "y1m": "1,30%",
    "y12m": "16,40%",
-   "preco": 70.48
+   "preco": 70.7
   },
   {
    "t": "MCCI11",
@@ -4063,7 +4063,7 @@
    "pvpa": "1,00",
    "y1m": "1,05%",
    "y12m": "12,40%",
-   "preco": 94.3
+   "preco": 95.8
   },
   {
    "t": "PCIP11",
@@ -4071,7 +4071,7 @@
    "pvpa": "0,89",
    "y1m": "1,07%",
    "y12m": "13,29%",
-   "preco": 81.28
+   "preco": 82.36
   },
   {
    "t": "TRXF11",
@@ -4079,7 +4079,7 @@
    "pvpa": "0,93",
    "y1m": "1,02%",
    "y12m": "12,89%",
-   "preco": 71.89
+   "preco": 71.9
   },
   {
    "t": "AFHI11",
@@ -4087,7 +4087,7 @@
    "pvpa": "1,01",
    "y1m": "1,07%",
    "y12m": "12,58%",
-   "preco": 96.03
+   "preco": 96.93
   },
   {
    "t": "RBRR11",
@@ -4095,7 +4095,7 @@
    "pvpa": "0,89",
    "y1m": "1,08%",
    "y12m": "11,85%",
-   "preco": 74.86
+   "preco": 76.0
   },
   {
    "t": "RZTR11",
@@ -4103,7 +4103,7 @@
    "pvpa": "0,98",
    "y1m": "1,12%",
    "y12m": "13,51%",
-   "preco": 79.15
+   "preco": 79.9
   },
   {
    "t": "RZAK11",
@@ -4111,7 +4111,7 @@
    "pvpa": "0,94",
    "y1m": "1,32%",
    "y12m": "16,05%",
-   "preco": 79.87
+   "preco": 79.75
   },
   {
    "t": "VILG11",
@@ -4119,7 +4119,7 @@
    "pvpa": "0,85",
    "y1m": "0,86%",
    "y12m": "9,40%",
-   "preco": 102.0
+   "preco": 103.02
   },
   {
    "t": "KNSC11",
@@ -4127,7 +4127,7 @@
    "pvpa": "1,04",
    "y1m": "1,09%",
    "y12m": "12,34%",
-   "preco": 9.11
+   "preco": 9.18
   },
   {
    "t": "VGIP11",
@@ -4135,7 +4135,7 @@
    "pvpa": "0,88",
    "y1m": "1,34%",
    "y12m": "13,69%",
-   "preco": 77.02
+   "preco": 77.0
   },
   {
    "t": "CYCR11",
@@ -4143,7 +4143,7 @@
    "pvpa": "0,94",
    "y1m": "1,20%",
    "y12m": "14,55%",
-   "preco": 8.67
+   "preco": 8.84
   },
   {
    "t": "XPCI11",
@@ -4151,7 +4151,7 @@
    "pvpa": "0,95",
    "y1m": "1,07%",
    "y12m": "12,95%",
-   "preco": 81.45
+   "preco": 82.4
   },
   {
    "t": "GTWR11",
@@ -4159,7 +4159,7 @@
    "pvpa": "0,82",
    "y1m": "1,09%",
    "y12m": "12,96%",
-   "preco": 81.1
+   "preco": 81.0
   },
   {
    "t": "VCJR11",
@@ -4167,7 +4167,7 @@
    "pvpa": "0,83",
    "y1m": "1,27%",
    "y12m": "13,56%",
-   "preco": 75.5
+   "preco": 76.9
   },
   {
    "t": "LIFE11",
@@ -4175,7 +4175,7 @@
    "pvpa": "0,92",
    "y1m": "1,45%",
    "y12m": "17,45%",
-   "preco": 7.43
+   "preco": 7.6
   },
   {
    "t": "SNCI11",
@@ -4183,7 +4183,7 @@
    "pvpa": "0,91",
    "y1m": "1,14%",
    "y12m": "13,68%",
-   "preco": 85.94
+   "preco": 85.5
   },
   {
    "t": "KNUQ11",
@@ -4191,7 +4191,7 @@
    "pvpa": "1,03",
    "y1m": "1,10%",
    "y12m": "14,69%",
-   "preco": 101.34
+   "preco": 101.88
   },
   {
    "t": "HSAF11",
@@ -4199,7 +4199,7 @@
    "pvpa": "0,91",
    "y1m": "1,16%",
    "y12m": "13,92%",
-   "preco": 77.08
+   "preco": 77.73
   },
   {
    "t": "RBFM11",
@@ -4207,7 +4207,7 @@
    "pvpa": "0,80",
    "y1m": "1,03%",
    "y12m": "12,81%",
-   "preco": 10.6
+   "preco": 10.81
   },
   {
    "t": "WHGR11",
@@ -4223,7 +4223,7 @@
    "pvpa": "0,88",
    "y1m": "0,94%",
    "y12m": "11,33%",
-   "preco": 89.9
+   "preco": 88.79
   },
   {
    "t": "HSML11",
@@ -4231,7 +4231,7 @@
    "pvpa": "0,87",
    "y1m": "0,79%",
    "y12m": "9,09%",
-   "preco": 94.38
+   "preco": 94.5
   },
   {
    "t": "KFOF11",
@@ -4239,7 +4239,7 @@
    "pvpa": "0,87",
    "y1m": "0,99%",
    "y12m": "11,65%",
-   "preco": 83.09
+   "preco": 83.54
   },
   {
    "t": "MANA11",
@@ -4247,7 +4247,7 @@
    "pvpa": "0,98",
    "y1m": "1,19%",
    "y12m": "14,29%",
-   "preco": 9.26
+   "preco": 9.3
   },
   {
    "t": "GARE11",
@@ -4255,7 +4255,7 @@
    "pvpa": "0,89",
    "y1m": "1,00%",
    "y12m": "11,97%",
-   "preco": 8.72
+   "preco": 8.76
   },
   {
    "t": "TEPP11",
@@ -4263,7 +4263,7 @@
    "pvpa": "0,90",
    "y1m": "1,52%",
    "y12m": "12,56%",
-   "preco": 7.79
+   "preco": 7.84
   },
   {
    "t": "KCRE11",
@@ -4271,7 +4271,7 @@
    "pvpa": "0,98",
    "y1m": "1,18%",
    "y12m": "12,43%",
-   "preco": 8.95
+   "preco": 8.97
   },
   {
    "t": "CPSH11",
@@ -4279,7 +4279,7 @@
    "pvpa": "0,87",
    "y1m": "1,09%",
    "y12m": "13,04%",
-   "preco": 10.09
+   "preco": 10.11
   },
   {
    "t": "BTAL11",
@@ -4287,7 +4287,7 @@
    "pvpa": "0,75",
    "y1m": "1,15%",
    "y12m": "13,17%",
-   "preco": 84.32
+   "preco": 88.05
   },
   {
    "t": "HSLG11",
@@ -4295,7 +4295,7 @@
    "pvpa": "0,82",
    "y1m": "0,81%",
    "y12m": "9,28%",
-   "preco": 83.35
+   "preco": 83.2
   },
   {
    "t": "RBRL11",
@@ -4303,7 +4303,7 @@
    "pvpa": "0,81",
    "y1m": "0,73%",
    "y12m": "10,72%",
-   "preco": 84.8
+   "preco": 84.07
   },
   {
    "t": "BTHF11",
@@ -4311,7 +4311,7 @@
    "pvpa": "0,91",
    "y1m": "1,10%",
    "y12m": "12,53%",
-   "preco": 9.02
+   "preco": 9.12
   },
   {
    "t": "RBRX11",
@@ -4319,7 +4319,7 @@
    "pvpa": "0,85",
    "y1m": "1,08%",
    "y12m": "12,99%",
-   "preco": 7.79
+   "preco": 7.72
   },
   {
    "t": "KNHF11",
@@ -4327,7 +4327,7 @@
    "pvpa": "0,98",
    "y1m": "1,00%",
    "y12m": "12,05%",
-   "preco": 95.85
+   "preco": 96.61
   },
   {
    "t": "HFOF11",
@@ -4335,7 +4335,7 @@
    "pvpa": "0,84",
    "y1m": "0,90%",
    "y12m": "10,28%",
-   "preco": 6.69
+   "preco": 6.67
   },
   {
    "t": "RPRI11",
@@ -4343,7 +4343,7 @@
    "pvpa": "0,79",
    "y1m": "1,12%",
    "y12m": "14,71%",
-   "preco": 80.65
+   "preco": 81.99
   },
   {
    "t": "VGHF11",
@@ -4351,7 +4351,7 @@
    "pvpa": "0,73",
    "y1m": "1,12%",
    "y12m": "15,04%",
-   "preco": 5.79
+   "preco": 5.82
   },
   {
    "t": "SPXS11",
@@ -4367,7 +4367,7 @@
    "pvpa": "0,82",
    "y1m": "1,04%",
    "y12m": "13,16%",
-   "preco": 7.68
+   "preco": 7.97
   },
   {
    "t": "BPML11",
@@ -4375,7 +4375,7 @@
    "pvpa": "0,70",
    "y1m": "1,06%",
    "y12m": "16,31%",
-   "preco": 91.16
+   "preco": 91.0
   },
   {
    "t": "XPIN11",
@@ -4391,7 +4391,7 @@
    "pvpa": "0,81",
    "y1m": "1,31%",
    "y12m": "14,10%",
-   "preco": 67.0
+   "preco": 67.89
   },
   {
    "t": "ICRI11",
@@ -4399,7 +4399,7 @@
    "pvpa": "0,93",
    "y1m": "1,15%",
    "y12m": "12,43%",
-   "preco": 94.37
+   "preco": 95.0
   },
   {
    "t": "CLIN11",
@@ -4407,7 +4407,7 @@
    "pvpa": "0,94",
    "y1m": "1,04%",
    "y12m": "12,97%",
-   "preco": 93.69
+   "preco": 95.0
   },
   {
    "t": "XPSF11",
@@ -4415,7 +4415,7 @@
    "pvpa": "0,82",
    "y1m": "1,06%",
    "y12m": "12,12%",
-   "preco": 6.6
+   "preco": 6.67
   },
   {
    "t": "KIVO11",
@@ -4423,7 +4423,7 @@
    "pvpa": "0,73",
    "y1m": "1,37%",
    "y12m": "18,14%",
-   "preco": 57.83
+   "preco": 58.2
   },
   {
    "t": "SNFF11",
@@ -4439,7 +4439,7 @@
    "pvpa": "0,27",
    "y1m": "4,69%",
    "y12m": "56,61%",
-   "preco": 14.51
+   "preco": 14.6
   },
   {
    "t": "URPR11",
@@ -4447,7 +4447,7 @@
    "pvpa": "0,30",
    "y1m": "1,17%",
    "y12m": "17,51%",
-   "preco": 21.98
+   "preco": 21.51
   },
   {
    "t": "KISU11",
@@ -4463,7 +4463,7 @@
    "pvpa": "0,63",
    "y1m": "0,78%",
    "y12m": "9,38%",
-   "preco": 52.8
+   "preco": 52.97
   },
   {
    "t": "PSEC11",
@@ -4471,7 +4471,7 @@
    "pvpa": "0,79",
    "y1m": "0,93%",
    "y12m": "13,54%",
-   "preco": 53.45
+   "preco": 54.5
   },
   {
    "t": "PVBI11",
@@ -4479,7 +4479,7 @@
    "pvpa": "0,68",
    "y1m": "0,54%",
    "y12m": "7,40%",
-   "preco": 76.11
+   "preco": 77.29
   },
   {
    "t": "ITRI11",
@@ -4487,7 +4487,7 @@
    "pvpa": "0,88",
    "y1m": "1,01%",
    "y12m": "12,52%",
-   "preco": 82.27
+   "preco": 82.3
   },
   {
    "t": "KORE11",
@@ -4495,7 +4495,7 @@
    "pvpa": "0,64",
    "y1m": "0,89%",
    "y12m": "18,31%",
-   "preco": 73.13
+   "preco": 74.8
   },
   {
    "t": "VRTM11",
@@ -4503,7 +4503,7 @@
    "pvpa": "0,76",
    "y1m": "1,24%",
    "y12m": "14,94%",
-   "preco": 6.85
+   "preco": 6.92
   },
   {
    "t": "VGRI11",
@@ -4511,7 +4511,7 @@
    "pvpa": "0,72",
    "y1m": "1,19%",
    "y12m": "21,43%",
-   "preco": 6.2
+   "preco": 6.22
   },
   {
    "t": "AZPL11",
@@ -4519,7 +4519,7 @@
    "pvpa": "0,89",
    "y1m": "0,98%",
    "y12m": "12,19%",
-   "preco": 7.25
+   "preco": 7.26
   },
   {
    "t": "HCTR11",
@@ -4527,7 +4527,7 @@
    "pvpa": "0,16",
    "y1m": "1,56%",
    "y12m": "21,23%",
-   "preco": 13.72
+   "preco": 13.54
   },
   {
    "t": "BBIG11",
@@ -4543,7 +4543,7 @@
    "pvpa": "0,47",
    "y1m": "1,03%",
    "y12m": "20,00%",
-   "preco": 41.0
+   "preco": 40.26
   },
   {
    "t": "VINO11",
@@ -4551,7 +4551,7 @@
    "pvpa": "0,49",
    "y1m": "0,82%",
    "y12m": "12,35%",
-   "preco": 4.66
+   "preco": 4.71
   },
   {
    "t": "TOPP11",
@@ -4559,7 +4559,7 @@
    "pvpa": "0,59",
    "y1m": "1,34%",
    "y12m": "16,03%",
-   "preco": 72.0
+   "preco": 72.32
   },
   {
    "t": "DEVA11",
@@ -4567,7 +4567,7 @@
    "pvpa": "0,19",
    "y1m": "1,64%",
    "y12m": "23,44%",
-   "preco": 18.19
+   "preco": 18.0
   },
   {
    "t": "BROF11",
@@ -4575,7 +4575,7 @@
    "pvpa": "0,49",
    "y1m": "1,03%",
    "y12m": "11,87%",
-   "preco": 62.03
+   "preco": 62.57
   }
  ],
  "casas": {
@@ -5039,7 +5039,7 @@
    "n_casas": 4,
    "pvpa": "1,00",
    "dy12m": "9,27%",
-   "preco": 113.96
+   "preco": 114.0
   },
   {
    "t": "KNCR11",
@@ -5054,7 +5054,7 @@
    "n_casas": 4,
    "pvpa": "1,04",
    "dy12m": "13,70%",
-   "preco": 105.7
+   "preco": 105.55
   },
   {
    "t": "MCCI11",
@@ -5069,7 +5069,7 @@
    "n_casas": 4,
    "pvpa": "1,00",
    "dy12m": "12,40%",
-   "preco": 94.3
+   "preco": 95.8
   },
   {
    "t": "PVBI11",
@@ -5083,7 +5083,7 @@
    "n_casas": 3,
    "pvpa": "0,68",
    "dy12m": "7,40%",
-   "preco": 76.11
+   "preco": 77.29
   },
   {
    "t": "BTLG11",
@@ -5096,7 +5096,7 @@
    "n_casas": 2,
    "pvpa": "1,00",
    "dy12m": "9,23%",
-   "preco": 104.32
+   "preco": 104.8
   },
   {
    "t": "HGBS11",
@@ -5109,7 +5109,7 @@
    "n_casas": 2,
    "pvpa": "0,97",
    "dy12m": "9,43%",
-   "preco": 19.42
+   "preco": 19.6
   },
   {
    "t": "HSML11",
@@ -5122,7 +5122,7 @@
    "n_casas": 2,
    "pvpa": "0,87",
    "dy12m": "9,09%",
-   "preco": 94.38
+   "preco": 94.5
   },
   {
    "t": "KNIP11",
@@ -5135,7 +5135,7 @@
    "n_casas": 2,
    "pvpa": "0,99",
    "dy12m": "10,18%",
-   "preco": 93.89
+   "preco": 93.2
   },
   {
    "t": "PCIP11",
@@ -5148,7 +5148,7 @@
    "n_casas": 2,
    "pvpa": "0,89",
    "dy12m": "13,29%",
-   "preco": 81.28
+   "preco": 82.36
   },
   {
    "t": "RBRR11",
@@ -5161,7 +5161,7 @@
    "n_casas": 2,
    "pvpa": "0,89",
    "dy12m": "11,85%",
-   "preco": 74.86
+   "preco": 76.0
   },
   {
    "t": "TRXF11",
@@ -5174,7 +5174,7 @@
    "n_casas": 2,
    "pvpa": "0,93",
    "dy12m": "12,89%",
-   "preco": 71.89
+   "preco": 71.9
   },
   {
    "t": "XPML11",
@@ -5187,7 +5187,7 @@
    "n_casas": 2,
    "pvpa": "0,97",
    "dy12m": "10,34%",
-   "preco": 104.7
+   "preco": 104.61
   },
   {
    "t": "BRCR11",
@@ -5199,7 +5199,7 @@
    "n_casas": 1,
    "pvpa": "0,51",
    "dy12m": "11,16%",
-   "preco": 45.76
+   "preco": 46.09
   },
   {
    "t": "BTCI11",
@@ -5211,7 +5211,7 @@
    "n_casas": 1,
    "pvpa": "0,91",
    "dy12m": "12,55%",
-   "preco": 9.07
+   "preco": 9.2
   },
   {
    "t": "CPTS11",
@@ -5223,7 +5223,7 @@
    "n_casas": 1,
    "pvpa": "0,86",
    "dy12m": "14,01%",
-   "preco": 7.71
+   "preco": 7.77
   },
   {
    "t": "GZIT11",
@@ -5235,7 +5235,7 @@
    "n_casas": 1,
    "pvpa": "0,47",
    "dy12m": "20,00%",
-   "preco": 41.0
+   "preco": 40.26
   },
   {
    "t": "HGCR11",
@@ -5247,7 +5247,7 @@
    "n_casas": 1,
    "pvpa": "0,98",
    "dy12m": "12,51%",
-   "preco": 98.13
+   "preco": 98.69
   },
   {
    "t": "HGLG11",
@@ -5259,7 +5259,7 @@
    "n_casas": 1,
    "pvpa": "0,93",
    "dy12m": "8,51%",
-   "preco": 157.04
+   "preco": 159.66
   },
   {
    "t": "JSAF11",
@@ -5271,7 +5271,7 @@
    "n_casas": 1,
    "pvpa": "0,82",
    "dy12m": "13,16%",
-   "preco": 7.68
+   "preco": 7.97
   },
   {
    "t": "JSRE11",
@@ -5283,7 +5283,7 @@
    "n_casas": 1,
    "pvpa": "0,60",
    "dy12m": "9,37%",
-   "preco": 69.1
+   "preco": 71.41
   },
   {
    "t": "KNHY11",
@@ -5295,7 +5295,7 @@
    "n_casas": 1,
    "pvpa": "1,01",
    "dy12m": "13,34%",
-   "preco": 100.89
+   "preco": 99.71
   },
   {
    "t": "KNRI11",
@@ -5307,7 +5307,7 @@
    "n_casas": 1,
    "pvpa": "0,99",
    "dy12m": "7,66%",
-   "preco": 162.7
+   "preco": 162.3
   },
   {
    "t": "LVBI11",
@@ -5319,7 +5319,7 @@
    "n_casas": 1,
    "pvpa": "0,89",
    "dy12m": "8,43%",
-   "preco": 107.05
+   "preco": 107.49
   },
   {
    "t": "RBRX11",
@@ -5331,7 +5331,7 @@
    "n_casas": 1,
    "pvpa": "0,85",
    "dy12m": "12,99%",
-   "preco": 7.79
+   "preco": 7.72
   },
   {
    "t": "RBRY11",
@@ -5343,7 +5343,7 @@
    "n_casas": 1,
    "pvpa": "0,93",
    "dy12m": "14,90%",
-   "preco": 86.62
+   "preco": 89.16
   },
   {
    "t": "RECR11",
@@ -5355,7 +5355,7 @@
    "n_casas": 1,
    "pvpa": "0,91",
    "dy12m": "13,11%",
-   "preco": 76.49
+   "preco": 77.77
   },
   {
    "t": "RZTR11",
@@ -5367,7 +5367,7 @@
    "n_casas": 1,
    "pvpa": "0,98",
    "dy12m": "13,51%",
-   "preco": 79.15
+   "preco": 79.9
   },
   {
    "t": "VGIP11",
@@ -5379,7 +5379,7 @@
    "n_casas": 1,
    "pvpa": "0,88",
    "dy12m": "13,69%",
-   "preco": 77.02
+   "preco": 77.0
   },
   {
    "t": "VILG11",
@@ -5391,7 +5391,7 @@
    "n_casas": 1,
    "pvpa": "0,85",
    "dy12m": "9,40%",
-   "preco": 102.0
+   "preco": 103.02
   },
   {
    "t": "VISC11",
@@ -5403,7 +5403,7 @@
    "n_casas": 1,
    "pvpa": "0,92",
    "dy12m": "9,23%",
-   "preco": 113.55
+   "preco": 114.2
   },
   {
    "t": "XPCI11",
@@ -5415,7 +5415,7 @@
    "n_casas": 1,
    "pvpa": "0,95",
    "dy12m": "12,95%",
-   "preco": 81.45
+   "preco": 82.4
   },
   {
    "t": "XPLG11",
@@ -5427,17 +5427,17 @@
    "n_casas": 1,
    "pvpa": "0,92",
    "dy12m": "10,17%",
-   "preco": 100.67
+   "preco": 101.0
   }
  ],
  "precoFonte": {
   "fonte": "Yahoo Finance",
-  "data": "22/10/2026"
+  "data": "23/10/2026"
  },
  "mercado": {
   "fonte": "Yahoo Finance",
   "completo": false,
-  "atualizado_em": "22/10/2026 21:08 (BRT)",
+  "atualizado_em": "23/10/2026 20:58 (BRT)",
   "sem_cotacao": [
    "ARCT11",
    "BBPO11",
@@ -5464,58 +5464,58 @@
   ],
   "fundos": {
    "AFHI11": {
-    "preco": 96.03,
+    "preco": 96.93,
     "prov12m": 12.04,
     "cotas": 5288811,
     "vpa": 95.52,
-    "vm": 507884520.33,
-    "pvp": 1.0053,
-    "dy12m": 12.54
+    "vm": 512644450.23,
+    "pvp": 1.0148,
+    "dy12m": 12.42
    },
    "AIEC11": {
-    "preco": 73.24,
+    "preco": 72.3,
     "prov12m": 3.86,
     "cotas": 4824987,
     "vpa": 75.79,
-    "vm": 353382047.88,
-    "pvp": 0.9664,
-    "dy12m": 5.27
+    "vm": 348846560.1,
+    "pvp": 0.954,
+    "dy12m": 5.34
    },
    "AJFI11": {
-    "preco": 8.6,
+    "preco": 8.65,
     "prov12m": 0.64,
     "cotas": 33625978,
     "vpa": 10.45,
-    "vm": 289183410.8,
-    "pvp": 0.823,
-    "dy12m": 7.44
+    "vm": 290864709.7,
+    "pvp": 0.8278,
+    "dy12m": 7.4
    },
    "ALZR11": {
-    "preco": 10.39,
+    "preco": 10.45,
     "prov12m": 1.0,
     "cotas": 164444501,
     "vpa": 10.78,
-    "vm": 1708578365.39,
-    "pvp": 0.9638,
-    "dy12m": 9.62
+    "vm": 1718445035.45,
+    "pvp": 0.9694,
+    "dy12m": 9.57
    },
    "ARRI11": {
-    "preco": 4.69,
+    "preco": 4.58,
     "prov12m": 0.9,
     "cotas": 20726973,
     "vpa": 8.39,
-    "vm": 97209503.37,
-    "pvp": 0.559,
-    "dy12m": 19.19
+    "vm": 94929536.34,
+    "pvp": 0.5459,
+    "dy12m": 19.65
    },
    "AZPL11": {
-    "preco": 7.25,
+    "preco": 7.26,
     "prov12m": 0.84,
     "cotas": 41922689,
     "vpa": 8.64,
-    "vm": 303939495.25,
-    "pvp": 0.8391,
-    "dy12m": 11.59
+    "vm": 304358722.14,
+    "pvp": 0.8403,
+    "dy12m": 11.57
    },
    "BARI11": {
     "preco": 79.2,
@@ -5535,160 +5535,160 @@
     "dy12m": 12.39
    },
    "BCIA11": {
-    "preco": 89.83,
+    "preco": 90.94,
     "prov12m": 10.43,
     "cotas": 3719038,
     "vpa": 97.68,
-    "vm": 334081183.54,
-    "pvp": 0.9196,
-    "dy12m": 11.61
+    "vm": 338209315.72,
+    "pvp": 0.931,
+    "dy12m": 11.47
    },
    "BCRI11": {
-    "preco": 58.75,
+    "preco": 58.4,
     "prov12m": 9.39,
     "cotas": 6257873,
     "vpa": 84.82,
-    "vm": 367650038.75,
-    "pvp": 0.6926,
-    "dy12m": 15.98
+    "vm": 365459783.2,
+    "pvp": 0.6885,
+    "dy12m": 16.08
    },
    "BLMG11": {
-    "preco": 32.15,
+    "preco": 32.54,
     "prov12m": 4.72,
     "cotas": 4645000,
     "vpa": 45.69,
-    "vm": 149336750.0,
-    "pvp": 0.7037,
-    "dy12m": 14.68
+    "vm": 151148300.0,
+    "pvp": 0.7122,
+    "dy12m": 14.51
    },
    "BPML11": {
-    "preco": 91.16,
+    "preco": 91.0,
     "prov12m": 11.04,
     "cotas": 7441745,
     "vpa": 119.45,
-    "vm": 678389474.2,
-    "pvp": 0.7632,
-    "dy12m": 12.11
+    "vm": 677198795.0,
+    "pvp": 0.7618,
+    "dy12m": 12.13
    },
    "BRCO11": {
-    "preco": 113.96,
+    "preco": 114.0,
     "prov12m": 11.0,
     "cotas": 18021303,
     "vpa": 114.87,
-    "vm": 2053707689.88,
-    "pvp": 0.9921,
+    "vm": 2054428542.0,
+    "pvp": 0.9924,
     "dy12m": 9.65
    },
    "BRCR11": {
-    "preco": 45.76,
+    "preco": 46.09,
     "prov12m": 4.92,
     "cotas": 26638202,
     "vpa": 80.72,
-    "vm": 1218964123.52,
-    "pvp": 0.5669,
-    "dy12m": 10.75
+    "vm": 1227754730.18,
+    "pvp": 0.571,
+    "dy12m": 10.67
    },
    "BROF11": {
-    "preco": 62.03,
+    "preco": 62.57,
     "prov12m": 6.7,
     "cotas": 11610812,
     "vpa": 108.45,
-    "vm": 720218668.36,
-    "pvp": 0.572,
-    "dy12m": 10.8
+    "vm": 726488506.84,
+    "pvp": 0.5769,
+    "dy12m": 10.71
    },
    "BRZP11": {
-    "preco": 195.0,
+    "preco": 200.25,
     "prov12m": 12.16,
     "cotas": null,
     "vpa": null,
-    "dy12m": 6.24
+    "dy12m": 6.07
    },
    "BTAL11": {
-    "preco": 84.32,
+    "preco": 88.05,
     "prov12m": 11.85,
     "cotas": null,
     "vpa": null,
-    "dy12m": 14.05
+    "dy12m": 13.46
    },
    "BTCI11": {
-    "preco": 9.07,
+    "preco": 9.2,
     "prov12m": 1.17,
     "cotas": 99521172,
     "vpa": 10.13,
-    "vm": 902657030.04,
-    "pvp": 0.8954,
-    "dy12m": 12.9
+    "vm": 915594782.4,
+    "pvp": 0.9082,
+    "dy12m": 12.72
    },
    "BTHF11": {
-    "preco": 9.02,
+    "preco": 9.12,
     "prov12m": 1.2,
     "cotas": 205846940,
     "vpa": 9.86,
-    "vm": 1856739398.8,
-    "pvp": 0.9148,
-    "dy12m": 13.3
+    "vm": 1877324092.8,
+    "pvp": 0.9249,
+    "dy12m": 13.16
    },
    "BTLG11": {
-    "preco": 104.32,
+    "preco": 104.8,
     "prov12m": 9.63,
     "cotas": 69389648,
     "vpa": 107.04,
-    "vm": 7238728079.36,
-    "pvp": 0.9746,
-    "dy12m": 9.23
+    "vm": 7272035110.4,
+    "pvp": 0.9791,
+    "dy12m": 9.19
    },
    "BTRA11": {
-    "preco": 71.85,
+    "preco": 71.0,
     "prov12m": 9.0,
     "cotas": null,
     "vpa": null,
-    "dy12m": 12.53
+    "dy12m": 12.68
    },
    "CACR11": {
-    "preco": 14.51,
+    "preco": 14.6,
     "prov12m": 7.71,
     "cotas": 4836324,
     "vpa": 102.16,
-    "vm": 70175061.24,
-    "pvp": 0.142,
-    "dy12m": 53.14,
+    "vm": 70610330.4,
+    "pvp": 0.1429,
+    "dy12m": 52.81,
     "dy_atipico": true
    },
    "CARE11": {
-    "preco": 3.94,
+    "preco": 3.93,
     "prov12m": null,
     "cotas": 7201226,
     "vpa": 34.58,
-    "vm": 28372830.44,
-    "pvp": 0.1139
+    "vm": 28300818.18,
+    "pvp": 0.1136
    },
    "CCME11": {
-    "preco": 9.29,
+    "preco": 9.21,
     "prov12m": 1.03,
     "cotas": 67797053,
     "vpa": 10.52,
-    "vm": 629834622.37,
-    "pvp": 0.8831,
-    "dy12m": 11.09
+    "vm": 624410858.13,
+    "pvp": 0.8755,
+    "dy12m": 11.18
    },
    "CLIN11": {
-    "preco": 93.69,
+    "preco": 95.0,
     "prov12m": 12.01,
     "cotas": 4346763,
     "vpa": 98.77,
-    "vm": 407248225.47,
-    "pvp": 0.9486,
-    "dy12m": 12.82
+    "vm": 412942485.0,
+    "pvp": 0.9618,
+    "dy12m": 12.64
    },
    "CNES11": {
-    "preco": 1.58,
+    "preco": 1.6,
     "prov12m": 0.08,
     "cotas": 34134825,
     "vpa": 6.39,
-    "vm": 53933023.5,
-    "pvp": 0.2473,
-    "dy12m": 5.06
+    "vm": 54615720.0,
+    "pvp": 0.2504,
+    "dy12m": 5.0
    },
    "CPFF11": {
     "preco": 69.9,
@@ -5699,49 +5699,49 @@
     "pvp": 1.1186
    },
    "CPSH11": {
-    "preco": 10.09,
+    "preco": 10.11,
     "prov12m": 1.37,
     "cotas": 123163844,
     "vpa": 11.1,
-    "vm": 1242723185.96,
-    "pvp": 0.909,
-    "dy12m": 13.58
+    "vm": 1245186462.84,
+    "pvp": 0.9108,
+    "dy12m": 13.55
    },
    "CPTS11": {
-    "preco": 7.71,
+    "preco": 7.77,
     "prov12m": 1.08,
     "cotas": 363503147,
     "vpa": 8.65,
-    "vm": 2802609263.37,
-    "pvp": 0.8913,
-    "dy12m": 14.01
+    "vm": 2824419452.19,
+    "pvp": 0.8983,
+    "dy12m": 13.9
    },
    "CYCR11": {
-    "preco": 8.67,
+    "preco": 8.84,
     "prov12m": 1.27,
     "cotas": 36549445,
     "vpa": 9.51,
-    "vm": 316883688.15,
-    "pvp": 0.9117,
-    "dy12m": 14.65
+    "vm": 323097093.8,
+    "pvp": 0.9295,
+    "dy12m": 14.37
    },
    "DEVA11": {
-    "preco": 18.19,
+    "preco": 18.0,
     "prov12m": 3.87,
     "cotas": 14044908,
     "vpa": 94.49,
-    "vm": 255476876.52,
-    "pvp": 0.1925,
-    "dy12m": 21.28
+    "vm": 252808344.0,
+    "pvp": 0.1905,
+    "dy12m": 21.5
    },
    "FATN11": {
-    "preco": 89.9,
+    "preco": 88.79,
     "prov12m": 9.6,
     "cotas": 6842990,
     "vpa": 97.15,
-    "vm": 615184801.0,
-    "pvp": 0.9254,
-    "dy12m": 10.68
+    "vm": 607589082.1,
+    "pvp": 0.9139,
+    "dy12m": 10.81
    },
    "FGAA11": {
     "preco": 8.18,
@@ -5751,103 +5751,103 @@
     "dy12m": 16.87
    },
    "FIIB11": {
-    "preco": 447.99,
+    "preco": 449.98,
     "prov12m": 36.53,
     "cotas": 685000,
     "vpa": 595.42,
-    "vm": 306873150.0,
-    "pvp": 0.7524,
-    "dy12m": 8.15
+    "vm": 308236300.0,
+    "pvp": 0.7557,
+    "dy12m": 8.12
    },
    "GARE11": {
-    "preco": 8.72,
+    "preco": 8.76,
     "prov12m": 0.91,
     "cotas": 289186438,
     "vpa": 9.11,
-    "vm": 2521705739.36,
-    "pvp": 0.9572,
-    "dy12m": 10.44
+    "vm": 2533273196.88,
+    "pvp": 0.9616,
+    "dy12m": 10.39
    },
    "GGRC11": {
-    "preco": 9.18,
+    "preco": 9.31,
     "prov12m": 1.2,
     "cotas": 345709457,
     "vpa": 10.93,
-    "vm": 3173612815.26,
-    "pvp": 0.8399,
-    "dy12m": 13.07
+    "vm": 3218555044.67,
+    "pvp": 0.8518,
+    "dy12m": 12.89
    },
    "GRUL11": {
-    "preco": 8.24,
+    "preco": 8.21,
     "prov12m": 0.96,
     "cotas": 24700000,
     "vpa": 9.69,
-    "vm": 203528000.0,
-    "pvp": 0.8504,
-    "dy12m": 11.65
+    "vm": 202787000.0,
+    "pvp": 0.8473,
+    "dy12m": 11.69
    },
    "GTWR11": {
-    "preco": 81.1,
+    "preco": 81.0,
     "prov12m": 10.8,
     "cotas": 12000000,
     "vpa": 101.38,
-    "vm": 973200000.0,
-    "pvp": 0.8,
-    "dy12m": 13.32
+    "vm": 972000000.0,
+    "pvp": 0.799,
+    "dy12m": 13.33
    },
    "GZIT11": {
-    "preco": 41.0,
+    "preco": 40.26,
     "prov12m": 6.36,
     "cotas": 23297836,
     "vpa": 86.89,
-    "vm": 955211276.0,
-    "pvp": 0.4719,
-    "dy12m": 15.51
+    "vm": 937970877.36,
+    "pvp": 0.4633,
+    "dy12m": 15.8
    },
    "HABT11": {
-    "preco": 70.48,
+    "preco": 70.7,
     "prov12m": 11.39,
     "cotas": 8126783,
     "vpa": 94.3,
-    "vm": 572775665.84,
-    "pvp": 0.7474,
-    "dy12m": 16.16
+    "vm": 574563558.1,
+    "pvp": 0.7497,
+    "dy12m": 16.11
    },
    "HCTR11": {
-    "preco": 13.72,
+    "preco": 13.54,
     "prov12m": 3.22,
     "cotas": 22084202,
     "vpa": 101.33,
-    "vm": 302995251.44,
-    "pvp": 0.1354,
-    "dy12m": 23.47
+    "vm": 299020095.08,
+    "pvp": 0.1336,
+    "dy12m": 23.78
    },
    "HFOF11": {
-    "preco": 6.69,
+    "preco": 6.67,
     "prov12m": 0.71,
     "cotas": 217830000,
     "vpa": 7.56,
-    "vm": 1457282700.0,
-    "pvp": 0.8849,
-    "dy12m": 10.61
+    "vm": 1452926100.0,
+    "pvp": 0.8823,
+    "dy12m": 10.64
    },
    "HGBS11": {
-    "preco": 19.42,
+    "preco": 19.6,
     "prov12m": 1.97,
     "cotas": 144355726,
     "vpa": 20.18,
-    "vm": 2803388198.92,
-    "pvp": 0.9623,
-    "dy12m": 10.14
+    "vm": 2829372229.6,
+    "pvp": 0.9713,
+    "dy12m": 10.05
    },
    "HGCR11": {
-    "preco": 98.13,
+    "preco": 98.69,
     "prov12m": 11.7,
     "cotas": 15418106,
     "vpa": 97.4,
-    "vm": 1512978741.78,
-    "pvp": 1.0075,
-    "dy12m": 11.92
+    "vm": 1521612881.14,
+    "pvp": 1.0132,
+    "dy12m": 11.86
    },
    "HGFF11": {
     "preco": 62.38,
@@ -5858,13 +5858,13 @@
     "pvp": 0.8764
    },
    "HGLG11": {
-    "preco": 157.04,
+    "preco": 159.66,
     "prov12m": 13.41,
     "cotas": 45601745,
     "vpa": 166.43,
-    "vm": 7161298034.8,
-    "pvp": 0.9436,
-    "dy12m": 8.54
+    "vm": 7280774606.7,
+    "pvp": 0.9593,
+    "dy12m": 8.4
    },
    "HGPO11": {
     "preco": 153.42,
@@ -5877,93 +5877,93 @@
     "dy_atipico": true
    },
    "HGRE11": {
-    "preco": 129.0,
+    "preco": 130.6,
     "prov12m": 11.5,
     "cotas": 11817767,
     "vpa": 146.64,
-    "vm": 1524491943.0,
-    "pvp": 0.8797,
-    "dy12m": 8.91
+    "vm": 1543400370.2,
+    "pvp": 0.8906,
+    "dy12m": 8.81
    },
    "HGRU11": {
-    "preco": 124.9,
+    "preco": 125.47,
     "prov12m": 10.95,
     "cotas": 24834204,
     "vpa": 128.2,
-    "vm": 3101792079.6,
-    "pvp": 0.9743,
-    "dy12m": 8.77
+    "vm": 3115947575.88,
+    "pvp": 0.9787,
+    "dy12m": 8.73
    },
    "HOFC11": {
-    "preco": 36.69,
+    "preco": 37.0,
     "prov12m": null,
     "cotas": 3599115,
     "vpa": 64.25,
-    "vm": 132051529.35,
-    "pvp": 0.5711
+    "vm": 133167255.0,
+    "pvp": 0.5759
    },
    "HSAF11": {
-    "preco": 77.08,
+    "preco": 77.73,
     "prov12m": 10.45,
     "cotas": 2526360,
     "vpa": 88.63,
-    "vm": 194731828.8,
-    "pvp": 0.8697,
-    "dy12m": 13.56
+    "vm": 196373962.8,
+    "pvp": 0.877,
+    "dy12m": 13.44
    },
    "HSLG11": {
-    "preco": 83.35,
+    "preco": 83.2,
     "prov12m": 8.76,
     "cotas": 12660067,
     "vpa": 110.2,
-    "vm": 1055216584.45,
-    "pvp": 0.7564,
-    "dy12m": 10.51
+    "vm": 1053317574.4,
+    "pvp": 0.755,
+    "dy12m": 10.53
    },
    "HSML11": {
-    "preco": 94.38,
+    "preco": 94.5,
     "prov12m": 8.66,
     "cotas": 21329976,
     "vpa": 99.67,
-    "vm": 2013123134.88,
-    "pvp": 0.9469,
-    "dy12m": 9.18
+    "vm": 2015682732.0,
+    "pvp": 0.9481,
+    "dy12m": 9.16
    },
    "HTMX11": {
-    "preco": 142.0,
+    "preco": 141.43,
     "prov12m": 16.96,
     "cotas": 2888094,
     "vpa": 148.23,
-    "vm": 410109348.0,
-    "pvp": 0.958,
-    "dy12m": 11.94
+    "vm": 408463134.42,
+    "pvp": 0.9541,
+    "dy12m": 11.99
    },
    "IBCR11": {
-    "preco": 46.8,
+    "preco": 46.97,
     "prov12m": 7.45,
     "cotas": 958423,
     "vpa": 88.47,
-    "vm": 44854196.4,
-    "pvp": 0.529,
-    "dy12m": 15.92
+    "vm": 45017128.31,
+    "pvp": 0.5309,
+    "dy12m": 15.86
    },
    "ICRI11": {
-    "preco": 94.37,
+    "preco": 95.0,
     "prov12m": 12.2,
     "cotas": 3857359,
     "vpa": 99.83,
-    "vm": 364018968.83,
-    "pvp": 0.9453,
-    "dy12m": 12.93
+    "vm": 366449105.0,
+    "pvp": 0.9516,
+    "dy12m": 12.84
    },
    "INLG11": {
-    "preco": 65.03,
+    "preco": 65.22,
     "prov12m": 7.63,
     "cotas": 4512103,
     "vpa": 106.52,
-    "vm": 293422058.09,
-    "pvp": 0.6105,
-    "dy12m": 11.73
+    "vm": 294279357.66,
+    "pvp": 0.6123,
+    "dy12m": 11.7
    },
    "IRDM11": {
     "preco": 58.5,
@@ -5974,76 +5974,76 @@
     "pvp": 0.7441
    },
    "IRIM11": {
-    "preco": 67.0,
+    "preco": 67.89,
     "prov12m": 10.03,
     "cotas": 35225947,
     "vpa": 82.68,
-    "vm": 2360138449.0,
-    "pvp": 0.8104,
-    "dy12m": 14.97
+    "vm": 2391489541.83,
+    "pvp": 0.8211,
+    "dy12m": 14.77
    },
    "ITRI11": {
-    "preco": 82.27,
+    "preco": 82.3,
     "prov12m": 10.44,
     "cotas": 6250000,
     "vpa": 90.49,
-    "vm": 514187500.0,
-    "pvp": 0.9092,
+    "vm": 514375000.0,
+    "pvp": 0.9095,
     "dy12m": 12.69
    },
    "JPPA11": {
-    "preco": 81.79,
+    "preco": 77.98,
     "prov12m": 14.22,
     "cotas": 904050,
     "vpa": 98.9,
-    "vm": 73942249.5,
-    "pvp": 0.827,
-    "dy12m": 17.39
+    "vm": 70497819.0,
+    "pvp": 0.7885,
+    "dy12m": 18.24
    },
    "JSAF11": {
-    "preco": 7.68,
+    "preco": 7.97,
     "prov12m": 0.97,
     "cotas": 77523290,
     "vpa": 9.13,
-    "vm": 595378867.2,
-    "pvp": 0.8412,
-    "dy12m": 12.63
+    "vm": 617860621.3,
+    "pvp": 0.8729,
+    "dy12m": 12.17
    },
    "JSCR11": {
-    "preco": 8.02,
+    "preco": 7.98,
     "prov12m": 1.18,
     "cotas": 22137100,
     "vpa": 9.44,
-    "vm": 177539542.0,
-    "pvp": 0.8496,
-    "dy12m": 14.71
+    "vm": 176654058.0,
+    "pvp": 0.8453,
+    "dy12m": 14.79
    },
    "JSRE11": {
-    "preco": 69.1,
+    "preco": 71.41,
     "prov12m": 5.82,
     "cotas": 20767328,
     "vpa": 101.59,
-    "vm": 1435022364.8,
-    "pvp": 0.6802,
-    "dy12m": 8.42
+    "vm": 1482994892.48,
+    "pvp": 0.7029,
+    "dy12m": 8.15
    },
    "KCRE11": {
-    "preco": 8.95,
+    "preco": 8.97,
     "prov12m": 1.14,
     "cotas": 36000000,
     "vpa": 9.38,
-    "vm": 322200000.0,
-    "pvp": 0.9542,
-    "dy12m": 12.74
+    "vm": 322920000.0,
+    "pvp": 0.9563,
+    "dy12m": 12.71
    },
    "KFOF11": {
-    "preco": 83.09,
+    "preco": 83.54,
     "prov12m": 9.6,
     "cotas": 7014565,
     "vpa": 89.31,
-    "vm": 582840205.85,
-    "pvp": 0.9304,
-    "dy12m": 11.55
+    "vm": 585996760.1,
+    "pvp": 0.9354,
+    "dy12m": 11.49
    },
    "KISU11": {
     "preco": 6.2,
@@ -6055,173 +6055,173 @@
     "dy12m": 13.39
    },
    "KIVO11": {
-    "preco": 57.83,
+    "preco": 58.2,
     "prov12m": 10.64,
     "cotas": 2222736,
     "vpa": 83.59,
-    "vm": 128540822.88,
-    "pvp": 0.6918,
-    "dy12m": 18.4
+    "vm": 129363235.2,
+    "pvp": 0.6963,
+    "dy12m": 18.28
    },
    "KNCA11": {
-    "preco": 91.03,
+    "preco": 91.6,
     "prov12m": 11.57,
     "cotas": null,
     "vpa": null,
-    "dy12m": 12.71
+    "dy12m": 12.63
    },
    "KNCR11": {
-    "preco": 105.7,
+    "preco": 105.55,
     "prov12m": 13.91,
     "cotas": 107089622,
     "vpa": 102.64,
-    "vm": 11319373045.4,
-    "pvp": 1.0298,
-    "dy12m": 13.16
+    "vm": 11303309602.1,
+    "pvp": 1.0284,
+    "dy12m": 13.18
    },
    "KNHF11": {
-    "preco": 95.85,
+    "preco": 96.61,
     "prov12m": 12.0,
     "cotas": 19663235,
     "vpa": 98.86,
-    "vm": 1884721074.75,
-    "pvp": 0.9696,
-    "dy12m": 12.52
+    "vm": 1899665133.35,
+    "pvp": 0.9772,
+    "dy12m": 12.42
    },
    "KNHY11": {
-    "preco": 100.89,
+    "preco": 99.71,
     "prov12m": 12.38,
     "cotas": 31173083,
     "vpa": 98.94,
-    "vm": 3145052343.87,
-    "pvp": 1.0197,
-    "dy12m": 12.27
+    "vm": 3108268105.93,
+    "pvp": 1.0078,
+    "dy12m": 12.42
    },
    "KNIP11": {
-    "preco": 93.89,
+    "preco": 93.2,
     "prov12m": 10.11,
     "cotas": 80078186,
     "vpa": 92.06,
-    "vm": 7518540883.54,
-    "pvp": 1.0199,
-    "dy12m": 10.77
+    "vm": 7463286935.2,
+    "pvp": 1.0124,
+    "dy12m": 10.85
    },
    "KNRI11": {
-    "preco": 162.7,
+    "preco": 162.3,
     "prov12m": 13.21,
     "cotas": 28204047,
     "vpa": 163.38,
-    "vm": 4588798446.9,
-    "pvp": 0.9958,
-    "dy12m": 8.12
+    "vm": 4577516828.1,
+    "pvp": 0.9934,
+    "dy12m": 8.14
    },
    "KNSC11": {
-    "preco": 9.11,
+    "preco": 9.18,
     "prov12m": 1.13,
     "cotas": 202202385,
     "vpa": 8.73,
-    "vm": 1842063727.35,
-    "pvp": 1.0435,
-    "dy12m": 12.4
+    "vm": 1856217894.3,
+    "pvp": 1.0515,
+    "dy12m": 12.31
    },
    "KNUQ11": {
-    "preco": 101.34,
+    "preco": 101.88,
     "prov12m": 14.46,
     "cotas": 21484730,
     "vpa": 101.23,
-    "vm": 2177262538.2,
-    "pvp": 1.0011,
-    "dy12m": 14.27
+    "vm": 2188864292.4,
+    "pvp": 1.0064,
+    "dy12m": 14.19
    },
    "KORE11": {
-    "preco": 73.13,
+    "preco": 74.8,
     "prov12m": 9.15,
     "cotas": 9625000,
     "vpa": 107.16,
-    "vm": 703876250.0,
-    "pvp": 0.6824,
-    "dy12m": 12.51
+    "vm": 719950000.0,
+    "pvp": 0.698,
+    "dy12m": 12.23
    },
    "LIFE11": {
-    "preco": 7.43,
+    "preco": 7.6,
     "prov12m": 1.43,
     "cotas": 39761584,
     "vpa": 9.77,
-    "vm": 295428569.12,
-    "pvp": 0.7605,
-    "dy12m": 19.25
+    "vm": 302188038.4,
+    "pvp": 0.7779,
+    "dy12m": 18.82
    },
    "LVBI11": {
-    "preco": 107.05,
+    "preco": 107.49,
     "prov12m": 9.1,
     "cotas": 16118565,
     "vpa": 120.39,
-    "vm": 1725492383.25,
-    "pvp": 0.8892,
-    "dy12m": 8.5
+    "vm": 1732584551.85,
+    "pvp": 0.8928,
+    "dy12m": 8.47
    },
    "MANA11": {
-    "preco": 9.26,
+    "preco": 9.3,
     "prov12m": 1.26,
     "cotas": 37536140,
     "vpa": 9.24,
-    "vm": 347584656.4,
-    "pvp": 1.0022,
-    "dy12m": 13.61
+    "vm": 349086102.0,
+    "pvp": 1.0065,
+    "dy12m": 13.55
    },
    "MCCI11": {
-    "preco": 94.3,
+    "preco": 95.8,
     "prov12m": 12.0,
     "cotas": 16960024,
     "vpa": 93.81,
-    "vm": 1599330263.2,
-    "pvp": 1.0052,
-    "dy12m": 12.73
+    "vm": 1624770299.2,
+    "pvp": 1.0212,
+    "dy12m": 12.53
    },
    "MCRE11": {
-    "preco": 8.62,
+    "preco": 8.8,
     "prov12m": 1.29,
     "cotas": 111598921,
     "vpa": 9.98,
-    "vm": 961982699.02,
-    "pvp": 0.8637,
-    "dy12m": 14.97
+    "vm": 982070504.8,
+    "pvp": 0.8818,
+    "dy12m": 14.66
    },
    "MFII11": {
-    "preco": 37.46,
+    "preco": 38.0,
     "prov12m": 10.0,
     "cotas": 6800000,
     "vpa": 97.47,
-    "vm": 254728000.0,
-    "pvp": 0.3843,
-    "dy12m": 26.7
+    "vm": 258400000.0,
+    "pvp": 0.3899,
+    "dy12m": 26.32
    },
    "MXRF11": {
-    "preco": 9.48,
+    "preco": 9.44,
     "prov12m": 1.19,
     "cotas": 567206273,
     "vpa": 9.26,
-    "vm": 5377115468.04,
-    "pvp": 1.0238,
-    "dy12m": 12.55
+    "vm": 5354427217.12,
+    "pvp": 1.0194,
+    "dy12m": 12.61
    },
    "NSLU11": {
-    "preco": 191.88,
+    "preco": 193.0,
     "prov12m": 49.79,
     "cotas": 1293286,
     "vpa": 253.21,
-    "vm": 248155717.68,
-    "pvp": 0.7578,
-    "dy12m": 25.95
+    "vm": 249604198.0,
+    "pvp": 0.7622,
+    "dy12m": 25.8
    },
    "OUJP11": {
-    "preco": 70.7,
+    "preco": 71.2,
     "prov12m": 14.18,
     "cotas": 3252384,
     "vpa": 99.02,
-    "vm": 229943548.8,
-    "pvp": 0.714,
-    "dy12m": 20.06
+    "vm": 231569740.8,
+    "pvp": 0.719,
+    "dy12m": 19.92
    },
    "PATL11": {
     "preco": 64.15,
@@ -6232,13 +6232,13 @@
     "dy12m": 17.74
    },
    "PCIP11": {
-    "preco": 81.28,
+    "preco": 82.36,
     "prov12m": 10.39,
     "cotas": 17011707,
     "vpa": 91.88,
-    "vm": 1382711544.96,
-    "pvp": 0.8846,
-    "dy12m": 12.78
+    "vm": 1401084188.52,
+    "pvp": 0.8964,
+    "dy12m": 12.62
    },
    "PLCR11": {
     "preco": 79.1,
@@ -6249,67 +6249,67 @@
     "pvp": 0.9484
    },
    "PMIS11": {
-    "preco": 8.0,
+    "preco": 8.06,
     "prov12m": 1.13,
     "cotas": 14803242,
     "vpa": 9.3,
-    "vm": 118425936.0,
-    "pvp": 0.8602,
-    "dy12m": 14.12
+    "vm": 119314130.52,
+    "pvp": 0.8667,
+    "dy12m": 14.02
    },
    "PMLL11": {
-    "preco": 109.86,
+    "preco": 110.0,
     "prov12m": 11.58,
     "cotas": 17750467,
     "vpa": 120.83,
-    "vm": 1950066304.62,
-    "pvp": 0.9092,
-    "dy12m": 10.54
+    "vm": 1952551370.0,
+    "pvp": 0.9104,
+    "dy12m": 10.53
    },
    "PORD11": {
-    "preco": 8.58,
+    "preco": 8.6,
     "prov12m": 1.19,
     "cotas": 37283750,
     "vpa": 9.53,
-    "vm": 319894575.0,
-    "pvp": 0.9003,
-    "dy12m": 13.87
+    "vm": 320640250.0,
+    "pvp": 0.9024,
+    "dy12m": 13.84
    },
    "PSEC11": {
-    "preco": 53.45,
+    "preco": 54.5,
     "prov12m": 4.1,
     "cotas": 18399378,
     "vpa": 72.29,
-    "vm": 983446754.1,
-    "pvp": 0.7394,
-    "dy12m": 7.67
+    "vm": 1002766101.0,
+    "pvp": 0.7539,
+    "dy12m": 7.52
    },
    "PVBI11": {
-    "preco": 76.11,
+    "preco": 77.29,
     "prov12m": 4.99,
     "cotas": 27130067,
     "vpa": 104.53,
-    "vm": 2064869399.37,
-    "pvp": 0.7281,
-    "dy12m": 6.56
+    "vm": 2096882878.43,
+    "pvp": 0.7394,
+    "dy12m": 6.46
    },
    "RBFM11": {
-    "preco": 10.6,
+    "preco": 10.81,
     "prov12m": 1.38,
     "cotas": 18746075,
     "vpa": 12.49,
-    "vm": 198708395.0,
-    "pvp": 0.8487,
-    "dy12m": 13.02
+    "vm": 202645070.75,
+    "pvp": 0.8655,
+    "dy12m": 12.77
    },
    "RBHG11": {
-    "preco": 62.03,
+    "preco": 61.55,
     "prov12m": 8.84,
     "cotas": 2167957,
     "vpa": 86.58,
-    "vm": 134478372.71,
-    "pvp": 0.7164,
-    "dy12m": 14.25
+    "vm": 133437753.35,
+    "pvp": 0.7109,
+    "dy12m": 14.36
    },
    "RBRF11": {
     "preco": 6.65,
@@ -6321,85 +6321,85 @@
     "dy12m": 4.96
    },
    "RBRL11": {
-    "preco": 84.8,
+    "preco": 84.07,
     "prov12m": 8.1,
     "cotas": 6687035,
     "vpa": 94.39,
-    "vm": 567060568.0,
-    "pvp": 0.8984,
-    "dy12m": 9.55
+    "vm": 562179032.45,
+    "pvp": 0.8907,
+    "dy12m": 9.63
    },
    "RBRP11": {
-    "preco": 52.8,
+    "preco": 52.97,
     "prov12m": 4.65,
     "cotas": 12179186,
     "vpa": 78.46,
-    "vm": 643061020.8,
-    "pvp": 0.673,
-    "dy12m": 8.81
+    "vm": 645131482.42,
+    "pvp": 0.6751,
+    "dy12m": 8.78
    },
    "RBRR11": {
-    "preco": 74.86,
+    "preco": 76.0,
     "prov12m": 9.86,
     "cotas": 16300275,
     "vpa": 91.91,
-    "vm": 1220238586.5,
-    "pvp": 0.8145,
-    "dy12m": 13.17
+    "vm": 1238820900.0,
+    "pvp": 0.8269,
+    "dy12m": 12.97
    },
    "RBRX11": {
-    "preco": 7.79,
+    "preco": 7.72,
     "prov12m": 1.08,
     "cotas": 146354302,
     "vpa": 9.33,
-    "vm": 1140100012.58,
-    "pvp": 0.8349,
-    "dy12m": 13.86
+    "vm": 1129855211.44,
+    "pvp": 0.8274,
+    "dy12m": 13.99
    },
    "RBRY11": {
-    "preco": 86.62,
+    "preco": 89.16,
     "prov12m": 13.05,
     "cotas": 12769512,
     "vpa": 100.43,
-    "vm": 1106095129.44,
-    "pvp": 0.8625,
-    "dy12m": 15.07
+    "vm": 1138529689.92,
+    "pvp": 0.8878,
+    "dy12m": 14.64
    },
    "RBVA11": {
-    "preco": 9.07,
+    "preco": 9.05,
     "prov12m": 0.99,
     "cotas": 165268143,
     "vpa": 10.67,
-    "vm": 1498982057.01,
-    "pvp": 0.85,
-    "dy12m": 10.92
+    "vm": 1495676694.15,
+    "pvp": 0.8482,
+    "dy12m": 10.94
    },
    "RCRB11": {
-    "preco": 146.49,
+    "preco": 151.97,
     "prov12m": 13.16,
     "cotas": 3690695,
     "vpa": 189.68,
-    "vm": 540649910.55,
-    "pvp": 0.7723,
-    "dy12m": 8.98
+    "vm": 560874919.15,
+    "pvp": 0.8012,
+    "dy12m": 8.66
    },
    "RECR11": {
-    "preco": 76.49,
+    "preco": 77.77,
     "prov12m": 10.72,
     "cotas": 26441650,
     "vpa": 86.48,
-    "vm": 2022521808.5,
-    "pvp": 0.8845,
-    "dy12m": 14.01
+    "vm": 2056367120.5,
+    "pvp": 0.8993,
+    "dy12m": 13.78
    },
    "RECT11": {
-    "preco": 35.01,
+    "preco": 35.47,
     "prov12m": 5.4,
     "cotas": 8543493,
     "vpa": 89.8,
-    "vm": 299107689.93,
-    "pvp": 0.3899,
-    "dy12m": 15.42
+    "vm": 303037696.71,
+    "pvp": 0.395,
+    "dy12m": 15.22
    },
    "RELG11": {
     "preco": 69.95,
@@ -6411,47 +6411,47 @@
     "dy12m": 27.09
    },
    "RPRI11": {
-    "preco": 80.65,
+    "preco": 81.99,
     "prov12m": 11.14,
     "cotas": 3471728,
     "vpa": 99,
-    "vm": 279994863.2,
-    "pvp": 0.8146,
-    "dy12m": 13.81
+    "vm": 284646978.72,
+    "pvp": 0.8282,
+    "dy12m": 13.59
    },
    "RZAG11": {
-    "preco": 8.77,
+    "preco": 8.86,
     "prov12m": 1.38,
     "cotas": null,
     "vpa": null,
-    "dy12m": 15.74
+    "dy12m": 15.58
    },
    "RZAK11": {
-    "preco": 79.87,
+    "preco": 79.75,
     "prov12m": 12.9,
     "cotas": 8807885,
     "vpa": 88.14,
-    "vm": 703485774.95,
-    "pvp": 0.9062,
-    "dy12m": 16.15
+    "vm": 702428828.75,
+    "pvp": 0.9048,
+    "dy12m": 16.18
    },
    "RZAT11": {
-    "preco": 85.34,
+    "preco": 85.98,
     "prov12m": 14.1,
     "cotas": 4235042,
     "vpa": 102.13,
-    "vm": 361418484.28,
-    "pvp": 0.8356,
-    "dy12m": 16.52
+    "vm": 364128911.16,
+    "pvp": 0.8419,
+    "dy12m": 16.4
    },
    "RZTR11": {
-    "preco": 79.15,
+    "preco": 79.9,
     "prov12m": 11.5,
     "cotas": 18851720,
     "vpa": 97.61,
-    "vm": 1492113638.0,
-    "pvp": 0.8109,
-    "dy12m": 14.53
+    "vm": 1506252428.0,
+    "pvp": 0.8186,
+    "dy12m": 14.39
    },
    "SARE11": {
     "preco": 4.75,
@@ -6462,13 +6462,13 @@
     "pvp": 0.9443
    },
    "SNCI11": {
-    "preco": 85.94,
+    "preco": 85.5,
     "prov12m": 12.0,
     "cotas": 4200000,
     "vpa": 94.27,
-    "vm": 360948000.0,
-    "pvp": 0.9116,
-    "dy12m": 13.96
+    "vm": 359100000.0,
+    "pvp": 0.907,
+    "dy12m": 14.04
    },
    "SNEL11": {
     "preco": 7.96,
@@ -6489,13 +6489,13 @@
     "dy12m": 12.81
    },
    "SPTW11": {
-    "preco": 34.77,
+    "preco": 34.7,
     "prov12m": 5.92,
     "cotas": 1798000,
     "vpa": 53.77,
-    "vm": 62516460.0,
-    "pvp": 0.6466,
-    "dy12m": 17.03
+    "vm": 62390600.0,
+    "pvp": 0.6453,
+    "dy12m": 17.06
    },
    "SPXS11": {
     "preco": 7.92,
@@ -6507,31 +6507,31 @@
     "dy12m": 15.03
    },
    "TEPP11": {
-    "preco": 7.79,
+    "preco": 7.84,
     "prov12m": 1.16,
     "cotas": 49616923,
     "vpa": 9.43,
-    "vm": 386515830.17,
-    "pvp": 0.8261,
-    "dy12m": 14.89
+    "vm": 388996676.32,
+    "pvp": 0.8314,
+    "dy12m": 14.8
    },
    "TGAR11": {
-    "preco": 51.96,
+    "preco": 51.95,
     "prov12m": 9.43,
     "cotas": 23567968,
     "vpa": 107.23,
-    "vm": 1224591617.28,
-    "pvp": 0.4846,
+    "vm": 1224355937.6,
+    "pvp": 0.4845,
     "dy12m": 18.15
    },
    "TOPP11": {
-    "preco": 72.0,
+    "preco": 72.32,
     "prov12m": 9.41,
     "cotas": 4528240,
     "vpa": 102.64,
-    "vm": 326033280.0,
-    "pvp": 0.7015,
-    "dy12m": 13.07
+    "vm": 327482316.8,
+    "pvp": 0.7046,
+    "dy12m": 13.01
    },
    "TORD11": {
     "preco": 0.99,
@@ -6543,101 +6543,101 @@
     "dy12m": 8.08
    },
    "TRBL11": {
-    "preco": 54.08,
+    "preco": 53.58,
     "prov12m": 9.68,
     "cotas": 7739092,
     "vpa": 76.68,
-    "vm": 418530095.36,
-    "pvp": 0.7053,
-    "dy12m": 17.9
+    "vm": 414660549.36,
+    "pvp": 0.6987,
+    "dy12m": 18.07
    },
    "TRXF11": {
-    "preco": 71.89,
+    "preco": 71.9,
     "prov12m": 10.87,
     "cotas": 62430702,
     "vpa": 95.75,
-    "vm": 4488143166.78,
-    "pvp": 0.7508,
+    "vm": 4488767473.8,
+    "pvp": 0.7509,
     "dy12m": 15.12
    },
    "TVRI11": {
-    "preco": 87.9,
+    "preco": 87.44,
     "prov12m": 12.6,
     "cotas": 15919690,
     "vpa": 100.53,
-    "vm": 1399340751.0,
-    "pvp": 0.8744,
-    "dy12m": 14.33
+    "vm": 1392017693.6,
+    "pvp": 0.8698,
+    "dy12m": 14.41
    },
    "URPR11": {
-    "preco": 21.98,
+    "preco": 21.51,
     "prov12m": 3.89,
     "cotas": 11733895,
     "vpa": 91.07,
-    "vm": 257911012.1,
-    "pvp": 0.2414,
-    "dy12m": 17.7
+    "vm": 252396081.45,
+    "pvp": 0.2362,
+    "dy12m": 18.08
    },
    "VCJR11": {
-    "preco": 75.5,
+    "preco": 76.9,
     "prov12m": 11.36,
     "cotas": 14723970,
     "vpa": 92.26,
-    "vm": 1111659735.0,
-    "pvp": 0.8183,
-    "dy12m": 15.05
+    "vm": 1132273293.0,
+    "pvp": 0.8335,
+    "dy12m": 14.77
    },
    "VCRI11": {
-    "preco": 7.46,
+    "preco": 7.47,
     "prov12m": 2.0,
     "cotas": 20543663,
     "vpa": 9.45,
-    "vm": 153255725.98,
-    "pvp": 0.7894,
-    "dy12m": 26.81
+    "vm": 153461162.61,
+    "pvp": 0.7905,
+    "dy12m": 26.77
    },
    "VGHF11": {
-    "preco": 5.79,
+    "preco": 5.82,
     "prov12m": 0.81,
     "cotas": 164721683,
     "vpa": 8.22,
-    "vm": 953738544.57,
-    "pvp": 0.7044,
-    "dy12m": 13.99
+    "vm": 958680195.06,
+    "pvp": 0.708,
+    "dy12m": 13.92
    },
    "VGIA11": {
-    "preco": 9.07,
+    "preco": 9.1,
     "prov12m": 1.62,
     "cotas": null,
     "vpa": null,
-    "dy12m": 17.86
+    "dy12m": 17.8
    },
    "VGIP11": {
-    "preco": 77.02,
+    "preco": 77.0,
     "prov12m": 10.29,
     "cotas": 11787247,
     "vpa": 90.8,
-    "vm": 907853763.94,
-    "pvp": 0.8482,
+    "vm": 907618019.0,
+    "pvp": 0.848,
     "dy12m": 13.36
    },
    "VGIR11": {
-    "preco": 9.58,
+    "preco": 9.59,
     "prov12m": 1.51,
     "cotas": 146101287,
     "vpa": 9.81,
-    "vm": 1399650329.46,
-    "pvp": 0.9766,
-    "dy12m": 15.76
+    "vm": 1401111342.33,
+    "pvp": 0.9776,
+    "dy12m": 15.75
    },
    "VGRI11": {
-    "preco": 6.2,
+    "preco": 6.22,
     "prov12m": 1.12,
     "cotas": 35021736,
     "vpa": 8.63,
-    "vm": 217134763.2,
-    "pvp": 0.7184,
-    "dy12m": 18.06
+    "vm": 217835197.92,
+    "pvp": 0.7207,
+    "dy12m": 18.01
    },
    "VIFI11": {
     "preco": 7.46,
@@ -6646,58 +6646,58 @@
     "vpa": null
    },
    "VILG11": {
-    "preco": 102.0,
+    "preco": 103.02,
     "prov12m": 9.54,
     "cotas": 14997396,
     "vpa": 109.32,
-    "vm": 1529734392.0,
-    "pvp": 0.933,
-    "dy12m": 9.35
+    "vm": 1545031735.92,
+    "pvp": 0.9424,
+    "dy12m": 9.26
    },
    "VINO11": {
-    "preco": 4.66,
+    "preco": 4.71,
     "prov12m": 0.52,
     "cotas": 82826295,
     "vpa": 9.78,
-    "vm": 385970534.7,
-    "pvp": 0.4765,
-    "dy12m": 11.16
+    "vm": 390111849.45,
+    "pvp": 0.4816,
+    "dy12m": 11.04
    },
    "VISC11": {
-    "preco": 113.55,
+    "preco": 114.2,
     "prov12m": 9.99,
     "cotas": 28828640,
     "vpa": 115.6,
-    "vm": 3273492072.0,
-    "pvp": 0.9823,
-    "dy12m": 8.8
+    "vm": 3292230688.0,
+    "pvp": 0.9879,
+    "dy12m": 8.75
    },
    "VIUR11": {
-    "preco": 2.43,
+    "preco": 2.53,
     "prov12m": 0.69,
     "cotas": 26946220,
     "vpa": 3.54,
-    "vm": 65479314.6,
-    "pvp": 0.6864,
-    "dy12m": 28.4
+    "vm": 68173936.6,
+    "pvp": 0.7147,
+    "dy12m": 27.27
    },
    "VRTA11": {
-    "preco": 76.23,
+    "preco": 75.67,
     "prov12m": 10.2,
     "cotas": 15592424,
     "vpa": 83.15,
-    "vm": 1188610481.52,
-    "pvp": 0.9168,
-    "dy12m": 13.38
+    "vm": 1179878724.08,
+    "pvp": 0.91,
+    "dy12m": 13.48
    },
    "VRTM11": {
-    "preco": 6.85,
+    "preco": 6.92,
     "prov12m": 1.08,
     "cotas": 46971245,
     "vpa": 9.42,
-    "vm": 321753028.25,
-    "pvp": 0.7272,
-    "dy12m": 15.77
+    "vm": 325041015.4,
+    "pvp": 0.7346,
+    "dy12m": 15.61
    },
    "VSLH11": {
     "preco": 1.68,
@@ -6726,20 +6726,20 @@
     "dy12m": 13.2
    },
    "XPCA11": {
-    "preco": 7.78,
+    "preco": 7.79,
     "prov12m": 1.28,
     "cotas": null,
     "vpa": null,
-    "dy12m": 16.45
+    "dy12m": 16.43
    },
    "XPCI11": {
-    "preco": 81.45,
+    "preco": 82.4,
     "prov12m": 10.69,
     "cotas": 8701551,
     "vpa": 87.11,
-    "vm": 708741328.95,
-    "pvp": 0.935,
-    "dy12m": 13.12
+    "vm": 717007802.4,
+    "pvp": 0.9459,
+    "dy12m": 12.97
    },
    "XPIN11": {
     "preco": 62.04,
@@ -6751,31 +6751,31 @@
     "dy12m": 14.78
    },
    "XPLG11": {
-    "preco": 100.67,
+    "preco": 101.0,
     "prov12m": 9.84,
     "cotas": 51390097,
     "vpa": 105.03,
-    "vm": 5173441064.99,
-    "pvp": 0.9585,
-    "dy12m": 9.77
+    "vm": 5190399797.0,
+    "pvp": 0.9616,
+    "dy12m": 9.74
    },
    "XPML11": {
-    "preco": 104.7,
+    "preco": 104.61,
     "prov12m": 11.07,
     "cotas": 64308055,
     "vpa": 110.11,
-    "vm": 6733053358.5,
-    "pvp": 0.9509,
-    "dy12m": 10.57
+    "vm": 6727265633.55,
+    "pvp": 0.95,
+    "dy12m": 10.58
    },
    "XPSF11": {
-    "preco": 6.6,
+    "preco": 6.67,
     "prov12m": 0.84,
     "cotas": 43302140,
     "vpa": 7.65,
-    "vm": 285794124.0,
-    "pvp": 0.8627,
-    "dy12m": 12.73
+    "vm": 288825273.8,
+    "pvp": 0.8719,
+    "dy12m": 12.59
    },
    "ZAVI11": {
     "preco": 9.92,
@@ -6896,6 +6896,10 @@
   {
    "d": "22/10/2026",
    "v": 3973.66
+  },
+  {
+   "d": "23/10/2026",
+   "v": 3990.57
   }
  ]
 }
