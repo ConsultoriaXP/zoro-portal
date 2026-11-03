@@ -1,16 +1,16 @@
 {
  "meta": {
-  "atualizado": "30/10/2026",
+  "atualizado": "03/11/2026",
   "data_ref_research": "Maio/2026",
-  "data_ref_mercado": "Cotacoes, valor de mercado, P/VP e DY 12m: Yahoo Finance, 30/10/2026. Ranking Clube FII e consenso das casas: Maio/2026."
+  "data_ref_mercado": "Cotacoes, valor de mercado, P/VP e DY 12m: Yahoo Finance, 03/11/2026. Ranking Clube FII e consenso das casas: Maio/2026."
  },
  "ifix": {
   "fech": 3646.62,
-  "data": "30/10/2026",
+  "data": "03/11/2026",
   "var_dia_pct": 0.4,
-  "var_mes_pct": -2.89,
+  "var_mes_pct": 0.0,
   "max_52s": 3990.57,
-  "obs": "IFIX em 3646,62 pontos no fechamento de 30/10/2026 (fonte: Yahoo (IFIX.SA))",
+  "obs": "IFIX em 3646,62 pontos no fechamento de 03/11/2026 (fonte: Yahoo (IFIX.SA))",
   "min_52s": 3554.56
  },
  "ifixEvo": [
@@ -5432,12 +5432,12 @@
  ],
  "precoFonte": {
   "fonte": "Yahoo Finance",
-  "data": "30/10/2026"
+  "data": "03/11/2026"
  },
  "mercado": {
   "fonte": "Yahoo Finance",
   "completo": false,
-  "atualizado_em": "30/10/2026 22:01 (BRT)",
+  "atualizado_em": "03/11/2026 00:03 (BRT)",
   "sem_cotacao": [
    "ARCT11",
    "BBPO11",
@@ -6919,6 +6919,10 @@
   },
   {
    "d": "30/10/2026",
+   "v": 3646.62
+  },
+  {
+   "d": "03/11/2026",
    "v": 3646.62
   }
  ]
