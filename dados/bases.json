@@ -1,6 +1,6 @@
 {
  "fonte": "Status Invest",
- "data": "17/11/2026",
+ "data": "18/11/2026",
  "nota": "Numero de cotas (c) e valor patrimonial por cota (v). Campos semi-estaticos: mudam em nova emissao ou no informe mensal. Usados para calcular valor de mercado (preco x c) e P/VP (preco / v) quando a fonte diaria devolve apenas a cotacao.",
  "fundos": {
   "ABCP11": {
