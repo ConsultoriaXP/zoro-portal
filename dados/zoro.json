@@ -1,16 +1,16 @@
 {
  "meta": {
-  "atualizado": "19/11/2026",
+  "atualizado": "20/11/2026",
   "data_ref_research": "Maio/2026",
-  "data_ref_mercado": "Cotacoes, valor de mercado, P/VP e DY 12m: Yahoo Finance, 19/11/2026. Ranking Clube FII e consenso das casas: Maio/2026."
+  "data_ref_mercado": "Cotacoes, valor de mercado, P/VP e DY 12m: Yahoo Finance, 20/11/2026. Ranking Clube FII e consenso das casas: Maio/2026."
  },
  "ifix": {
   "fech": 3485.06,
-  "data": "19/11/2026",
+  "data": "20/11/2026",
   "var_dia_pct": -0.8,
   "var_mes_pct": -4.43,
   "max_52s": 3990.57,
-  "obs": "IFIX em 3485,06 pontos no fechamento de 19/11/2026 (fonte: Yahoo (IFIX.SA))",
+  "obs": "IFIX em 3485,06 pontos no fechamento de 20/11/2026 (fonte: Yahoo (IFIX.SA))",
   "min_52s": 3485.06
  },
  "ifixEvo": [
@@ -5437,12 +5437,12 @@
  ],
  "precoFonte": {
   "fonte": "Yahoo Finance",
-  "data": "19/11/2026"
+  "data": "20/11/2026"
  },
  "mercado": {
   "fonte": "Yahoo Finance",
   "completo": false,
-  "atualizado_em": "19/11/2026 23:34 (BRT)",
+  "atualizado_em": "20/11/2026 23:48 (BRT)",
   "sem_cotacao": [
    "ARCT11",
    "BBPO11",
@@ -6236,12 +6236,12 @@
    },
    "PCIP11": {
     "preco": 66.67,
-    "prov12m": 10.29,
+    "prov12m": 10.22,
     "cotas": 17011707.0,
     "vpa": 91.88,
     "vm": 1134170505.69,
     "pvp": 0.7256,
-    "dy12m": 15.43
+    "dy12m": 15.33
    },
    "PLCR11": {
     "preco": 79.1,
@@ -6280,12 +6280,12 @@
    },
    "PSEC11": {
     "preco": 43.1,
-    "prov12m": 4.83,
+    "prov12m": 4.7,
     "cotas": 18399378.0,
     "vpa": 72.29,
     "vm": 793013191.8,
     "pvp": 0.5962,
-    "dy12m": 11.21
+    "dy12m": 10.9
    },
    "PVBI11": {
     "preco": 59.21,
@@ -6966,6 +6966,10 @@
   },
   {
    "d": "19/11/2026",
+   "v": 3485.06
+  },
+  {
+   "d": "20/11/2026",
    "v": 3485.06
   }
  ]
